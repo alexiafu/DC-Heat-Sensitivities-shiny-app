@@ -1,0 +1,502 @@
+"","DVTR_Name","DVTR_ID","DVTR_Pop","Pop_Source","DVTR_Tot_Vol","Units"
+"1","Uttarakhand Jal Sansthan (UJS)",1000,879000,"Excreta Matters",136,"MLD"
+"2","Uttarakhand Peya Jal Nigam",1003,42300,"Excreta Matters",6,"MLD"
+"3","National Water and Sewerage Corporation",1004,872433,"Target: 1,302,138; http://www.nwsc.co.ug/areasinfocus.html",97,"MLD"
+"4","Ministry of Water Resources, Development, and Management",1005,NA,NA,544,"MLD"
+"5","Senegalese Des Eaux (SDE)",1006,5000000,"519,756 customers in 2010; ""almost"" 5 mil people http://www.sde.sn/chifclientele.htm",240,"MLD"
+"6","Dar es Salaam Water and Sewerage Corporation (DAWASCO)",1007,NA,NA,302,"MLD"
+"7","Dar Es Salaam Water & Sewerage Authority (DAWASA)",1008,100000,"http://dawasa.co.tz/index.php/about-us",9,"MLD"
+"8","Addis Ababa Water and Sewerage Authority (AAWSA)",1009,NA,NA,600,"MLD"
+"9","Société des Eaux et de l’Assainissement d’Alger (SEAAL)",1010,460000,"subscribers; http://en.wikipedia.org/wiki/Water_privatization_in_Algeria#cite_note-5",1859,"MLD"
+"10","Société Nationale des Eaux du Bénin (SONEB)",1011,162596,"subscribers; http://www.soneb.com/soneb.htm",78,"MLD"
+"11","Unknown National Water Authority",1012,NA,NA,NA,NA
+"12","Guma Valley Water Company (GVWC)",1013,NA,NA,72,"MLD"
+"13","Société Nationale d'Exploitation et de Distribution des Eaux (SONEDE)",1014,2226000,"http://www.sonede.com.tn/an/E_P.html",1244,"MLD"
+"14","City of Cape Town Water and Sanitation",1015,1088631,"http://www.capetown.gov.za/en/Water/WaterservicesDevPlan/Documents/WSDP_2012_2013/Topic_3_SERVICE_LEVEL.pdf",929,"MLD"
+"15","Shenzhen Water Group (SZWG)",1016,2000000,"http://www.waterchina.com/en/catalog_7140.aspx",1670,"MLD"
+"16","Obras Sanitarias del Estado (OSE)",1017,2996750,"http://www.ose.com.uy/a_agua.html",904,"MLD"
+"17","Istanbul Su ve Kanalizasyon Idaresi (ISKI)",1018,NA,NA,NA,NA
+"18","Canal de Isabel II Gestión",1019,6000000,"http://www.gestioncanal.es/conocenos/index.html",4500,"MLD (total known)"
+"19","Lagos Water Corporation",1020,NA,NA,NA,NA
+"20","Hidrocapital",1021,NA,NA,NA,NA
+"21","Khartoum State Water Corporation (KSWC)",1022,NA,NA,NA,NA
+"22","Arisu",1023,NA,NA,NA,NA
+"23","PUB",1024,NA,NA,NA,NA
+"24","City of Houston",1025,2052780,"http://quickfacts.census.gov/qfd/states/48/4835000.html",1514,"MLD"
+"25","Philadelphia Water Department",1026,1547607,"http://quickfacts.census.gov/qfd/states/42/4260000.html",946,"MLD"
+"26","City of Phoenix Water Services Department",1027,1500000,"http://phoenix.gov/webcms/groups/internet/@inter/@dept/@wsd/documents/web_content/wsdwqr2012.pdf",2638,"MLD"
+"27","San Antonio Water System",1028,1300689,"http://www.saws.org/Your_Water/aquifer/docs/2011StatsBook.pdf",774,"MLD"
+"28","National Water Company (NWC)",1029,NA,NA,NA,NA
+"29","City of San Diego",1030,1300000,"http://www.sandiego.gov/water/pdf/waterreuse/2012/fy12annualwater121221.pdf",548,"MLD"
+"30","Metropolitan Water District of Southern California (MWDSC)",1031,19000000,"http://www.mwdh2o.com/mwdh2o/pages/about/AR/AR12/Chapter-4.pdf",9842,"MLD"
+"31","Dallas Water Utilities",1032,1241162,"http://quickfacts.census.gov/qfd/states/48/4819000.html",1292,"MLD"
+"32","City of Chicago Department of Water Management",1033,2695598,"http://163.191.83.31/dww/JSP/WaterSystemDetail.jsp?tinwsys_is_number=716257&tinwsys_st_code=IL&wsnumber=IL0316000",3780,"MLD"
+"33","Los Angeles Department of Water and Power",1034,4100260,"http://www.water.ca.gov/urbanwatermanagement/2010uwmps/Los%20Angeles%20Department%20of%20Water%20and%20Power/LADWP%20UWMP_2010_LowRes.pdf",1844,"MLD"
+"34","New York City Department of Environmental Protection (DEP)",1035,9000000,"http://www.nyc.gov/html/dep/pdf/wsstate12.pdf",3785,"MLD"
+"35","San Jose Water Company",1036,946494,"http://www.water.ca.gov/urbanwatermanagement/2010uwmps/San%20Jose%20Water%20Company/SJWC'S%202010%20UWMP%20with%20Appendicies.pdf",459,"MLD"
+"36","Santa Clara Valley Water District",1037,1800000,"http://www.valleywater.org",1125,"MLD"
+"37","JEA (formerly Jacksonville Electric Authority)",1038,305000,"https://www.jea.com/aboutus.aspx",454,"MLD"
+"38","Citizens Water",1039,309241,"http://viewer.zmags.com/publication/cd7e84ea#/cd7e84ea/2",424,"MLD"
+"39","San Francisco Public Utilities Commission",1040,2600000,"http://sfwater.org/index.aspx?page=634",1003,"MLD"
+"40","Austin Water Utility",1041,890000,"http://austintexas.gov/department/water/about",553,"MLD"
+"41","Columbus Department of Public Utilities",1042,1100000,"http://publicutilities.columbus.gov/DocListing.aspx?id=38046",530,"MLD"
+"42","Fort Worth Water Department",1043,686850,"http://fortworthtexas.gov/uploadedFiles/Water/Save_FW_water/FinalWCP09.pdf",1741,"MLD"
+"43","Charlotte-Mecklenburg Utilities",1044,800000,"http://charmeck.org/city/charlotte/Utilities/PublicationsandEducation/Documents/2012%20Full%20Water%20Quality%20Report.pdf",379,"MLD"
+"44","Detroit Water and Sewerage Department",1045,4000000,"http://www.dwsd.org/downloads_n/about_dwsd/masterplan_freshwater/Task_D_SWP_w_Appendix.pdf",2423,"MLD"
+"45","City of Baltimore Department of Public Works  Bureau of Water & Wastewater",1046,1800000,"http://www.cleanwaterbaltimore.org/where-your-drinking-water-comes-from.asp",852,"MLD"
+"46","Massachusetts Water Resources Authority",1047,850000,"http://www.mwra.state.ma.us/annual/waterreport/2012results/metro.htm",757,"MLD"
+"47","Seattle Public Utilities",1048,634535,"http://quickfacts.census.gov/qfd/states/53/5363000.html",457,"MLD"
+"48","District of Columbia Water and Sewer Authority",1049,2200000,"http://www.dcwater.com/about/gen_information.cfm",401,"MLD"
+"49","Denver Water",1050,1300000,"http://www.denverwater.org/SupplyPlanning/WaterSupply/CollectionSystem/",496,"MLD"
+"50","Portland Water Bureau",1051,935000,"http://www.portlandoregon.gov/water/29460",369,"MLD"
+"51","Las Vegas Valley Water District",1052,1967722,"http://www.lvvwd.com/assets/pdf/financial_cafr_statistical.pdf",1054,"MLD"
+"52","Long Beach Water Department (LBWD)",1053,464662,"http://www.lbwater.org/sites/default/files/FY%202013%20CCR.pdf",198,"MLD"
+"53","Mesa Water Resources Department",1054,465000,"http://www.mesaaz.gov/water/PDF/2012Strategicbusinessplan.pdf",301,"MLD"
+"54","Atlanta Department of Watershed Management",1055,1000000,"http://www.atlantawatershed.org/pdf/wqr2012.pdf",454,"MLD"
+"55","Miami-Dade Water & Sewer Department",1056,2200000,"http://www.miamidade.gov/water/library/reports/water-quality-2012.pdf",1217,"MLD"
+"56","Cleveland Division of Water (CWD)",1057,1500000,"http://www.clevelandwater.com/about_us/Documents/WCACD%20AboutPamplet-WEB%20(2).pdf",625,"MLD"
+"57","East Bay Municipal Utilities District (EBMUD)",1058,1300000,NA,1609,"MLD"
+"58","Minneapolis Water Works",1059,500000,"http://www.minneapolismn.gov/publicworks/water/water_waterfacts",216,"MLD"
+"59","City of Tampa Water Department",1060,347645,"http://quickfacts.census.gov/qfd/states/12/1271000.html",246,"MLD"
+"60","Tampa Bay Water",1061,2500000,"http://en.wikipedia.org/wiki/Tampa_Bay_Water",647,"MLD"
+"61","Aurora Water",1062,339030,"http://quickfacts.census.gov/qfd/states/08/0804000.html",153,"MLD"
+"62","City of Santa Ana Public Works Agency",1063,355000,"http://www.mwdh2o.com/mwdh2o/pages/memberag/agencies/santana.htm",169,"MLD"
+"63","City of St. Louis Water Division",1064,318172,"http://quickfacts.census.gov/qfd/states/29/29510.html",511,"MLD"
+"64","Saint Paul Regional Water Services",1065,415000,"http://mn-stpaul.civicplus.com/DocumentCenter/Home/View/1333",170,"MLD"
+"65","City of Newark Department of Water and Sewer Utilities",1066,277140,"http://www.ci.newark.nj.us/userimages/downloads/Newark_Master_Plan_FINAL_Vol_I(1).pdf",292,"MLD"
+"66","St. Petersburg Water Resources Department",1067,246541,"http://quickfacts.census.gov/qfd/states/12/1263000.html",104,"MLD"
+"67","Agra Jal Nigam",1068,1200000,"Excreta Matters",245,"MLD"
+"68","Allahabad Jal Sansthan",1069,1568000,"Excreta Matters",297,"MLD"
+"69","Aurangabad Municipal Corporation",1070,1400000,"Excreta Matters",204,"MLD"
+"70","Bangalore Water Supply and Sewerage Board",1071,7500000,"Excreta Matters",900,"MLD"
+"71","Baramati Municipal Corporation",1072,100000,"Excreta Matters",12,"MLD"
+"72","Chennai Metropolitan Water Supply and Sewerage Board",1073,5000000,"Excreta Matters",1535,"MLD"
+"73","Delhi Jal Board (DJB)",1074,28200000,"Excreta Matters",7600,"MLD"
+"74","Guwahati Municipal Corporation",1075,390000,"Excreta Matters",103,"MLD"
+"75","Hyderabad Metropolitan Water Supply and Sewerage Board",1076,5740000,"Excreta Matters",930,"MLD"
+"76","Indore Municipal Corporation",1077,1296000,"Excreta Matters",204,"MLD"
+"77","Jabalpur Municipal Corporation",1078,396000,"Excreta Matters",158,"MLD"
+"78","Kanpur Jal Sansthan",1079,3600000,"Excreta Matters",390,"MLD"
+"79","Karnataka Urban Water Supply and Drainage Board",1080,NA,NA,27,"MLD"
+"80","Karnataka Urban Water Supply and Sewerage Board",1081,NA,NA,111,"MLD"
+"81","Kerala Water Authority",1082,1054000,"Excreta Matters",151,"MLD"
+"82","Kolkata Municipal Water and Sanitation Agency",1083,5146000,"Excreta Matters",1216,"MLD"
+"83","Lucknow Jal Sansthan",1084,2576000,"Excreta Matters",480,"MLD"
+"84","Municipal Corporation of Amritsar",1085,2298600,"Excreta Matters",570,"MLD"
+"85","Municipal Corporation of Greater Mumbai",1086,15000000,"Excreta Matters",3050,"MLD"
+"86","Nagar Palika Parishad",1087,325000,"Excreta Matters",34,"MLD"
+"87","Nagpur Municipal Corporation",1088,2295000,"Excreta Matters",530,"MLD"
+"88","Patna Municipal Corporation",1089,1020000,"Excreta Matters",325,"MLD"
+"89","Haryana Urban Development Authority",1091,640000,"Excreta Matters",107,"MLD"
+"90","Public Health and Engineering Department",1092,14158200,"Excreta Matters",2122,"MLD"
+"91","Public Works Dept",1093,NA,NA,35,"MLD"
+"92","Pune Municipal Corporation",1094,3315000,"Excreta Matters",797,"MLD"
+"93","Punjab Water Supply & Sewerage Board",1095,683900,"Excreta Matters",327,"MLD"
+"94","Rajkot Municipal Corporation",1096,1200000,"Excreta Matters",211,"MLD"
+"95","Ranchi Municipal Corporation",1097,678000,"Excreta Matters",116,"MLD"
+"96","Siliguri Municipal Corporation",1098,210000,"Excreta Matters",23,"MLD"
+"97","Solapur Municipal Corporation",1099,1020000,"Excreta Matters",125,"MLD"
+"98","Surat Municipal Corporation",1100,3800000,"Excreta Matters",220,"MLD"
+"99","Thane Municipal Corporation",1101,1862000,"Excreta Matters",362,"MLD"
+"100","Uttar Pradesh Jal Nigam",1102,1421000,"Excreta Matters",222,"MLD"
+"101","Vadodara Municipal Corporation",1103,1428000,"Excreta Matters",270,"MLD"
+"102","City of Srikakulam",1104,100000,"Excreta Matters",10,"MLD"
+"103","Companhia de Saneamento Básico do Estado de São Paulo S.A (Sabesp)",1105,26700000,"http://site.sabesp.com.br/site/interna/Default.aspx?secaoId=4",5789,"MLD"
+"104","Mosvodokanal",1106,13000000,"http://www.mosvodokanal.ru/index.php?do=cat&category=about",3464,"MLD"
+"105","SEDAPAL",1107,6931600,"http://www.lima-water.de/en/lima.html?Menu=3",1728,"MLD"
+"106","Maynilad Water",1108,NA,NA,2790,"MLD"
+"107","Karachi Water and Sewerage Board (KW&SB)",1109,18000000,"http://www.kwsb.gos.pk/View.aspx?Page=26",2925,"MLD"
+"108","Watercare",1110,1300000,"http://www.watercare.co.nz/about-watercare/about-watercare/Pages/default.aspx",370,"MLD"
+"109","Yangon City Development Committee",1111,2608800,"http://asiapacific.anu.edu.au/newmandala/2009/03/02/water-problems-in-yangon/",511,"MLD"
+"110","Lyonnaise des Eaux de Casablanca (LYDEC)",1112,710000,"http://www.bvsde.paho.org/bvsacg/e/foro4/18marzo/public/Improving.pdf",466,"MLD"
+"111","Sistema de Aguas de la Ciudad de México (SACMEX)",1113,NA,NA,6851,"MLD"
+"112","Nairobi City Water and Sewerage Company",1114,1500000,"http://www.nairobiwater.co.ke/about_us/",459,"MLD"
+"113","Osaka City Waterworks Bureau",1115,2663000,"http://www.city.osaka.lg.jp/contents/wdu020/english/city_administration/about_osaka/profile_osaka.html",NA,NA
+"114","Beijing Water Authority",1116,15380000,"http://www.watsoninstitute.org/ge/watson_scholars/water%20use%20and%20management%20in%20beijing.pdf",9453,"MLD"
+"115","Societe de Distribution d'Eau de la Côte d'Ivoire",1117,6500000,"http://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_distribution_d'eau_de_la_C%C3%B4te_d'Ivoire",502,"MLD"
+"116","Palyja",1118,3000000,"http://en.palyja.co.id/profile/about-us/",438,"MLD"
+"117","Aetra",1119,2900000,"http://www.aetra.co.id/index.php/en_GB/profilPerusahaan/page?id=sekilas",411,"MLD"
+"118","Hong Kong Water Supplies Department",1120,7000000,"http://www.wsd.gov.hk/en/about_us/welcome_message/index.html",2529,"MLD"
+"119","Ghana Water Company Limited - Accra",1121,2900000,"http://www.worldwaterweek.org/documents/WWW_PDF/2009/monday/K21/Dharmaraj_-_Finding_at_Energy_Audit_Services_in_Water_Utilities_in_Sub-Saharan.pdf",290,"MLD"
+"120","Berliner Wasserbetriebe",1122,3500000,"http://www.bwb.de/content/language2/html/457.php",585,"MLD"
+"121","Alexandria Water Company",1123,1200000,"http://alexwater.com.eg/awco_history_ar.php",2300,"MLD"
+"122","Greater Cairo Water Company",1124,17000000,"http://www.gcwc.com.eg/main/ComHistory_lg_en.jsp",6400,"MLD"
+"123","Interagua",1125,2500000,"http://www.interagua.com.ec/hba5.html",1030,"MLD"
+"124","Regie de Distribution d'Eau  de la Repulique Democratique du Congo (REGIDESO)",1126,7436000,"http://www-wds.worldbank.org/external/default/WDSContentServer/WDSP/IB/2008/12/23/000333038_20081223000400/Rendered/PDF/465450PAD0Repl120080IDAR20081031113.pdf",650,"MLD"
+"125","Empresa de Acueducto y Alcantarillado de Bogotá (EAAB)",1127,8432000,"http://www.acueducto.com.co/wpsv61/wps/portal/!ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gLw2DfYHMPIwN_cyMXA09HV1cLM2MTLydHM6B8pFm8s7ujh4m5j4GBv1GYgYGRn2lwoEFosLGBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigDGFqsQ/dl3/d3/L3dDb0EvUU5RTGtBISEvWUZSdndBISEvNl84MVNNUzdIMjBPSzYxMElMVFJSUVBBM0YyNw!!/",1283,"MLD"
+"126","Shanghai Water Authority (SWA)",1128,23000000,"http://www.wwf.se/source.php/1390895/Big%20Cities_Big%20Water_Big%20Challenges_2011.pdf",9463,"MLD"
+"127","Aguas Andinas",1129,6000000,"http://www.aguasandinas.cl/la-empresa/como-atendemos/zona-antilco",1900,"MLD"
+"128","Companhia Estadual de Águas e Esgotos (CEDAE)",1130,9000000,"http://www.cedae.com.br/ri/PerfilVisaoMissao.htm",4900,"MLD"
+"129","Dhaka Water Supply and Sewerage Authority (DWASA)",1131,15500000,"http://www.dwasa.org.bd/admin/other_report/Annual_Report%202010-2011.pdf",2150,"MLD"
+"130","Aguas y Saneamientos Argentinos (AySA)",1132,3700000,"http://www.aguasbonaerenses.com.ar/",4777,"MLD"
+"131","Dublin City Council Water Services Division",1133,1500000,"http://www.dublincity.ie/WaterWasteEnvironment/DrinkingWater/Pages/YourDrinkingWater.aspx",540,"MLD"
+"132","Tokyo Waterworks",1134,12554106,"http://www.waterworks.metro.tokyo.jp/eng/supply/02.pdf",4334,"MLD"
+"133","New South Wales Government Metropolitan Water Directorate",1135,4300000,"http://www.waterforlife.nsw.gov.au/sites/default/files/publication-documents/2010_Metropolitan_Water_Plan.pdf",1644,"MLD"
+"134","Rand Water",1136,12000000,"http://www.randwater.co.za/Annual%20Reports/Annual%20Reports%202012/RW%20IAR%202011-12%20part%201.pdf",3653,"MLD"
+"135","City of Tshwane",1137,NA,NA,200,"MLD"
+"136","Thames Waters",1138,14000000,"http://www.thameswater.co.uk/about-us/4625.htm",2600,"MLD"
+"137","Affinity Water",1139,3000000,"https://c1016891.ssl.cf3.rackcdn.com/VWC-WRMP-March-2010-Main-Report.pdf",880,"MLD"
+"138","Instituto Costarricanse de Acueductos y Alcantarillados (AyA)",1140,NA,NA,NA,NA
+"139","El Servicio Autonomo Nacional de Acueductos y Alcantarillados (SANAA)",1141,NA,NA,NA,NA
+"140","Kobe Municipal Water System",1142,1700000,"http://www.auick.org/database/apc/apc042/apc04204_03",900,"MLD"
+"141","Tehran Water Board",1143,13000000,"http://atlas.tehran.ir/Default.aspx?tabid=247#1000",2833,"MLD"
+"142","Saigon Water Supply Company (SAWACO)",1144,7000000,"http://enviroscope.iges.or.jp/modules/envirolib/upload/981/attach/06_chapter3-3hochiminh.pdf",1236,"MLD"
+"143","Baghdad Water Authority",1145,6450000,"http://siteresources.worldbank.org/EXTWAT/Resources/4602122-1213366294492/5106220-1213804320899/5.3Baghdad_Water_Authority.pdf",2061,"MLD"
+"144","Companhia de Saneamento de Minas Gerais (COPASA)",1146,13000000,"http://f.hypotheses.org/wp-content/blogs.dir/146/files/2011/11/BeloHorizonte_text.pdf",613,"MLD"
+"145","A Empresa Baiana de Água e Saneamento (EMBASA)",1147,11800000,"http://www.embasa.ba.gov.br/institucional/embasa/area_atuacao",1037,"MLD (for Salvador's WTPs)"
+"146","Companhia de Saneamento Ambiental do Distrito Federal (CAESB)",1148,2590000,"http://www.caesb.df.gov.br/empresa/a-caesb.html",644,"MLD"
+"147","Companhia Pernambucana de Saneamento - COMPESA",1149,NA,NA,NA,NA
+"148","Companhia de Água e Esgoto do Ceará (CAGECE)",1150,5000000,"http://www.cagece.com.br/numeros/indice-de-cobertura",864,"MLD"
+"149","City of Toronto Drinking Water System",1151,NA,NA,422,"MLD"
+"150","City of Montréal Drinking Water System",1152,1800000,"http://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_Canada",2023,"MLD"
+"151","Chittagong Water Supply and Sewerage Authority",1153,3000000,"http://www.cwasa.org/index.php?cPath=About",175,"MLD"
+"152","Departamento Municipal de Água e Esgotos – DMAE",1154,1449684,"http://lproweb.procempa.com.br/pmpa/prefpoa/dmae/usu_doc/pda_completo.pdf",493,"MLD"
+"153","Empresa Pública de Águas de Luanda (EPAL)",1155,5000000,"http://epal.webuild.pt/pt/quem-somos",309,"MLD"
+"154","Eau de Paris",1156,2234105,"Google",490,"MLD"
+"155","Aigues Ter Llobregat",1157,3500000,"https://docs.google.com/viewer?a=v&q=cache:0r0eCC1U1JIJ:www.waterbcn2011.org/download/Water%2520Reuse%2520Project%2520of%2520Barcelona%2520Metropolitan%2520Area.pdf+&hl=en&gl=us&pid=bl&srcid=ADGEESglhCwig9Q4ph890iQk6kATx9e3uoqCWlNGqu4TReNS8djBgl-VsdiEwyWPjIQnUO1q0DvPjX8BqAtb8rZfZ25TBwb2mUtacxKQrJMSKtHZDhSe46Vx72X0FgrN9TUHP3MjOJTt&sig=AHIEtbTSljDD9_DbKKOBhXMRmlKaIst-7A",1301,"MLD (doesn't include 2 newish sources)"
+"156","Vodokanal SPB",1158,4848000,"http://www.vodokanal.spb.ru/files/documents/press/otchet/en/ar-2010.pdf",1995,"MLD"
+"157","Thailand Metropolitans Waterworks Authority",1159,7950000,"http://www.mwa.co.th/ewtadmin/ewt/mwa_internet_eng/main.php?filename=AnnualReport2009",4757,"MLD"
+"158","Ahmedabad Municipal Corporation (AMC)",1160,5600000,"http://www.egovamc.com/Downloads/24x7_Water_Supply_Workshop.pdf",1920,"MLD"
+"159","Sistema Intermunicipal para los Servicios de Agua Potable y Alcantarillado (SIAPA)",1161,3700000,"http://www.siapa.gob.mx/sites/default/files/informe_2011.pdf",800,"MLD"
+"160","Melbourne Water",1162,NA,NA,1129,"MLD"
+"161","Servicios de Agua y Drenaje de Monterrey (SADM)",1163,1100000,"http://en.wikipedia.org/wiki/Urban_water_management_in_Monterrey,_Mexico",NA,NA
+"162","Ankara Su ve Kanalizasyon İdaresi (ASKI)",1164,NA,NA,1342,"MLD"
+"163","Empresas Publicas de Medellin",1165,3600000,"http://www.epm.com.co/site/Home/Institucional.aspx",776,"MLD"
+"164","Busan Water Authority",1166,3600000,"http://water.busan.go.kr/jsp/06_english/html/02/04.jsp",1067,"MLD"
+"165","Oslo Water and Sewerage",1167,625000,"http://www.vann-og-avlopsetaten.oslo.kommune.no/vannet_vart/",11,"MLD"
+"166","Helsingin Vesi (HSY)",1168,100000,"http://www.hsy.fi/en/waterservices/drinking_water_and_water_quality/Pages/water_from_Lake_Paijanne.aspx",268,"MLD"
+"167","Veolia Djur",1169,1122900,"http://www.veoliadjur.am/en/veolia-djur/key-data/",841,"MLD"
+"168","Belgrade Waterworks and Sewerage",1170,2000000,"http://www.bvk.rs/eng/about_us.php",575,"MLD"
+"169","Sofiyska Voda",1171,1500000,"http://www.sofiyskavoda.bg/default.aspx",607,"MLD"
+"170","Wasserversorgung Zürich",1172,501500,"http://www.stadt-zuerich.ch/content/dib/de/index/wasserversorgung/ueber_die_wasserversorgung/zahlen_und_fakten.html",151,"MLD"
+"171","HOFOR",1173,1000000,"http://www.hofor.dk/wp-content/uploads/2013/01/faktaark_jan_final.pdf",142,"MLD"
+"172","Pražské Vodovody a Kanalizace (PVK)",1174,1260000,"http://www.pvk.cz/o-spolecnosti.html",445,"MLD"
+"173","Stockholm Vatten",1175,1000000,"http://www.stockholmvatten.se/en/Drinking-water/",360,"MLD"
+"174","Athens Water Supply and Sewerage Company (EYDAP SA)",1176,4300000,"http://www.eydap.gr/index.asp?a_id=236",1150,"MLD"
+"175","Mekorot",1177,6200000,"estimate based on http://www.mekorot.co.il/Eng/Mekorot/Pages/FactsFigures.aspx",4110,"MLD"
+"176","Gruppo Acea (Azienda Comunale Elettricità e Acque)",1178,9500000,"http://www.acea.it/ViewCategory.aspx?lang=it&catid=2da0b2fed3994ddb81af85df0f144cad",1657,"MLD"
+"177","Nagoya City Waterworks & Sewerage Bureau",1179,NA,NA,1032,"MLD"
+"178","Kano Ministry of Water Resources",1180,NA,NA,220,"MLD"
+"179","Afghan Urban Water Supply and Sewerage Corporation (AUWSSC)",1181,1000000,"http://pubs.usgs.gov/sir/2009/5262/pdf/sir2009-5262_front_text_508_Pt1_i-32_rev111312.pdf",120,"MLD"
+"180","Empresa Portuguesa das Águas Livres (EPAL)",1182,3000000,"http://www.epal.pt/epal/EN/Modelo1.aspx?src=QuemSomos&area=3276&menu=3278",576,"MLD"
+"181","Hanoi Water Company Ltd.",1183,6400000,"http://www.hawacom.vn/archives/2199",600,"MLD"
+"182","Kyivvodocanal",1184,2810000,"http://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2%D0%B2%D0%BE%D0%B4%D0%BE%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB",900,"MLD"
+"183","Autoridad de Acueductos y Alcantarillados (AAA)",1185,3800000,"http://www.acueductospr.com/NUESTRAAUTORIDAD/vision.htm",2336,"MLD"
+"184","Apa Nova Bucureşti",1186,2000000,"http://www.apanovabucuresti.ro/en/company/who-we-are/apa-nova-bucuresti/",1430,"MLD"
+"185","Kuwait Ministry of Electricity and Water",1187,231982,"http://mew.gov.kw/media/Statistics/2009/water/Chapter%2006.pdf",1251,"MLD"
+"186","Yemeni Ministry of Water and Environment",1188,NA,NA,NA,NA
+"187","Suvsoz",1189,2000000,"https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDIQFjAA&url=http%3A%2F%2Fwww.iwmi.cgiar.org%2Fsww2008%2FCentral%2520Asia%2FTashkent%2520summary%2520%2520Report.doc&ei=_z1dUZm3LartiwK0oICwDg&usg=AFQjCNEi5XysyufJccDiFn9g1CHhr1moCA&sig2=5PJ8AFW5NfBcBEjk_IIUtg",1570,"MLD"
+"188","Corporación del Acueducto y Alcantarillado de Santo Domingo (CAASD)",1190,2731294,"http://www.caasd.gov.do/njurisdiccion.php",1348,"MLD"
+"189","Aguas de La Habana",1191,1250000,"http://www.ahabana.co.cu/nuestra-empresa.php",NA,NA
+"190","Unknown Provincial Water Provider",1192,NA,NA,NA,NA
+"191","Empresa de Servicios Sanitarios de Paraguay (ESSAP)",1193,NA,NA,330,"MLD"
+"192","AZERSU",1194,1136000,"azersu.az",NA,NA
+"193","Establishment of the Water of Beirut and Mount Lebanon",1195,NA,NA,NA,NA
+"194","Intercommunale bruxelloise de distribution d’ eau (IBDE)",1196,1000000,"http://www.ibde.be/index.cfm?R_ID=60600476&Content_ID=60600476",164,"MLD"
+"195","Energie du Mali SA",1197,NA,NA,NA,NA
+"196","L'Office national de l'eau et de l'assainissement (ONEA)",1198,182000,"http://www.oneabf.com/lentreprise/chiffres-cles.html",83,"MLD (165 for all areas)"
+"197","Syrian Ministry of Housing and Construction",1199,NA,NA,NA,NA
+"198","Jiro Sy Rano Malagasy (JIRAMA)",1200,NA,NA,128,"MLD (for capital only)"
+"199","Dubai Electricity and Water Authority (DEWA)",1201,460000,"http://www.dewa.gov.ae/aboutus/electStats2012.aspx",1779,"MLD"
+"200","Fővárosi Vízművek",1202,2000000,"http://vizmuvek.hu/en",453,"MLD"
+"201","Lusaka Water and Sewerage Company (LSWC)",1203,1500000,"http://www.ecfa.or.jp/japanese/act-pf_jka/H17/renkei/zambia/Zambia-Chapter%204-D.pdf",200,"MLD"
+"202","Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji",1204,NA,NA,400,"MLD"
+"203","Société des Eaux de Guinée",1205,3600000,"http://segguinee.com/Publi-reportage-journal%20AAE.pdf",165,"MLD"
+"204","Wiener Wasser",1206,1700000,"http://www.wien.gv.at/wienwasser/pdf/folder-trinkwasser-wien.pdf",370,"MLD"
+"205","La Empresa Pública Social de Agua y Saneamiento (EPSAS)",1207,1900000,"http://www.epsas.com.bo/images/pdf/historia2010.pdf",190,"MLD"
+"206","Electrogaz",1208,59300,"http://www.ewsa.rw/Docs/ANNUAL%20REPORT_2008.pdf",54,"MLD"
+"207","Lilongwe Water Board",1209,700000,"http://www.lwb.mw/ldwd/ANNUAL%20REPORT%202011-2012.pdf",86,"MLD"
+"208","Unknown State Water Provider",1210,NA,NA,60,"MLD"
+"209","Nampapa Nakhone Luang",1211,NA,NA,120,"MLD"
+"210","Liberia Water and Sewerage Corporation (LWSC)",1212,1100000,"http://www.iwawaterwiki.org/xwiki/bin/view/Articles/33)+MONROVIA+(Liberia)+3",10,"MLD"
+"211","Bishkekvodokanal",1213,800000,"ftp://taurus2.caf.dlr.de/put/Machwitz/out/VW/BishkekWater.pdf",454,"MLD"
+"212","Empresa Nicaragüense de Acueductos y Alcantarillados (ENACAL)",1214,1200000,"http://www.enacal.com.ni/publicacion/02_01.html",440,"MLD"
+"213","Ulaanbaatar Water Supply and Sewerage Company (USAG)",1215,1000000,"http://siteresources.worldbank.org/INTEAPREGTOPENVIRONMENT/Resources/TuulMongolia111809.pdf",154,"MLD"
+"214","Waternet",1216,NA,NA,234,"MLD"
+"215","Georgian Water and Power (GWP)",1217,400000,"http://www.georgianwater.com/main.php?pg=pg&mn1=1&mn2=29",NA,NA
+"216","Fundo de Investimento e Patrimonio do Abastecimento de Agua (FIPAG)",1218,NA,NA,144,"MLD"
+"217","Jordan Water Company",1219,2200000,"http://link.springer.com/article/10.1007/s11269-008-9266-4",465,"MLD"
+"218","Almaty SU",1220,1500000,"http://www.almatysu.kz/index.php/ru/about",1309,"MLD"
+"219","Phnom Penh Water Supply Authority",1221,1350000,"http://www.ppwsa.com.kh/en/index.php?page=cleanwaterforall",300,"MLD"
+"220","Société Nationale de Distribution d'Eau (SNDE)",1222,139000,"http://www.tresor.economie.gouv.fr/File/330358",132,"MLD (low conf.)"
+"221","Macao Water",1223,187000,"http://www.macaowater.com/images/ar/annualreport2012_eng.pdf",258,"MLD"
+"222","ZZ Water",1224,NA,NA,1767,"MLD"
+"223","Harbin Water Supply and Drainage Group",1225,NA,"http://www.hrbgpsgroup.com/info_Show.asp?ArticleID=1",1530,"MLD"
+"224","Anchorage Water and Wastewater Utility",1226,225744,"Padowski",NA,NA
+"225","Birmingham Water Works & Sewer Board",1227,663615,"Padowski",378,"MLD"
+"226","Huntsville Utilities Water Department",1228,213253,"Padowski",NA,NA
+"227","Mobile Area Water & Sewer System",1229,317605,"Padowski",151,"MLD"
+"228","Montgomery Water Works & Sanitary Sewer Board",1230,196892,"Padowski",NA,NA
+"229","Tuscaloosa Water Works and Sewer Department",1231,116888,"Padowski",104,"MLD"
+"230","Central Arkansas Water",1232,360331,"Padowski",NA,NA
+"231","City of Fort Smith Utility Dept.",1233,106470,"Padowski",NA,NA
+"232","Tucson Water",1234,720425,"Padowski",384,"MLD"
+"233","Antioch Water Distribution Division of Public Works",1235,217591,"Padowski",NA,NA
+"234","Bakersfield-California Water Service",1236,396125,"Padowski",240,"MLD"
+"235","Concord-Contra Costa Water District",1237,552624,"Padowski",NA,NA
+"236","City of Fairfield-Water Division",1238,112446,"Padowski",60,"MLD"
+"237","City of Fresno- Water Division",1239,554923,"Padowski",NA,NA
+"238","City of Hemet- Water Department",1240,117200,"Padowski",NA,NA
+"239","City of Merced Water System Division",1241,110483,"Padowski",79,"MLD"
+"240","Santa Margarita Water District",1242,533015,"Padowski",NA,NA
+"241","City of Modesto Water Services Division",1243,310945,"Padowski",218,"MLD"
+"242","City of Oxnard Public Works Department",1244,337591,"Padowski",90,"MLD"
+"243","City of Redding Water Utility",1245,105267,"Padowski",78,"MLD"
+"244","City of Sacramento Department of Utilities, Sacramento Suburban Water District",1246,1393498,"Padowski",366,"MLD"
+"245","Salinas-California Water",1247,179173,"Padowski",NA,NA
+"246","City of Santa Barbara Water and Sewer Division",1248,196263,"Padowski",45,"MLD"
+"247","Santa Clarita Water Division",1249,170481,"Padowski",NA,NA
+"248","City of Santa Cruz Water Division",1250,157348,"Padowski",NA,NA
+"249","City of Santa Maria Department of Utilities",1251,120297,"Padowski",NA,NA
+"250","City of Santa Rosa Water Utility",1252,285408,"Padowski",65,"MLD"
+"251","Simi Valley Water System",1253,112345,"Padowski",NA,NA
+"252","City of Stockton Water Department",1254,313392,"Padowski",113,"MLD"
+"253","Thousand Oaks Public Works Department, Thousand Oaks- California American Water, Thousand Oaks- California Water Service",1255,210990,"Padowski",NA,NA
+"254","City of Vallejo Water System",1256,158967,"Padowski",82,"MLD"
+"255","Visalia-California Water Service",1257,120044,"Padowski",NA,NA
+"256","City of Boulder's Utilities Division",1258,112299,"Padowski",208,"MLD"
+"257","Colorado Springs Utility",1259,466122,"Padowski",338,"MLD"
+"258","Fort Collins Utilities",1260,206633,"Padowski",88,"MLD"
+"259","Pueblo Board of Water Works",1261,123351,"Padowski",259,"MLD"
+"260","The Metropolitan District",1262,851535,"Padowski",NA,NA
+"261","South Central Connecticut Regional Water Authority",1263,531314,"Padowski",182,"MLD"
+"262","Waterbury Water Department",1264,189026,"Padowski",NA,NA
+"263","Danbury Water Division",1265,154455,"Padowski",NA,NA
+"264","Brooksville, FL",1266,102193,"Padowski",187,"MLD"
+"265","City of Cape Coral Utilities Division",1267,329757,"Padowski",NA,NA
+"266","Deltona Water",1268,147713,"Padowski",NA,NA
+"267","City of Fort Walton Beach Utilities Department",1269,152741,"Padowski",NA,NA
+"268","Gainesville Regional Utilities",1270,159508,"Padowski",NA,NA
+"269","Toho Water Authority",1271,186667,"Padowski",NA,NA
+"270","City of Lakeland Water Utilities",1272,199487,"Padowski",87,"MLD"
+"271","City of Ocala Water and Sewer Department",1273,106542,"Padowski",NA,NA
+"272","Orlando Utilities Commission",1274,1157431,"Padowski",262,"MLD"
+"273","Bay County Utility Services",1275,132419,"Padowski",NA,NA
+"274","City of Port St. Lucie Utility Systems Department",1276,270774,"Padowski",NA,NA
+"275","City of Tallahassee Water Utility",1277,204260,"Padowski",279,"MLD"
+"276","City of Winter Haven Water Utility",1278,153924,"Padowski",NA,NA
+"277","Emerald Coast Utilities",1279,323783,"Padowski",NA,NA
+"278","Athens-Clarke County Public Utilities Department",1280,106482,"Padowski",NA,NA
+"279","Macon Water Authority",1281,135170,"Padowski",227,"MLD"
+"280","City of Savannah Water Supply and Treatment Department",1282,208886,"Padowski",NA,NA
+"281","Augusta-Richmond Utilities Department",1283,335630,"Padowski",161,"MLD"
+"282","Cedar Rapids Water Department",1284,155334,"Padowski",144,"MLD"
+"283","Des Moines Water Works",1285,370505,"Padowski",511,"MLD"
+"284","Waterloo Water Works",1286,108298,"Padowski",NA,NA
+"285","Iowa American Water-Davenport",1287,270626,"Padowski",NA,NA
+"286","Sioux City Water Services",1288,106119,"Padowski",52,"MLD"
+"287","Idaho United Water-Boise",1289,272625,"Padowski",NA,NA
+"288","Champaign- American Water",1290,123938,"Padowski",NA,NA
+"289","Peoria-American Water",1291,247172,"Padowski",NA,NA
+"290","Rockford Water Division",1292,270414,"Padowski",NA,NA
+"291","City Water, Light & Power",1293,153516,"Padowski",83,"MLD"
+"292","City of Fort Wayne Utilities",1294,287759,"Padowski",NA,NA
+"293","City of Lafayette Water Works",1295,125738,"Padowski",NA,NA
+"294","City of Evansville Water Department",1296,211989,"Padowski",87,"MLD"
+"295","City of Elkhart Public Works and Utilities Department",1297,131226,"Padowski",NA,NA
+"296","South Bend Water Works",1298,276498,"Padowski",59,"MLD"
+"297","City of Topeka Public Works",1299,142411,"Padowski",80,"MLD"
+"298","City of Wichita Water and Sewer Department",1300,422301,"Padowski",135,"MLD"
+"299","Lexington-Fayetteville American Water",1301,250994,"Padowski",NA,NA
+"300","Louisville Water Company",1302,863582,"Padowski",372,"MLD"
+"301","Baton Rouge Water Company",1303,479019,"Padowski",NA,NA
+"302","Consolidated Waterworks District No. 1",1304,125929,"Padowski",NA,NA
+"303","Lafayette Utilities System",1305,178079,"Padowski",87,"MLD"
+"304","City of Lake Charles Water Division",1306,132977,"Padowski",NA,NA
+"305","City of Monroe Department of Public Works Wawter Treatment Division",1307,113818,"Padowski",NA,NA
+"306","Sewerage and Water Board of New Orleans",1308,1009283,"Padowski",NA,NA
+"307","City of Shreveport Water Division",1309,275213,"Padowski",140,"MLD"
+"308","Barnstable Town, MA",1310,243667,"Padowski",NA,NA
+"309","New Bedford Department of Public Infrastructure- Water Division",1311,146730,"Padowski",170,"MLD"
+"310","Springfield Water and Sewer Commission",1312,573610,"Padowski",NA,NA
+"311","City of Worcester Water / Sewer Operations",1313,429882,"Padowski",91,"MLD"
+"312","City of Fredrick Water and Sewer Department",1314,119144,"Padowski",NA,NA
+"313","City of Hagerstown Water Department",1315,120326,"Padowski",NA,NA
+"314","Ann Arbor Public Services",1316,283904,"Padowski",NA,NA
+"315","City of Flint Department of Utilities",1317,365096,"Padowski",75,"MLD"
+"316","Grand Rapids Water System",1318,539080,"Padowski",138,"MLD"
+"317","Kalamazoo Public Water Supply System",1319,187961,"Padowski",76,"MLD"
+"318","Lansing Board of Water & Light",1320,300032,"Padowski",71,"MLD"
+"319","City of Muskegon Department of Public Works",1321,154729,"Padowski",NA,NA
+"320","City of Saginaw Water Treatment Division",1322,140985,"Padowski",73,"MLD"
+"321","Duluth Department of Public Works",1323,118265,"Padowski",50,"MLD"
+"322","City Utilities",1324,215004,"Padowski",95,"MLD"
+"323","Kansas City Missouri Water Services Department",1325,1361744,"Padowski",387,"MLD"
+"324","City of Jackson Public Works Department Water & Sewer Division",1326,292637,"Padowski",NA,NA
+"325","City of Billings Water Production Division",1327,100317,"Padowski",87,"MLD"
+"326","City of Asheville Water Resources Department",1328,221570,"Padowski",NA,NA
+"327","City of Concord Department of Water Resources",1329,115057,"Padowski",NA,NA
+"328","City of Durham Water Supply and Treatment Division",1330,287796,"Padowski",NA,NA
+"329","City of Fayetteville Public Works Commission",1331,276368,"Padowski",101,"MLD"
+"330","City of Gastonia Public Works",1332,141407,"Padowski",NA,NA
+"331","Greensboro Water Resources",1333,267884,"Padowski",110,"MLD"
+"332","Hickory Public Utilities",1334,187808,"Padowski",NA,NA
+"333","City of High Point Public Services Department",1335,132844,"Padowski",42,"MLD"
+"334","City of Raleigh Public Utilities",1336,541527,"Padowski",254,"MLD"
+"335","Cape Fear Public Utility Authority",1337,161149,"Padowski",NA,NA
+"336","Winston-Salem/Forsyth County Utility Commission",1338,299290,"Padowski",139,"MLD"
+"337","City of Fargo Water Department",1339,142477,"Padowski",42,"MLD"
+"338","City of Lincoln Public Works",1340,226582,"Padowski",118,"MLD"
+"339","Metropolitan Utility District of Omaha",1341,626623,"Padowski",341,"MLD"
+"340","Manchester Water Works",1342,143549,"Padowski",64,"MLD"
+"341","Pennichuck Water Works",1343,197155,"Padowski",NA,NA
+"342","Atlantic City Municipal Utilities Authority",1344,227180,"Padowski",NA,NA
+"343","Trenton Water Works",1345,268472,"Padowski",128,"MLD"
+"344","Albuquerque Bernalillo County Water Utility Authority",1346,598191,"Padowski",342,"MLD"
+"345","City of Las Cruces Department of Water Resources",1347,104186,"Padowski",74,"MLD"
+"346","Truckee Meadows Water Authority",1348,303689,"Padowski",NA,NA
+"347","City of Albany Department of Water and Water Supply",1349,558947,"Padowski",85,"MLD"
+"348","Buffalo Water Authority",1350,976703,"Padowski",NA,NA
+"349","City of Rochester Water Service",1351,694396,"Padowski",132,"MLD"
+"350","City of Syracuse Water Department",1352,402267,"Padowski",136,"MLD"
+"351","Mohawk  Valley Water Authority",1353,113409,"Padowski",NA,NA
+"352","Binghamton Water Bureau",1354,158884,"Padowski",23,"MLD"
+"353","City of Akron Water Supply Division",1355,570215,"Padowski",132,"MLD"
+"354","Canton Water Department",1356,266595,"Padowski",91,"MLD"
+"355","City of Dayton Divison of Water",1357,703444,"Padowski",NA,NA
+"356","Greater Cincinnati Water Works",1358,1503262,"Padowski",503,"MLD"
+"357","City of Toledo Water Division",1359,503008,"Padowski",303,"MLD"
+"358","City of Youngstown Water Department",1360,417437,"Padowski",68,"MLD"
+"359","Oklahoma City Utilities",1361,747003,"Padowski",416,"MLD"
+"360","Tulsa Water",1362,558329,"Padowski",437,"MLD"
+"361","Eugene Water and Electric Board",1363,224049,"Padowski",222,"MLD"
+"362","Medford Water Commission",1364,128780,"Padowski",NA,NA
+"363","City of Salem Department of Public Works",1365,207229,"Padowski",95,"MLD"
+"364","Erie Water Works",1366,194804,"Padowski",NA,NA
+"365","Harrisburg-United Water Pennsylvania",1367,362782,"Padowski",NA,NA
+"366","Lancaster Water Bureau",1368,323554,"Padowski",NA,NA
+"367","Pittsburgh Water and Sewer Authority",1369,1753136,"Padowski",265,"MLD"
+"368","Reading Area Water Authority",1370,240264,"Padowski",44,"MLD"
+"369","Scranton- Pennsylvania American Water",1371,385237,"Padowski",147,"MLD"
+"370","York Water Company",1372,192903,"Padowski",76,"MLD"
+"371","Providence Water",1373,1174548,"Padowski",254,"MLD"
+"372","City of Columbia Water Department",1374,420537,"Padowski",NA,NA
+"373","Greenville Water system",1375,302194,"Padowski",NA,NA
+"374","City of Myrtle Beach Water Department",1376,122984,"Padowski",NA,NA
+"375","Spartanburg Water",1377,145058,"Padowski",NA,NA
+"376","Sioux Falls Department of Public Works",1378,124269,"Padowski",85,"MLD"
+"377","Johnson City Water & Sewer Services Department",1379,102456,"Padowski",NA,NA
+"378","Knoxville Utility Board",1380,419830,"Padowski",129,"MLD"
+"379","Murfreesboro Water and Sewer Division",1381,135855,"Padowski",NA,NA
+"380","Metro Water Services",1382,749935,"Padowski",NA,NA
+"381","Chattanooga-Tennessee American Water",1383,343509,"Padowski",NA,NA
+"382","Clarksville Gas & Water",1384,121775,"Padowski",NA,NA
+"383","Memphis Light, Gas and Water Division",1385,972091,"Padowski",386,"MLD"
+"384","City of Abilene Water Utilities Department",1386,107041,"Padowski",183,"MLD"
+"385","City of Amarillo Utilities Division",1387,179312,"Padowski",170,"MLD"
+"386","City of Beaumont Water Department",1388,139304,"Padowski",216,"MLD"
+"387","Brownsville Public Utility Board",1389,165776,"Padowski",NA,NA
+"388","City of Corpus Christi Water Department",1390,293925,"Padowski",303,"MLD"
+"389","Harlingen Water Works System",1391,110770,"Padowski",NA,NA
+"390","City of Kileen Water Department",1392,167976,"Padowski",NA,NA
+"391","Laredo Utilities Department",1393,175586,"Padowski",NA,NA
+"392","City of Lubbock Water Department",1394,202225,"Padowski",137,"MLD"
+"393","McAllen Public Utility",1395,523144,"Padowski",NA,NA
+"394","City of Odessa Water Department",1396,111395,"Padowski",72,"MLD"
+"395","City of Port Arthur Utilities Operations Department",1397,114656,"Padowski",NA,NA
+"396","Tyler Water Utilities",1398,101494,"Padowski",310,"MLD"
+"397","City of Waco Water Utility Services",1399,153198,"Padowski",NA,NA
+"398","El Paso Water Utility",1400,674801,"Padowski",388,"MLD"
+"399","Salt Lake City Public Utilities Department, Salt Lake City, UT",1401,887650,"Padowski",329,"MLD"
+"400","Richmond Department of Public Utilities",1402,818836,"Padowski",500,"MLD"
+"401","Western Virginia Water Authority",1403,197442,"Padowski",NA,NA
+"402","Virginia Beach Water",1404,1394439,"Padowski",NA,NA
+"403","City of Burlington Water Department",1405,105365,"Padowski",NA,NA
+"404","City of Bremerton Water Department",1406,178369,"Padowski",30,"MLD"
+"405","City of Marysville Water Utility",1407,114372,"Padowski",15,"MLD"
+"406","City of Yakima Water Utility",1408,112816,"Padowski",NA,NA
+"407","Spokane Water",1409,334858,"Padowski",218,"MLD"
+"408","Appleton Water Utility",1410,187683,"Padowski",NA,NA
+"409","Green Bay Water Utility",1411,187316,"Padowski",69,"MLD"
+"410","Kenosha Water Utility",1412,110942,"Padowski",NA,NA
+"411","Madison Water Utility",1413,329533,"Padowski",NA,NA
+"412","Milwaukee Water Works",1414,1308913,"Padowski",341,"MLD"
+"413","City of Racine Water Department",1415,129545,"Padowski",NA,NA
+"414","Charleston- West Virginia American Water",1416,182991,"Padowski",NA,NA
+"415","Huntington- West Virginia American Water",1417,177550,"Padowski",NA,NA
+"416","Chongqing Water Group",1418,NA,NA,4240,"MLD"
+"417","Xi'an Water Group Company., Ltd.",1419,NA,"http://www.xashuiwu.com/html/jtjs.html",900,"MLD"
+"418","Dalian Water Affairs Bureau",1420,NA,NA,1580,"MLD"
+"419","Kunming CGE Water Supply Co. Ltd.",1421,2100000,"http://www.kmwater.cn/kmwater/CompanyDescription.jsp?id=2",1300,"MLD"
+"420","EMCALI",1422,2200000,"http://www.emcali.com.co/web/water_service/portafolio",1027,"MLD (production capacity, not consumption)"
+"421","Triple A S.A. E.S.P.",1423,NA,NA,NA,NA
+"422","Empresa Pública Metropolitana de Agua Potable y Saneamiento",1424,NA,NA,668,"MLD"
+"423","Sistema de Agua Potable y Alcantarillado de León",1425,1550000,"http://www.sapal.gob.mx/transparencia/?id=distribucion",222,"MLD"
+"424","Water Corporation of Oyo State",1426,1656000,"http://www.afdb.org/fileadmin/uploads/afdb/Documents/Project-and-Operations/ADB-BD-IF-2005-142-EN-NIGERIA-PCR-IBADAN-WATER-SUPPLY-II-PROJECT.PDF",123,"MLD"
+"425","La Cameroon Water Utilities Corporation (CAMWATER)",1427,NA,NA,100,"MLD (for Yaoundé)"
+"426","Empresa de Servicios Sanitarios del Bio-Bío (ESSBIO)",1428,630000,"http://www.essbio.cl/link.exe/NuestraEmpresa/458",592,"MLD (all cities)"
+"427","Mombasa Water and Sewerage Company",1429,NA,NA,NA,NA
+"428","Plateau State Water Board",1430,1200000,"http://www.worldwaterweek.org/documents/WWW_PDF/2009/monday/K21/Dharmaraj_-_Finding_at_Energy_Audit_Services_in_Water_Utilities_in_Sub-Saharan.pdf",108,"MLD"
+"429","Balochistan Water and Sanitation Authority",1431,NA,NA,1452,"MLD"
+"430","Rajshahi City Corporation",1432,577500,"http://www.erajshahi.gov.bd/app/municipal_function/municipal_function.php?cmd=funcdetails&section_departmen_id=71",591,"MLD"
+"431","DESO Companhia de Saneamento de Sergipe",1433,NA,NA,NA,NA
+"432","Taipei Water Department",1434,3800000,"http://english.twd.gov.tw/ct.asp?xItem=994214&CtNode=23969&mp=114012",2500,"MLD"
+"433","Guangzhou Water Supplies Bureau",1435,NA,NA,4225,"MLD"
+"434","Wuhan Water Utility Corporation",1436,NA,NA,3100,"MLD"
+"435","Tianjin Tap Water Corporation",1437,NA,NA,6327,"MLD"
+"436","Beijing Enterprises Water Group Limited",1438,NA,NA,895,"MLD"
+"437","Dongguan Dongjiang ShuiWu Co.,Ltd.",1439,NA,NA,5053,"MLD"
+"438","Chengdu Municipal Waterworks Co. Ltd",1440,NA,NA,1707,"MLD"
+"439","Nanjing Tap Water Corporation",1441,NA,NA,3400,"MLD"
+"440","Qingdao Hairun Tap Water Corporation",1442,NA,NA,2621,"MLD"
+"441","Changchun Water Group Co. Ltd",1443,NA,NA,6496,"MLD"
+"442","Águas e Esgotos do Piauí S.A.",1444,756000,"(for Teresina only) http://www.agespisa.com.br/municipios.php",NA,NA
+"443","Companhia Catarinense de Águas e Saneamento (CASAN)",1445,2480000,"http://www.casan.com.br/ckfinder/userfiles/files/Relat%C3%B3rio%20Anual%20Casan%202012.pdf#1521",461,"MLD"
+"444","Hidrocentro",1446,NA,NA,552,"MLD (for state of Aragua, which surrounds Maracay)"
+"445","INSTITUTO DE ACUEDUCTOS Y ALCANTARILLADOS NACIONALES",1447,1411820,"http://www.idaan.gob.pa/transparencia/Boletin%202011.pdf",725,"MLD (metro area)"
+"446","Federal Capital Territory Water Board",1448,3200000,"http://www.nse.org.ng/pic_uploaded/resources/2012-October-lecture.pdf",NA,NA
+"447","Office Nationale de l’Eau Potable (ONEP) d’Agadir",1449,NA,NA,157,"MLD"
+"448","PDAM Tirta Kencana",1450,666000,"http://pdamkotasamarinda.co.id/profil-teknik.html",144,"MLD"
+"449","Aguas Cordobesas",1451,457000,"http://www.aguascordobesas.com.ar/Media/Default/empresa-sustentable/Reportes-de-sustentabilidad/ReporteSustentabilidad2010.pdf",436,"MLD"
+"450","MUP Water Yekaterinburg",1452,NA,NA,550,"MLD"
+"451","Unknown Municipal Water Department - Mosul",1453,1700000,"http://en.wikipedia.org/wiki/Mosul_Dam",NA,NA
+"452"," Shiraz Water and Wastewater Company",1454,1400000,"http://www-wds.worldbank.org/external/default/WDSContentServer/WDSP/IB/2010/06/25/000333037_20100625012909/Rendered/PDF/ICR14410P071191C0disclosed061231101.pdf",300,"MLD (approx based on growth from 2004)"
+"453","Ghana Water Supply Company - Kumasi",1455,NA,"see 1121",122,"MLD"
+"454","Aquarion",1456,NA,NA,NA,NA
+"455","Portland ME WD",1457,NA,NA,NA,NA
+"456","Private water providers",1458,NA,NA,NA,NA
+"457","Manaus Ambiental",1459,1700000,"http://atlas.ana.gov.br/Atlas/forms/analise/Geral.aspx?est=29#",650,"MLD"
+"458","La empresa Aguas Santafesinas (ASSA)",1460,2021541,"http://portal.aguassantafesinas.com.ar/page.aspx?1,principal,ciudades-que-abarca,O,es,0,",961,"MLD (summer)"
+"459","SAGUAPAC",1461,1065310,"http://www.saguapac.com.bo/aplicacion/vista/sistema-agua-potable.html",164,"MLD"
+"460","Acueducto Metropolitano de Bucaramanga SAESP",1462,225016,"http://amb.com.co/DocumentoInfo/Indicadores_para_control_social.pdf",153,"MLD (rough average)"
+"461","SANEPAR",1463,10200000,"http://site.sanepar.com.br/investidores/perfil-da-companhia",1516,"MLD (all cities)"
+"462","SANASA",1464,1145000,"http://www.sanasa.com.br/document/noticias/1581.pdf",271,"MLD"
+"463","SANEAGO",1465,NA,NA,NA,NA
+"464","COSANPA",1466,NA,NA,552,"MLD"
+"465","CESAN",1467,2260520,"http://www.cesan.com.br/wp-content/uploads/2013/03/relatorio_anual_e_de_sustentabilidade_2011_cesan.pdf",673,"MLD"
+"466","CAEMA",1468,NA,NA,204,"MLD"
+"467","CAERN",1469,NA,NA,NA,NA
+"468","CASAL",1470,NA,NA,NA,NA
+"469","CAGEPA",1471,196921,"water connections (not population) for the city of João Pessoa http://www.cagepa.pb.gov.br/portal/?page_id=529",NA,NA
+"470","Hidrolago",1472,NA,NA,NA,NA
+"471","Hidrocaribe",1473,NA,NA,NA,NA
+"472","Hidrobolivar",1474,NA,NA,NA,NA
+"473","Empresa Municipal de Agua (Empagua)",1475,2500000,"http://mu.muniguate.com/index.php/component/content/article/40-empagua/50-aguapotable",329,"MLD"
+"474","ESVAL",1476,1480834,"http://portal.esval.cl/wp-content/uploads/2011/04/reporte_esval_ingles2009.pdf",442,"MLD"
+"475","Aguas de Cartagena S.A E.S.P.",1477,225815,"http://www.acuacar.com/Acuacar.aspx",216,"MLD"
+"476","Aguas Kpital Cúcuta SAESP",1478,156343,"http://www.akc.com.co/page/index.php?option=com_content&view=article&id=50&Itemid=66",212,"MLD"
+"477","Administración Nacional de Acueductos y Alcantarillados (ANDA)",1479,6216143,"http://www.anda.gob.sv/index.php?option=com_phocadownload&view=category&id=8:&Itemid=115",273,"MLD (San Salvaodr dept.)"
+"478","Junta Municipal de Agua y Saneamiento de Cd. Juárez",1480,NA,NA,427,"MLD"
+"479","Junta de Agua Potable y Alcantarillado de Yucatán (JAPAY)",1481,NA,NA,NA,NA
+"480","Sistema Operador de los Servicios de Agua Potable y Alcantarillado del Municipio de Puebla (SOAPAP)",1482,NA,NA,NA,NA
+"481","Comision de Aguas Queretaro (CEA)",1483,NA,NA,NA,NA
+"482","Interapas",1484,287000,"http://www.siagua.org/sites/default/files/documentos/documentos/san_luis_potosi.pdf",274,"MLD"
+"483","COMISIÓN ESTATAL DE SERVICIOS PÚBLICOS DE TIJUANA (CESPT)",1485,NA,NA,287,"MLD"
+"484","Organismo Agua y Saneamiento de Toluca (AYST)",1486,878916,"http://www.ipomex.org.mx/ipo/portal/toluca/estadisticas/2014/0/5.web",NA,NA
+"485","Sistema Municipal de Aguas y Saneamiento (SIMAS)",1487,NA,NA,172,"MLD"
+"486","Aguas Mendocinas",1488,340000,"http://www.aysam.com.ar/notas/ver/proceso-de-potabilizacion",NA,NA
+"487","HIDROLARA",1489,1118517,"http://www.monografias.com/trabajos91/hidrologicas-de-venezuela/hidrologicas-de-venezuela2.shtml",NA,NA
+"488","Metropolitana Milanese SPA",1490,2000000,"http://www.metropolitanamilanese.it/pub/page/en/MM/servizioidrico_integrato",630,"MLD"
+"489","Metro Vancouver",1491,2329575,"http://www.metrovancouver.org/about/publications/Publications/2012_Water_Consumption_Statistics_Report.pdf",1080,"MLD"
+"490","Gruppo Veritas",1492,283000,"http://www.gruppoveritas.it/servizio-idrico-integrato/venezia-e-mogliano.html",170,"MLD"
+"491","Evides",1493,2500000,"http://www.evides.nl/paginas/english.aspx",657,"MLD"
+"492","Industrielle Werke Basel (IWB)",1494,200000,"http://www.iwb.ch/de/privatkunden/wasser/trinkwasser-versorgung/trinkwasser-produktion/",71,"MLD"
+"493","Stadtwerke Heidelberg",1495,150000,"http://www.heidelberger-stadtwerke.de/cms/Trinkwasser/Trinkwasser_in_Heidelberg/Trinkwasser_in_Heidelberg.html",29,"MLD"
+"494","Yokohama Waterworks Bureau",1496,3693733,"http://www.city.yokohama.lg.jp/suidou/kyoku/torikumi/kankyo-hozen/pdf/h25kankyo-hokoku.pdf",1165,"MLD"
+"495","Changwon Waterworks",1497,1063000,"http://sangsudo.changwon.go.kr/jsp/sub01/01_04_02.jsp",330,"MLD"
+"496","Norfolk Department of Utilities",1498,NA,NA,NA,NA
+"497","Bristol Water",1499,1167240,"http://www.bristolwater.co.uk/wp/wp-content/uploads/2013/05/dWRMP-report-submission-final-V1.0-20130329.pdf",265,"MLD"
+"498","Christchurch City Council",1500,350000,"http://resources.ccc.govt.nz/files/WaterSupplyStrategy2009Full.pdf",145,"MLD"
+"499","Scottish Water",1501,2400000,"All of Scotland; http://www.scottishwater.co.uk/about-us/publications/key-publications/scottish-water-annual-report-2012-13",1300,"MLD (all of Scotland)"
+"500","eThewkwini Water & Sanitation",1502,NA,NA,NA,NA
+"501","Santa Fe Water Division",1503,82500,"http://www.santafenm.gov/media/files/Public_Utilities_WATER/2012_City_of_Santa_Fe_Annual_Water_Report.pdf",34,"MLD"

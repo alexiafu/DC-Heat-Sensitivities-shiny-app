@@ -1,0 +1,283 @@
+"","WW_Name","WW_ID","WW_Type","WW_Loc","WW_Qual","Treatment_Level","Destination","WW_Date"
+"1","Mehrauli",3102,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"2","Najafgarh",3103,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"3","Nilothi",3104,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"4","Narela",3105,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"5","Okhla",3106,"River",NA,"Supplies biogas to 4000 households","Secondary and Higher","Yamuna River",NA
+"6","Pappankalan",3107,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"7","Rithala",3108,"River",NA,"Generates electricity from biogas produced during treatment","Secondary and Higher","Yamuna River",NA
+"8","Rohini",3109,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"9","Dr Sen Nursing Home",3110,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"10","Timarpur",3111,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"11","Yamuna Vihar",3112,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"12","Vasant Kunj",3113,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"13","Untreated Water",3114,"River",NA,NA,"None","Yamuna River",NA
+"14","Badshahpur",3115,"River",NA,"Total treated by these plants leaves almost 100 MLD of untreated waste going into the Yamuna","Secondary and Higher","Yamuna River",NA
+"15","Mirzapur",3116,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"16","Pratapgarh",3117,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"17","Untreated Water",3118,"River",NA,NA,"None","Yamuna River",NA
+"18","Dhanwapur",3119,"River",NA,NA,"Primary","Yamuna River",NA
+"19","Dhanwapur",3120,"River",NA,NA,"Primary","Yamuna River",NA
+"20","Behrampur",3121,"River",NA,NA,"Primary","Yamuna River",NA
+"21","Haryana Plant",3122,NA,NA,NA,"Secondary and Higher",NA,"Proposed"
+"22","Behrampur",3123,NA,NA,NA,"Secondary and Higher",NA,"Proposed"
+"23","Untreated Water",3124,"River",NA,NA,"None","Yamuna River",NA
+"24","Jajmau",3125,"River",NA,NA,"Secondary and Higher","Ganga & Pandu Rivers",NA
+"25","Jajmau",3126,"River",NA,NA,"Secondary and Higher","Ganga & Pandu Rivers",NA
+"26","Jajmau",3127,"River",NA,NA,"Secondary and Higher","Ganga & Pandu Rivers",NA
+"27","Untreated Water",3128,"River",NA,NA,"None","Ganga & Pandu Rivers",NA
+"28","Daulatganj",3129,"River",NA,NA,"Secondary and Higher","Gomti River",NA
+"29","Daulatganj",3130,"River",NA,NA,"Secondary and Higher","Gomti River","2010"
+"30","Bharwara",3131,"River",NA,NA,"Secondary and Higher","Gomti River","01/11/13"
+"31","Untreated Water",3132,"River",NA,NA,"None","Gomti River",NA
+"32","Masani",3133,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"33","Kulu ka Nagla",3134,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"34","None",3135,"River",NA,NA,"None","Ganga River",NA
+"35","Saidpur",3136,"River",NA,"140 MLD flows untreated into the Ganga","Secondary and Higher","Ganga River",NA
+"36","Beur",3137,"River",NA,NA,"Secondary and Higher","Ganga River",NA
+"37","Pahari",3138,"River",NA,NA,"Secondary and Higher","Ganga River",NA
+"38","Karmalichak",3139,"River",NA,NA,"Secondary and Higher","Ganga River","Proposed"
+"39","Untreated Water",3140,"River",NA,NA,"None","Ganga River",NA
+"40","Plant 1 & 2",3141,"River",NA,"Upflow anaerobic sludge blanket","Secondary and Higher","Yamuna",NA
+"41","Untreated Water",3142,"River",NA,NA,"Primary","Yamuna",NA
+"42","Crowborough",3000,"River",NA,"Low - untreated sewage flows into source of drinking water; Cholera outbreak 2007-8","None","Rivers Marimba and Mukuvisi (drains to Lakes Chivero and Manyame)",NA
+"43","Firle",3001,"River",NA,"Low - untreated sewage flows into source of drinking water; Cholera outbreak 2007-8","None","Rivers Marimba and Mukuvisi (drains to Lakes Chivero and Manyame)",NA
+"44","Hatcliffe",3002,"River",NA,"Low - untreated sewage flows into source of drinking water; Cholera outbreak 2007-8","None","Rivers Marimba and Mukuvisi (drains to Lakes Chivero and Manyame)",NA
+"45","Marlborough",3003,"River",NA,"Low - untreated sewage flows into source of drinking water; Cholera outbreak 2007-8","None","Rivers Marimba and Mukuvisi (drains to Lakes Chivero and Manyame)",NA
+"46","Bugolobi",3004,"Lake","0.313452,32.611761 (estimated)","Low - all water treated and untreated goes into N. Channel; only 7% treated","None","Nakivubo Channel - Lake Victoria","1940s"
+"47","Cambérène",3005,"Ocean",NA,"Good","Secondary and Higher","Atlantic Ocean",NA
+"48","Rufisque",3006,"Ocean",NA,"Poor (?); unclear, but only about 17% of all wastewater is treated in Dakar; all other flows to ocean","Unknown","Atlantic Ocean",NA
+"49","Yoff",3007,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"50","Ouakam",3008,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"51","Hann Bel Air",3009,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"52","Thiaroye",3010,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"53","Mbao",3011,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"54","Bargny",3012,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"55","Ngor",3013,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"56","Cité OF",3014,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"57","Cité S",3015,"Ocean",NA,NA,"Unknown","Atlantic Ocean",NA
+"58","Unpumped sewer system",3016,"Ocean",NA,"Low - a few stabilization ponds; mostly straight to ocean","None","Indian Ocean",NA
+"59","Kality",3017,"River","8.915111,38.754035","Less than 30% of wastewater is treated; all goes to same place (pathogens in river)","Unknown","Akaki River",NA
+"60","Kotebe",3018,"River",NA,"Less than 30% of wastewater is treated; all goes to same place (pathogens in river)","Unknown","Akaki River",NA
+"61","STEP BENI MESSOUS",3019,NA,NA,NA,"Unknown",NA,NA
+"62","STEP STAOUELI - Site ECOLE",3020,NA,NA,NA,"Unknown",NA,NA
+"63","STEP ZERALDA",3021,NA,NA,NA,"Unknown",NA,NA
+"64","STEP SIDI ABDALLAH",3022,NA,NA,NA,"Unknown",NA,NA
+"65","STEP BARAKI",3023,NA,NA,NA,"Unknown",NA,NA
+"66","STEP REGHAIA",3024,NA,NA,NA,"Unknown",NA,NA
+"67","Unnamed plant",3025,"Ocean",NA,"V. low - almost no treatment available (only 1 private plant)","None","Atlantic Ocean",NA
+"68",NA,3026,"Ocean",NA,"V. low - no treatment before it's dumped into the sea","None","Mediterranean Sea",NA
+"69","Kingtom",3027,NA,NA,"Extremely low - no one takes responsibility for sanitation; only 4km of pipes in entire country","None",NA,NA
+"70","Currently unknown - website down",3028,NA,NA,NA,"Secondary and Higher",NA,NA
+"71","Zandvliet Wastewater Treatment Works",3029,NA,NA,"High","Secondary and Higher",NA,"1988"
+"72","Cape Flats Wastewater Treatment Plant",3030,NA,NA,"High","Secondary and Higher",NA,NA
+"73","Fisantekraal Wastewater Treatment Works",3031,NA,NA,"High","Secondary and Higher",NA,"comissioned 2011"
+"74","Athlone Wastewater Treatment Works",3032,NA,NA,"A grade","Secondary and Higher",NA,NA
+"75","Bellville Wastewater Treatment Works",3033,NA,NA,"A grade","Secondary and Higher",NA,NA
+"76","Borcherds Quarry Wastewater Treatment Works",3034,NA,NA,"B grade","Secondary and Higher",NA,NA
+"77","Camps Bay Marine Outfall",3035,"Ocean",NA,NA,"Secondary and Higher","Atlantic Ocean",NA
+"78","Green Point Marine Outfall",3036,"Ocean",NA,NA,"Secondary and Higher","Atlantic Ocean",NA
+"79","Groot Springfontein Wastewater Treatment Works",3037,NA,NA,NA,"Secondary and Higher",NA,NA
+"80","Gordon’s Bay Wastewater Treatment Works",3038,NA,NA,"D grade","Secondary and Higher",NA,NA
+"81","Hout Bay Marine Outfall",3039,"Ocean",NA,NA,"Secondary and Higher","Atlantic Ocean",NA
+"82","Klipheuwel Wastewater Treatment Works",3040,NA,NA,NA,"Secondary and Higher",NA,NA
+"83","Kraaifontein Wastewater Treatment Works",3041,NA,NA,"B grade","Secondary and Higher",NA,NA
+"84","Llandudno Wastewater Treatment Works",3042,NA,NA,NA,"Secondary and Higher",NA,NA
+"85","Macassar Wastewater Treatment Works",3043,NA,NA,"B grade","Secondary and Higher",NA,NA
+"86","Melkbosstrand Wastewater Treatment Works",3044,NA,NA,"D grade","Secondary and Higher",NA,NA
+"87","Miller’s Point Wastewater  Treatment Works",3045,NA,NA,NA,"Secondary and Higher",NA,NA
+"88","Mitchells Plain Wastewater Treatment Works",3046,NA,NA,"B grade","Secondary and Higher",NA,NA
+"89","Oudekraal Wastewater Treatment Works",3047,NA,NA,NA,"Secondary and Higher",NA,NA
+"90","Parow Wastewater Treatment Works",3048,NA,NA,NA,"Secondary and Higher",NA,NA
+"91","Philadelphia Wastewater Treatment Works",3049,NA,NA,NA,"Secondary and Higher",NA,NA
+"92","Potsdam Wastewater Treatment Works",3050,NA,NA,"A grade","Secondary and Higher",NA,NA
+"93","Scottsdene Wastewater Treatment Works",3051,NA,NA,"C grade","Secondary and Higher",NA,NA
+"94","Simon’s Town Wastewater Treatment Works",3052,NA,NA,"D grade","Secondary and Higher",NA,NA
+"95","Wesfleur Wastewater Treatment Works",3053,"Groundwater",NA,"C grade","Secondary and Higher","Atlantis groundwater scheme",NA
+"96","Wildevoëlvlei Wastewater Treatment Works",3054,NA,NA,"C grade","Secondary and Higher",NA,NA
+"97","Binhe",3055,NA,NA,"AB process and MSBR are used","Secondary and Higher",NA,NA
+"98","Luofang",3056,NA,NA,"AB process and MSBR are used","Secondary and Higher",NA,NA
+"99","Nanshan",3057,NA,NA,"AB process and MSBR are used","Secondary and Higher",NA,NA
+"100","Yantian",3058,NA,NA,"AB process and MSBR are used","Secondary and Higher",NA,NA
+"101","Indiranagar",3059,"Unknown",NA,"No WWTP exist currently, untreated sewage goes into Rispana & Bindal Rivers","Secondary and Higher","Water body","Proposed"
+"102","Doon Vihar",3060,"River",NA,NA,"Secondary and Higher","Bindal River","Proposed"
+"103","Vijay Colony",3061,"River",NA,NA,"Secondary and Higher","Bindal River","Proposed"
+"104","Kargi",3062,"River",NA,NA,"Secondary and Higher","Suswa River","Proposed"
+"105","Dorwala",3063,"River",NA,NA,"Secondary and Higher","Bindal River","Proposed"
+"106","Salawala",3064,"River",NA,NA,"Secondary and Higher","Bindal River","Proposed"
+"107","Untreated Water",3065,"River",NA,"Note that around 20 MLD is used by farmers for fertilizer, and the rest dumped in Rispana, p.12","None","Rispana River","1965"
+"108","Untreated Water",3066,"River",NA,NA,"None","Tawl River",NA
+"109","Untreated Water",3067,"River",NA,NA,"None","Tawl River","Under construction"
+"110","Untreated Water",3068,"River",NA,NA,"None","Tawl River","Under construction"
+"111","Untreated Water",3069,"River",NA,NA,"None","Tawl River",NA
+"112","Untreated Water",3070,"River",NA,"No WWTP, Septic tanks used","Primary","Yamuna River",NA
+"113","Untreated Water",3071,"River",NA,"Sewage is disposed of in a valley (Ghati), eventually leading to Balia and Nihal watersheds","None","Naini River","Proposed"
+"114","Untreated Water",3072,"River",NA,NA,"Secondary and Higher","Naini River","Proposed"
+"115","Untreated Water",3073,"River",NA,NA,"Secondary and Higher","Naini River","Proposed"
+"116","Untreated Water",3074,"River",NA,NA,"Secondary and Higher","Jhelum",NA
+"117","Centaur Lake View Hotel",3075,"Lake",NA,NA,"Secondary and Higher","Dal & Achar Lakes",NA
+"118","SKIMS Hospital",3076,"Lake",NA,NA,"Secondary and Higher","Dal & Achar Lakes",NA
+"119","Grand Palace Hotel",3077,"Lake",NA,NA,"Secondary and Higher","Dal & Achar Lakes",NA
+"120","Hazratbal",3078,"Lake",NA,NA,"Secondary and Higher","Dal Lake",NA
+"121","Habak",3079,"Lake",NA,NA,"Secondary and Higher","Dal Lake",NA
+"122","Laam",3080,"Lake",NA,NA,"Secondary and Higher","Dal Lake",NA
+"123","Brari Numba",3081,NA,NA,NA,"Secondary and Higher",NA,"Proposed"
+"124","Nala Amir Khan",3082,NA,NA,NA,"Secondary and Higher",NA,"Proposed"
+"125","Untreated Water",3083,"Lake/River",NA,NA,"None","Dal Lake, Jhelum River",NA
+"126","Plant 1",3084,"River",NA,NA,"Secondary and Higher","Bhagirathi River","Proposed"
+"127","Plant 2",3085,"River",NA,NA,"Secondary and Higher","Bhagirathi River","Proposed"
+"128","Untreated Water",3086,"River",NA,NA,"None","Bhagirathi River",NA
+"129","Peela Khar",3087,"River",NA,NA,"Primary","Yamuna River",NA
+"130","Burhi Ka Nagla",3088,"River",NA,NA,"Primary","Yamuna River",NA
+"131","Dhandupura",3089,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"132","Untreated Water",3090,"River",NA,NA,"None","Yamuna River",NA
+"133","Naini",3091,"River",NA,"Will eventually be increased to 80 MLD","Secondary and Higher","Yamuna, Ganga Rivers",NA
+"134","Salori",3092,"River",NA,NA,"Secondary and Higher","Yamuna, Ganga Rivers","Proposed"
+"135","Untreated Water",3093,"River",NA,"(untreated mixed with primary treated from Naini plant)","Primary","Yamuna, Ganga Rivers",NA
+"136","Untreated Water",3094,"River",NA,NA,"None","Yamuna, Ganga Rivers",NA
+"137","Untreated Water",3095,"All sewage pumped into local water bodies",NA,NA,"None","Tung Dhab & Ganda nullahs",NA
+"138","Untreated Water",3096,"River",NA,NA,"None","Sewage pumped into Lassara drain, which discharges into Ghaggar River",NA
+"139","Coronation Pillar",3097,"River",NA,"Sewage is treated, but release into dirty drains which transport pollution to the Yamuna","Primary","Yamuna River",NA
+"140","Delhi Gate",3098,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"141","Ghitorni",3099,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"142","Keshopur",3100,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"143","Kondli",3101,"River",NA,NA,"Secondary and Higher","Yamuna River",NA
+"144","Untreated Water",3143,"River",NA,NA,"None","Damodar River",NA
+"145","Untreated Water",3144,"River",NA,NA,"None","Damodar",NA
+"146","Plant 1",3145,"River",NA,NA,"Primary","Subarnarekha",NA
+"147","Plant 2",3146,"River",NA,NA,"Primary","Subarnarekha","Proposed"
+"148","Untreated Water",3147,"River",NA,NA,"None","Subarnarekha",NA
+"149","Untreated Water",3148,"River",NA,NA,"None","Tlwang",NA
+"150","Untreated Water",3149,"River",NA,"WW amount actually much higher b/c of private water tankers","None","Brahmaputra",NA
+"151","Untreated Water",3150,"River",NA,NA,"None","Fuleswari, Mahananda Rivers",NA
+"152","Untreated Water",3151,NA,NA,"Diverted outside of town, but reused for fertilizing crops","None",NA,NA
+"153","Untreated Water",3152,"River",NA,NA,"None","Kotharl, Banas Rivers",NA
+"154","Plant 1",3153,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah","1977-1980"
+"155","Plant 2",3154,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah","2005"
+"156","Delawas",3155,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah",NA
+"157","Jaisinghpura Khor",3156,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah",NA
+"158","Brahmapuri",3157,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah",NA
+"159","Ram Niwas Garden",3158,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah",NA
+"160","Jawahar Circle",3159,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah",NA
+"161","Relawta",3160,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah","Proposed"
+"162","Gajadharpura",3161,"River",NA,NA,"Secondary and Higher","Ganda, Amanishah","Proposed"
+"163","Untreated Water",3162,"River",NA,NA,"None","Ganda, Amanishah",NA
+"164","Nandri Village",3163,"River",NA,NA,"Secondary and Higher","Jojri",NA
+"165","Untreated Water",3164,"River",NA,"Some raw sewage is used for fertilization","None","Jojri",NA
+"166","Untreated Water",3165,"River",NA,NA,"None","Ahar",NA
+"167","8 WWTP's",3166,"Lake",NA,NA,"Primary","Upper",NA
+"168","Untreated Water",3167,"Lake",NA,NA,"None","Upper",NA
+"169","Untreated Water",3168,"River",NA,NA,"None","Chhoti Kali Sindh",NA
+"170","Morar",3169,"River",NA,NA,"Secondary and Higher","Swarnarekha, Morar","Proposed"
+"171","Lashkar",3170,"River",NA,NA,"Secondary and Higher","Swarnarekha, Morar","Proposed"
+"172","Untreated Water",3171,"River",NA,NA,"None","Swarnarekha, Morar",NA
+"173","Kabir Khedi (2)",3172,"River",NA,NA,"Primary","Khan, Saraswati",NA
+"174","Untreated Water",3173,"River",NA,"#s don't add up, but city estimes are WAY undervalued","None","Khan, Saraswati",NA
+"175","Untreated Water",3174,"River",NA,NA,"Primary","Naramda, Pariyat",NA
+"176","Untreated Water",3175,"River",NA,"(oxidation ponds for some %)","Primary","Betwa",NA
+"177","Bhandewadi",3176,"River",NA,NA,"Primary","Nag, Pili","2000"
+"178","Madhapur",3177,"River",NA,"Capacity of 90 MLD has not been realized","Secondary and Higher","Nyari, Aji","1994"
+"179","Untreated Water",3178,"River",NA,"#s don't add up. Independent estimates of 166 MLD indicate that 50% of sewage goes untreated.","None","Aji",NA
+"180","Plant 1",3179,"River",NA,NA,"Secondary and Higher","Kshpira",NA
+"181","Plant 2",3180,"River",NA,NA,"Secondary and Higher","Kshpira",NA
+"182","Untreated Water",3181,"River",NA,NA,"None","Kshpira",NA
+"183","3 STP's",3182,"River",NA,NA,"Secondary and Higher","Vishwamitri",NA
+"184","Untreated Water",3183,"River",NA,NA,"None","Vishwamitri",NA
+"185","Sayajigunj",3184,"River",NA,NA,"Secondary and Higher","Vishwamitri","Proposed"
+"186","Fatehgunj",3185,"River",NA,NA,"Secondary and Higher","Vishwamitri","Proposed"
+"187","Murtjapur",3186,"River",NA,NA,"Secondary and Higher","Kham, Sukhna",NA
+"188","Benewadi",3187,"River",NA,NA,"Secondary and Higher","Kham, Sukhna",NA
+"189","Untreated Water",3188,"River",NA,NA,"None","Kham, Sukhna",NA
+"190","Vrishabhavathi Valley",3189,"Lake",NA,"Designed combined capacity is 721, but utilized capacity is 302","Secondary and Higher","Vrishabhavathi Valley",NA
+"191","Koramangala-Challaghatta Valley",3190,"Lake",NA,"See page 315 for spatial details","Secondary and Higher","Koramangala-Challaghatta Valley",NA
+"192","Hebbal Valley",3191,"Lake",NA,NA,"Secondary and Higher","Hebbal",NA
+"193","Madivala",3192,"Lake",NA,NA,"Secondary and Higher","Koramangala-Challaghatta Valley",NA
+"194","Kempambudhi",3193,"Lake",NA,NA,"Secondary and Higher","Vrishabhavathi Valley",NA
+"195","Yelahanka",3194,"Lake",NA,NA,"Secondary and Higher","Hebbal",NA
+"196","Mylasandra",3195,"Lake",NA,NA,"Secondary and Higher","Vrishabhavathi Valley",NA
+"197","Nagasandra",3196,"Lake",NA,NA,"Secondary and Higher","Vrishabhavathi Valley",NA
+"198","Jakkur",3197,"Lake",NA,NA,"Secondary and Higher","Hebbal",NA
+"199","K R Puram",3198,"Lake",NA,NA,"Secondary and Higher","Hebbal",NA
+"200","Kadabeesanahalli",3199,"Lake",NA,NA,"Secondary and Higher","Koramangala-Challaghatta Valley",NA
+"201","Raja Canal",3200,"Lake",NA,NA,"Secondary and Higher","Hebbal",NA
+"202","Cubbon Park",3201,"Lake",NA,NA,"Secondary and Higher","Koramangala-Challaghatta Valley",NA
+"203","Lalbagh",3202,"Lake",NA,NA,"Secondary and Higher","Koramangala-Challaghatta Valley",NA
+"204","Untreated Water",3203,"Lake",NA,NA,"None","All aforementioned areas",NA
+"205","Untreated Water",3204,NA,NA,NA,"None","Does not say",NA
+"206","Untreated Water",3205,NA,NA,"Sewage pools in cesspits, only community latrines & septic tanks available","None",NA,NA
+"207","Untreated Water",3206,"RIver",NA,"Lots of water mixed with chemical waste from pharmaceutical companies","None","Musi",NA
+"208","Hussain Sagar",3207,"Lake",NA,NA,"Secondary and Higher","Nallacheruvu",NA
+"209","Amberpet",3208,"Lake",NA,"Capacity will be increased to  339 MLD","Secondary and Higher","Nallacheruvu",NA
+"210","Bhairoba",3209,"Canal",NA,"Article states that 281 MLD goes untreated.. #s don't add up","Primary","Nalli","1928"
+"211","Dr Naidu ID Hospital",3210,"River",NA,NA,"Secondary and Higher","Mula-Mutha","1981"
+"212","Tanajiwadi",3211,"River",NA,NA,"Secondary and Higher","Mula-Mutha",NA
+"213","Bopodi",3212,"River",NA,NA,"Secondary and Higher","Mula-Mutha",NA
+"214","Erandawana",3213,"River",NA,NA,"Secondary and Higher","Mula-Mutha",NA
+"215","IDH",3214,"River",NA,NA,"Secondary and Higher","Mula-Mutha",NA
+"216","Vithalwadi",3215,"River",NA,NA,"Secondary and Higher","Mula-Mutha",NA
+"217","Untreated Water",3216,"River",NA,NA,"None","Mula-Mutha",NA
+"218","Plant I",3217,"Lake",NA,NA,"Secondary and Higher","Siddheshwar, Dharmveer",NA
+"219","Untreated Water",3218,"Lake",NA,NA,"None","Siddheshwar, Dharmveer",NA
+"220","Veerasagara, Bheemasandara",3219,"River/Lake",NA,NA,"Secondary and Higher","Shimsa, Amanikere",NA
+"221","Untreated Water",3220,"River/Lake",NA,NA,"None","Shimsa, Amanikere",NA
+"222","Untreated Water",3221,"River",NA,NA,"None","Daya",NA
+"223","Kodungalyur",3222,"Bay",NA,NA,"Secondary and Higher","Bay of Bengal",NA
+"224","Koyembedu",3223,"Bay",NA,NA,"Secondary and Higher","Bay of Bengal",NA
+"225","Nesapakkam",3224,"Bay",NA,NA,"Secondary and Higher","Bay of Bengal",NA
+"226","Perungudi",3225,"Bay",NA,NA,"Secondary and Higher","Bay of Bengal",NA
+"227","Villivakkam",3226,"Bay",NA,NA,"Secondary and Higher","Bay of Bengal",NA
+"228","Untreated Water",3227,"Bay",NA,NA,"None","Bay of Bengal",NA
+"229","Plant 1",3228,"Rivers",NA,NA,"Secondary and Higher","Mahanadi, Kathajodi",NA
+"230","Plant 2",3229,"Rivers",NA,NA,"Primary","Mahanadi, Kathajodi",NA
+"231","Plant 3",3230,"Rivers",NA,NA,"Primary","Mahanadi, Kathajodi","Proposed"
+"232","Plant 4",3231,"Rivers",NA,NA,"Secondary and Higher","Mahanadi, Kathajodi","Proposed"
+"233","Plant 5",3232,"Rivers",NA,NA,"Primary","Mahanadi, Kathajodi","Proposed"
+"234","Garden Reach",3233,"River",NA,NA,"Secondary and Higher","Hooghly",NA
+"235","South Suburban Eat",3234,"River",NA,NA,"Secondary and Higher","Hooghly",NA
+"236","Bangur",3235,"River",NA,NA,"Secondary and Higher","Hooghly",NA
+"237","Bagha Jatin",3236,"River",NA,NA,"Secondary and Higher","Hooghly",NA
+"238","East Kolkata Wetlands",3237,"River",NA,"Wetlands!","None","Hooghly",NA
+"239","Untreated Water",3238,"River",NA,NA,"Primary","Hooghly",NA
+"240","Untreated Water",3239,"Canal, Sea",NA,NA,"None","Cannoly, Arabian",NA
+"241","Untreated Water",3240,"Sea",NA,"Has huge problems with treatment - not all sewage supplied to STP gets treated, and only 1/2 population's sewage collected","None","Arabian",NA
+"242","Bhandup",3241,"Creek",NA,NA,"Primary","Bhandup",NA
+"243","Ghatkopar",3242,"Creek",NA,NA,"Primary","Ghatkopar",NA
+"244","Versova",3243,"Creek",NA,NA,"Primary","Versova",NA
+"245","Malad",3244,"Creek",NA,NA,"Primary","Malad",NA
+"246","Lovegrove",3245,"Sea",NA,NA,"Primary","Arabian",NA
+"247","Colaba",3246,"Sea",NA,NA,"Primary","Arabian",NA
+"248","Bandra",3247,"Sea",NA,NA,"Primary","Arabian",NA
+"249","Lawspet",3248,"Sea",NA,NA,"Secondary and Higher","Arabian","1980"
+"250","Duprayapet",3249,"Sea",NA,NA,"Secondary and Higher","Arabian",NA
+"251","Untreated Water",3250,"Sea",NA,NA,"None","Arabian",NA
+"252","Untreated Water",3251,"River",NA,NA,"None","Nagavali",NA
+"253","Anjana",3252,"River",NA,NA,"Secondary and Higher","Tapi","1996"
+"254","Bhesan",3253,"River",NA,NA,"Secondary and Higher","Tapi","1996"
+"255","Bhatar",3254,"River",NA,NA,"Secondary and Higher","Tapi","1999"
+"256","Karani",3255,"River",NA,NA,"Secondary and Higher","Tapi","1999"
+"257","Singanpore",3256,"River",NA,NA,"Secondary and Higher","Tapi","2002"
+"258","Bamroli",3257,"River",NA,NA,"Secondary and Higher","Tapi","2002"
+"259","Asarma",3258,"River",NA,NA,"Secondary and Higher","Tapi",NA
+"260","Khajod",3259,"River",NA,NA,"Secondary and Higher","Tapi",NA
+"261","Untreated Water",3260,"River",NA,NA,"None","Tapi",NA
+"262","Dindoli",3261,"River",NA,NA,"Secondary and Higher","Tapi","Proposed"
+"263","Vairav-Kosad",3262,"River",NA,NA,"Secondary and Higher","Tapi","Proposed"
+"264","Plant 1",3263,"River",NA,NA,"Primary","Ulnas",NA
+"265","Untreated Water",3264,"River",NA,NA,"None","Ulnas",NA
+"266","Untreated Water",3265,"Sea",NA,NA,"None","Arabian",NA
+"267","Punta Carretas outfall",3266,"River","-34.936186,-56.159878","100% of water treated; underwater outfalls","Primary","Rio de la Plata",NA
+"268","Punta Lobos outfall",3267,"River","-34.904798,-56.313686","Sewage is mixed with storm/river water to get ""acceptible"" levels of beach fecal bacteria","Primary","Rio de la Plata",NA
+"269","Punta Yeguas Plant",3268,"River",NA,NA,"Unknown","Rio de la Plata","Proposed"
+"270","Untreated Water",3269,NA,NA,NA,"None",NA,NA
+"271","Untreated Water",3270,NA,NA,NA,"None",NA,NA
+"272","Untreated Water",3271,NA,NA,NA,"None",NA,NA
+"273","Untreated Water",3272,NA,NA,NA,"None",NA,NA
+"274","Untreated Water",3273,NA,NA,NA,"None",NA,NA
+"275","Untreated Water",3274,NA,NA,NA,"None",NA,NA
+"276","Untreated Water",3275,NA,NA,NA,"None",NA,NA
+"277","Untreated Water",3276,NA,NA,NA,"None",NA,NA
+"278","Untreated Water",3277,NA,NA,NA,"None",NA,NA
+"279","Untreated Water",3278,NA,NA,NA,"None",NA,NA
+"280","Untreated Water",3279,NA,NA,NA,"None",NA,NA
+"281","Untreated Water",3280,NA,NA,NA,"None",NA,NA
+"282","Untreated Water",3281,NA,NA,NA,"None",NA,NA

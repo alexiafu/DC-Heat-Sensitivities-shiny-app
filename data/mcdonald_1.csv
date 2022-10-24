@@ -1,0 +1,535 @@
+"","City_Name","Country_Name","City_ID","Country_ID","Continent_ID","GRUMP_ID","Water_Quality_Notes","Water_Scarcity_Notes"
+"1","London","United Kingdom",10,826,1,NA,NA,NA
+"2","Pretoria","South Africa",11,710,2,NA,NA,NA
+"3","Sydney","Australia",12,36,3,NA,NA,NA
+"4","Tokyo","Japan",13,392,4,NA,NA,NA
+"5","Sao Paulo","Brazil",14,76,5,NA,"Slums surround many reservoirs creating pollution problems; only 55% sewage treated","Water scarcity has led to conflicts w/ Campinas to the north"
+"6","Dublin","Ireland",15,372,1,NA,NA,"Climate change will produce more dry spells"
+"7","Buenos Aires","Argentina",16,32,5,NA,NA,NA
+"8","Dhaka","Bangladesh",17,50,4,NA,"GW very overexploited; pollution a big problem","Water supply is not up to demand"
+"9","Rio de Janeiro","Brazil",18,76,5,NA,"Pollution is a concern",NA
+"10","Santiago","Chile",19,152,5,NA,"Most (87%) of sewage is treated","In the city, treated water is almost universal"
+"11","Beijing","China",20,156,4,NA,"Pollution and siltation are worrisome","Overdraft of groundwater; supply-demand gap widening"
+"12","Shanghai","China",21,156,4,NA,"Pollution a problem; saltwater intrution",NA
+"13","Bogotá","Colombia",22,170,5,NA,"High levels of pollution","Good"
+"14","Kinshasa","The Democratic Republic of the Congo",23,180,2,NA,"Treatment of sewage is grossly deficient","~38% of residents have no access to treated water"
+"15","Guayaquil","Ecuador",24,218,5,NA,"Not all surface water is treated; most WW is untreated","Incomplete water/sewer coverage of the city"
+"16","Cairo","Egypt",25,818,2,NA,"Drinking water quality variable; disease in children a problem; sewage coverage and treatment can be poor","Unclear, most residents probably have continuous supply"
+"17","Alexandria","Egypt",26,818,2,NA,"Drinking water quality variable; disease in children a problem; sewage coverage and treatment can be poor","Unclear, most residents probably have continuous supply"
+"18","Berlin","Germany",27,276,1,NA,"Good","Good"
+"19","Accra","Ghana",28,288,2,NA,"Only 10% of WW treated in Accra; unclean drinking water a major cause of disease","Only 25% of Accra recieves continuous supply; 10% w/o access to piped water"
+"20","Hong Kong","S.A.R. China",29,344,4,NA,"Good","Stable with imports from Chinese mainland"
+"21","Thane","India",30,356,4,NA,"Poor sewage system ","Demand-supply gap (after leakage losses) 79 MLD"
+"22","Thiruvananthapuram","India",31,356,4,NA,NA,"Demand-supply gap (after leakage losses) 39 MLD"
+"23","Jakarta","Indonesia",32,360,4,NA,"30% of Indonesian water is contaminated with fecal matter; therefore must boil first","92% of people in Jakarta have continuous water supply"
+"24","Abidjan","Ivory Coast",34,384,2,NA,NA,"Water supply reaches about 85% of city"
+"25","Osaka","Japan",35,392,4,NA,NA,NA
+"26","Nairobi","Kenya",36,404,2,NA,NA,"Only half of households have water access (informal housing)"
+"27","Mexico City","Mexico",37,484,6,NA,"4% of surface water heavily polluted","Most have connection within city; groundwater is v. overdrawn; subsidence a big concern"
+"28","Casablanca","Morocco",38,504,2,NA,NA,"Connection to water supply is v. high within the city"
+"29","Dehradun","India",39,356,4,NA,"On the whole good - Water from surface sources is hard & rich in minerals, while water from falls is hard & rich in calcium. ","Demand-supply gap (after leakage losses) 34 MLD"
+"30","Jammu","India",40,356,4,NA,"Chlorination used to treat water, but problems persist","Demand-supply gap (after leakage losses) 4 MLD"
+"31","Mussoorie","India",41,356,4,NA,"Water supplied 100% by springs","Demand-supply gap (after leakage losses) 6 MLD"
+"32","Nainital","India",42,356,4,NA,"Heavily rely on groundwater due to fecal pollution of Naini Lake",NA
+"33","Srinagar","India",43,356,4,NA,"Heavily rely on Jhelum & Dal Rivers, which are getting polluted and dealing with eutrophication problems","Demand-supply gap (after leakage losses) 81 MLD"
+"34","Uttarkashi","India",44,356,4,NA,"90% of population receives water, but some left untreated & no WWTP","No Demand-supply gap"
+"35","Agra","India",45,356,4,NA,"Very high leakage losses (45%), lots of purification problems. Most sewage runs into river untreated","Demand-supply gap (after leakage losses) 110 MLD"
+"36","Allahabad","India",46,356,4,NA,"75% of sewage (untreated) flows into river, while drinking water is oversupplied","Demand-supply gap (after leakage losses) 70 MLD"
+"37","Amritsar","India",47,356,4,NA,"Serious health risks downstream of nullahs, no WWTP","No Demand-supply gap"
+"38","Bathinda","India",48,356,4,NA,"Sirhind Canal (water source) being heavily contaminated by sewage from Bathinda & 3 other surrounding cities","Demand-supply gap (after leakage losses) 25 MLD"
+"39","Delhi","India",49,356,4,NA,"Qualitatively, groundwater in the NCT has three major problems – salinity, and fluoride and nitrate contamination.","Demand-supply gap (after leakage losses) 2,149 MLD"
+"40","Faridabad","India",50,356,4,NA,"Groundwater levels decreasing yearly, untreated sewage pollutes Yamuta","Demand-supply gap (after leakage losses) 16 MLD"
+"41","Gurgaon","India",51,356,4,NA,"Rapidly dwindling grounwater high in nitrates & fluoride","Demand-supply gap (after leakage losses) 93 MLD"
+"42","Kanpur","India",52,356,4,NA,"Rapidly dwindling grounwater","Demand-supply gap (after leakage losses) 244 MLD"
+"43","Lucknow","India",53,356,4,NA,"Groundwater has high levels of nitrates, coliform, only 10% sewage is treated","Demand-supply gap (after leakage losses) 264 MLD"
+"44","Mathura","India",54,356,4,NA,"Groundwater becoming increasingly saline & water table falling","Demand-supply gap (after leakage losses) 32 MLD"
+"45","Meerut","India",55,356,4,NA,"Groundwater quantity & quality decreasing due to stressed water tables & industrial pollution","Demand-supply gap (after leakage losses) 81 MLD"
+"46","Patna","India",56,356,4,NA,"100% dependent on GW, which has high levels of arsenic & harmful bacteria","Demand-supply gap (after leakage losses) 13 MLD"
+"47","Yamunanagar","India",57,356,4,NA,"Most population connected to groundwater, but pollution is contaminating it","Demand-supply gap (after leakage losses) 25 MLD"
+"48","Jagadhri","India",58,356,4,NA,"Most population connected to groundwater, but pollution is contaminating it","Demand-supply gap (after leakage losses) 25 MLD"
+"49","Khanna","India",59,356,4,NA,NA,"Demand-supply gap (after leakage losses) 1.8 MLD"
+"50","Malout","India",60,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"51","Mansa","India",61,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"52","Budhlada","India",62,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"53","Baretta","India",63,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"54","Bhucho","India",64,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"55","Goniana","India",65,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"56","Kot Fatta","India",66,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"57","Maur","India",67,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"58","Raman","India",68,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"59","Rampura","India",69,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"60","Sangat","India",70,356,4,NA,NA,"Demand-supply gap (after leakage losses) 0 MLD"
+"61","Dhanbad","India",71,356,4,NA,"Groundwater exceeds recommended limits of alkalinity/hardness/TDS/mercury/heavy metals","Demand-supply gap (after leakage losses) 25 MLD"
+"62","Hazaribagh","India",72,356,4,NA,"Groundwater meets needs of population","Demand-supply gap (after leakage losses) 2 MLD"
+"63","Ranchi","India",73,356,4,NA,"Water does not reach all areas of town equally","Demand-supply gap (after leakage losses) 75 MLD"
+"64","Aizawl","India",74,356,4,NA,"Water pumped high distances from river to village, untreated sewage pollutes same river","Demand-supply gap (after leakage losses) 19 MLD"
+"65","Guwahati","India",75,356,4,NA,"Pollution from smaller surface water contributed to making even the huge Brahmaputra unfit for even bathing","Demand-supply gap (after leakage losses) 81 MLD"
+"66","Siliguri","India",76,356,4,NA,"Using Mahananda as drinking & disposal, river now has high BOD, low DO and high coliform counts","Demand-supply gap (after leakage losses) 37 MLD"
+"67","Alwar","India",77,356,4,NA,"Rapidly depleting grounwater sources are contaminated with nitrate due to lack of sewage sanitation","Demand-supply gap (after leakage losses) 19 MLD"
+"68","Bhilwara","India",78,356,4,NA,"Groundwater has high TDS levels","Demand-supply gap (after leakage losses) 30 MLD"
+"69","Jaipur","India",79,356,4,NA,"High levels of nitrate in groundwater, depleting water table","Demand-supply gap (after leakage losses) 233 MLD"
+"70","Jodhpur","India",80,356,4,NA,"Uses extremely high levels of grounwater, despite being in desert","Demand-supply gap (after leakage losses) 54 MLD"
+"71","Udaipur","India",81,356,4,NA,"Lakes which used to supply water are severely polluted, as are rivers","Demand-supply gap (after leakage losses) 48 MLD"
+"72","Bhopal","India",82,356,4,NA,"Untreated sewage pollutes lake used for drinking water, groundwater being over-extracted","Demand-supply gap (after leakage losses) 108 MLD"
+"73","Dewas","India",83,356,4,NA,"Groundwater rapidly declining due to overdrawing","Demand-supply gap (after leakage losses) 6 MLD"
+"74","Gwalior","India",84,356,4,NA,"High TDS/alkalinity levels in rapidly depleting groundwater","Demand-supply gap (after leakage losses) 14 MLD"
+"75","Indore","India",85,356,4,NA,"Heavy polluting of drinking water sources","Demand-supply gap (after leakage losses) 110 MLD"
+"76","Jabalpur","India",86,356,4,NA,"Fecal pollution of groundwater & drinking water (rivers)","Demand-supply gap (after leakage losses) 24 MLD"
+"77","Jhansi","India",87,356,4,NA,"Coliform & nitrate pollution in drinking water supplied by authorities","Demand-supply gap (after leakage losses) 26 MLD"
+"78","Nagpur","India",88,356,4,NA,"Heavy pollution of drinking water bodies (Nag, Pili)","Demand-supply gap (after leakage losses) 82 MLD"
+"79","Rajkot","India",89,356,4,NA,"High TSS, BOD, COD levels in rivers receiving untreated sewage","Demand-supply gap (after leakage losses) 63 MLD"
+"80","Ujjain","India",90,356,4,NA,"Groundwater mainly suitable for drinking, slightly nitrate/TDS problems. Drinking water from rivers poluted by upstream sewage discharge","Demand-supply gap (after leakage losses) 18 MLD"
+"81","Vadodara","India",91,356,4,NA,"Heavy pollution of Vishwamitri - extends to pollution of Mahi by heavy metals & industrial wastes","Demand-supply gap (after leakage losses) 108 MLD"
+"82","Aurangabad","India",92,356,4,NA,"No significant water problems, but sewage network lacking in extent",NA
+"83","Bengaluru","India",93,356,4,NA,"High levels of nitrates, fecal coliform in groundwater, whose water table is rapidly declining","Demand-supply gap (after leakage losses) 585 MLD"
+"84","Baramati","India",94,356,4,NA,"No significant water problems, but no  sewage network",NA
+"85","Hubli-Dharwad","India",95,356,4,NA,"No sewage network means contamination of groundwater","Demand-supply gap (after leakage losses) 63 MLD"
+"86","Hyderabad","India",96,356,4,NA,"Manjira River (water supply) polluted by chemicals from upstream towns, while Musi (lake) drained for water & polluted by sewage","Demand-supply gap (after leakage losses) 742 MLD"
+"87","Pune","India",97,356,4,NA,"Mula-Mutha (drinking water supply) highly polluted, see pg. 348","Demand-supply gap (after leakage losses) 47 MLD"
+"88","Solapur","India",98,356,4,NA,"Bhima river highly polluted - high BOD","Demand-supply gap (after leakage losses) 35 MLD"
+"89","Tumkur","India",99,356,4,NA,"Shimsa & Amanikere highly polluted from untreated sewage","Demand-supply gap (after leakage losses) 5 MLD"
+"90","Bhubaneswar","India",100,356,4,NA,"High coliform & high BOD amount in groundwater and surface drinking water","Demand-supply gap (after leakage losses) 0 MLD"
+"91","Chennai","India",101,356,4,NA,"As  a coastal city, Chennai depends heavily on monsoons for drinking water supply, but also has managed to clog its waterways with immense amounts of sewage & high levels of pollution","Demand-supply gap (after leakage losses) 267 MLD"
+"92","Cuttack","India",102,356,4,NA,"Relies almost exclusively on GW, which has high levels of nitrate, manganese & iron","Demand-supply gap (after leakage losses) 0 MLD"
+"93","Kolkata","India",103,356,4,NA,"High levels of cadmium, iron, manganese, nickel, arsenic in groundwater","Demand-supply gap (after leakage losses) 135 MLD"
+"94","Kozhikode","India",104,356,4,NA,"Ample drinking water supply, no serious GW contamination but declining levels recorded","Demand-supply gap (after leakage losses) 66 MLD"
+"95","Mumbai","India",105,356,4,NA,"Numerous rivers running thru Mumbai are garbage disposals, which only worsen during seasonal monsoons. High coliform counts in some drinking water in areas of city recorded","Demand-supply gap (after leakage losses) 1765 MLD"
+"96","Puducherry","India",106,356,4,NA,"Completely dependent on GW, whih has problems with industrial & sewage discharges leaking in, as well as high iron and salt content","Demand-supply gap (after leakage losses) 14 MLD"
+"97","Srikakulam","India",107,356,4,NA,"Most water sourced from infiltration wells","Demand-supply gap (after leakage losses) 2 MLD"
+"98","Surat","India",108,356,4,NA,"Sewage dumped into  drinking water source","Demand-supply gap (after leakage losses) 174 MLD"
+"99","Yangon","Myanmar",109,104,4,NA,"A  Japanese study in 2002 described Yangon’s water supply as “very low in terms of water quality, quantity and pressure”; most delivered water is untreated","Big problems, pumps often run dry; water supplied to 60% officially, usually less"
+"100","Auckland","New Zealand",110,554,3,NA,NA,NA
+"101","Karachi","Pakistan",111,586,4,NA,NA,"Only 60% of households have running water and 57% have sewer; supply gap estimated at 430 mil gal/day"
+"102","Manila","Philippines",112,608,4,NA,"ISO certified water treatment plants",NA
+"103","Lima","Peru",113,604,5,NA,"Sewage is usually discharged directly into ocean","Lima is within a desert, water scarcity is a problem (non-continuous service)"
+"104","Moscow","Russia",114,643,1,NA,"Treatment plants updated in 2012",NA
+"105","Riyadh","Saudi Arabia",115,682,4,NA,NA,NA
+"106","Singapore","Singapore",116,702,4,NA,NA,NA
+"107","Seoul","Republic of Korea",117,410,4,NA,NA,NA
+"108","Khartoum","Sudan",118,736,2,NA,NA,NA
+"109","Caracas","Venezuela",119,862,5,NA,NA,NA
+"110","Lagos","Nigeria",120,566,2,NA,NA,NA
+"111","Madrid","Spain",121,724,1,NA,NA,NA
+"112","Istanbul","Turkey",122,792,4,NA,NA,NA
+"113","Montevideo","Uruguay",123,858,5,NA,"100% of Montevideo's sewage is treated","98% have access to water; 91% have access to sewer in Montevideo"
+"114","Shenzhen ","China",124,156,4,NA,"According to the DVTR, it's up to national but not European standards",NA
+"115","Cape Town","South Africa",125,710,2,NA,"High when treated","98.7% have access to improved water (sometimes communal)"
+"116","Tunis","Tunisia",126,788,2,NA,NA,"SONEDE says that all urban dwellers have access to improved water sources"
+"117","Freetown","Sierra Leone",127,694,2,NA,"Water quality is a problem—mainly due to bacteriological contamination—but data are scarce","In Freetown, 38 percent of properties have house connections, in addition to over 500 stand posts; only 26 percent of the urban population had improved (not shared) sanitation facilities, mainly pit latrines with slab"
+"118","Tripoli","Libya",128,434,2,NA,NA,NA
+"119","Cotonou","Benin",129,204,2,NA,NA,NA
+"120","Algiers","Algeria",130,12,2,NA,NA,NA
+"121","Addis Ababa","Ethiopia",131,231,2,NA,NA,"93% water coverage, according to a news source; sewer coverage 40% according to GWOPA"
+"122","Dar es Salaam","Tanzania",132,834,2,NA,NA,"Only 8% without a ""protected"" source; however, a lot of water must be carried; lots of water stolen = scarcity; 92% use pit latrines; water only a fer hrs/day"
+"123","Dakar","Senegal",133,686,2,NA,NA,"Good for sub-Saharan Africa; only 5% rely on non-SDE sources; most have sewerage as well"
+"124","Harare","Zimbabwe",134,716,2,NA,NA,NA
+"125","San José","Costa Rica",147,188,6,NA,"Almost no sewer lines or treatment","Good continuity and connection"
+"126","Tegucigalpa","Honduras",150,340,6,NA,"Deforestation is a problem, heavy sedimentation",NA
+"127","Kampala","Uganda",153,800,2,NA,NA,NA
+"128","Houston","United States of America",154,840,6,NA,NA,NA
+"129","Philadelphia","United States of America",155,840,6,NA,NA,NA
+"130","Phoenix","United States of America",156,840,6,NA,NA,NA
+"131","San Antonio","United States of America",157,840,6,NA,NA,NA
+"132","San Diego","United States of America",158,840,6,NA,NA,NA
+"133","Dallas","United States of America",159,840,6,NA,NA,NA
+"134","Chicago","United States of America",160,840,6,NA,NA,NA
+"135","Los Angeles","United States of America",161,840,6,NA,NA,NA
+"136","New York","United States of America",162,840,6,NA,NA,NA
+"137","San Jose","United States of America",163,840,6,NA,NA,NA
+"138","Jacksonville","United States of America",164,840,6,NA,NA,NA
+"139","Indianapolis","United States of America",165,840,6,NA,NA,NA
+"140","San Francisco","United States of America",166,840,6,NA,NA,NA
+"141","Austin","United States of America",167,840,6,NA,NA,NA
+"142","Columbus","United States of America",168,840,6,NA,NA,NA
+"143","Fort Worth","United States of America",169,840,6,NA,NA,NA
+"144","Charlotte","United States of America",170,840,6,NA,NA,NA
+"145","Detroit","United States of America",171,840,6,NA,NA,NA
+"146","Baltimore","United States of America",172,840,6,NA,NA,NA
+"147","Boston","United States of America",173,840,6,NA,NA,NA
+"148","Seattle","United States of America",174,840,6,NA,NA,NA
+"149","Washington","United States of America",175,840,6,NA,NA,NA
+"150","Denver","United States of America",176,840,6,NA,NA,NA
+"151","Portland","United States of America",177,840,6,NA,NA,NA
+"152","Las Vegas","United States of America",178,840,6,NA,NA,NA
+"153","Long Beach","United States of America",179,840,6,NA,NA,NA
+"154","Mesa","United States of America",180,840,6,NA,NA,NA
+"155","Atlanta","United States of America",181,840,6,NA,NA,NA
+"156","Miami","United States of America",182,840,6,NA,NA,NA
+"157","Cleveland","United States of America",183,840,6,NA,NA,NA
+"158","Oakland","United States of America",184,840,6,NA,NA,NA
+"159","Minneapolis","United States of America",185,840,6,NA,NA,NA
+"160","Tampa","United States of America",186,840,6,NA,NA,NA
+"161","Aurora","United States of America",187,840,6,NA,NA,NA
+"162","Santa Ana","United States of America",188,840,6,NA,NA,NA
+"163","Saint Louis","United States of America",189,840,6,NA,NA,NA
+"164","Saint Paul","United States of America",190,840,6,NA,NA,NA
+"165","Newark","United States of America",191,840,6,NA,NA,NA
+"166","Saint Petersburg","United States of America",192,840,6,NA,NA,NA
+"167","Kobe","Japan",193,392,4,NA,NA,NA
+"168","Tehran","Iran",194,364,4,NA,NA,NA
+"169","Ho Chi Minh City","Vietnam",195,704,4,NA,NA,NA
+"170","Baghdad","Iraq",196,368,4,NA,"Warfare has greatly degraded water quality; sewer is in disrepair as well","Euphrates also runs through Syria, scarcity may become a large problem"
+"171","Belo Horizonte","Brazil",197,76,5,NA,NA,NA
+"172","Salvador","Brazil",198,76,5,NA,NA,NA
+"173","Brasília","Brazil",199,76,5,NA,NA,NA
+"174","Recife","Brazil",200,76,5,NA,NA,NA
+"175","Fortaleza","Brazil",201,76,5,NA,NA,NA
+"176","Toronto","Canada",202,124,6,NA,NA,NA
+"177","Montréal","Canada",203,124,6,NA,NA,NA
+"178","Chittagong","Bangladesh",204,50,4,NA,"Groundwater contains arsenic, leading to millions of people with chronic exposure; surface water is polluted","98% have access to improved water"
+"179","Pôrto Alegre","Brazil",205,76,5,NA,NA,NA
+"180","Luanda","Angola",206,24,2,NA,NA,NA
+"181","Paris","France",207,250,1,NA,NA,NA
+"182","Barcelona","Spain",208,724,1,NA,NA,NA
+"183","Saint Petersburg","Russia",209,643,1,NA,NA,NA
+"184","Bangkok","Thailand",210,764,4,NA,NA,NA
+"185","Ahmedabad","India",211,356,4,NA,NA,NA
+"186","Guadalajara","Mexico",212,484,6,NA,NA,NA
+"187","Melbourne","Australia",213,36,3,NA,NA,NA
+"188","Monterrey","Mexico",214,484,6,NA,NA,NA
+"189","Ankara","Turkey",215,792,4,NA,NA,NA
+"190","Johannesburg","South Africa",216,710,2,NA,NA,NA
+"191","Medellín","Colombia",217,170,5,NA,"Drainage and pollution are a problem","Good water and sanitation coverage"
+"192","Jeddah","Saudi Arabia",218,682,4,NA,NA,"Water supplied only every few days; groundwater depletion"
+"193","Busan","Republic of Korea",219,410,4,NA,NA,NA
+"194","Oslo","Norway",220,578,1,NA,NA,NA
+"195","Helsinki","Finland",221,246,1,NA,NA,NA
+"196","Yerevan","Armenia",222,51,1,NA,NA,NA
+"197","Belgrade","Serbia",223,688,1,NA,NA,NA
+"198","Sofia","Bulgaria",224,100,1,NA,NA,NA
+"199","Zurich","Switzerland",225,756,1,NA,NA,NA
+"200","Copenhagen","Denmark",226,208,1,NA,NA,NA
+"201","Prague","Czech Republic",227,203,1,NA,NA,NA
+"202","Stockholm","Sweden",228,752,1,NA,NA,NA
+"203","Athens","Greece",229,300,1,NA,NA,NA
+"204","Tel Aviv","Israel",230,376,4,NA,NA,NA
+"205","Jaffa","Israel",231,376,4,NA,NA,NA
+"206","Rome","Italy",232,380,1,NA,NA,NA
+"207","Nagoya","Japan",233,392,4,NA,NA,NA
+"208","East Rand","South Africa",234,710,2,NA,NA,NA
+"209","Kano","Nigeria",235,566,2,NA,"Pollution and siltation problems","Many citizens do not have reliable access to water; overexploitation of surface water continues"
+"210","Kabul","Afghanistan",236,4,4,NA,NA,NA
+"211","Lisbon","Portugal",237,620,1,NA,NA,NA
+"212","Hanoi","Vietnam",238,704,4,NA,NA,NA
+"213","Kiev","Ukraine",239,804,1,NA,NA,NA
+"214","San Juan","Puerto Rico",240,630,6,NA,NA,NA
+"215","Bucharest","Romania",241,642,1,NA,NA,NA
+"216","Kuwait City","Kuwait",242,414,4,NA,NA,NA
+"217","Sana'a","Yemen",243,887,4,NA,NA,"Extreme water scarcity due to overexploitation of GW; may be first capital to run dry"
+"218","Tashkent","Uzbekistan",244,860,4,NA,NA,NA
+"219","Santo Domingo","Dominican Republic",245,214,6,NA,NA,NA
+"220","Havana","Cuba",246,192,6,NA,NA,NA
+"221","Asunción","Paraguay",247,600,5,NA,NA,NA
+"222","Baku","Azerbaijan",248,31,4,NA,NA,NA
+"223","Beirut","Lebanon",249,422,4,NA,NA,NA
+"224","Brussels","Belgium",250,56,1,NA,NA,NA
+"225","Bamako","Mali",251,466,2,NA,NA,NA
+"226","Ouagadougou","Burkina Faso",252,854,2,NA,NA,NA
+"227","Allepo","Syria",253,760,4,NA,NA,NA
+"228","Antananarivo","Madagascar",254,450,2,NA,NA,NA
+"229","Dubai","United Arab Emirates",255,784,4,NA,NA,NA
+"230","Budapest","Hungary",256,348,1,NA,NA,NA
+"231","Lusaka","Zambia",257,894,2,NA,NA,NA
+"232","Warsaw","Poland",258,616,1,NA,NA,NA
+"233","Conakry","Guinea",259,324,2,NA,NA,NA
+"234","Vienna","Austria",260,40,1,NA,NA,NA
+"235","La Paz","Bolivia",261,68,5,NA,NA,NA
+"236","Kigali","Rwanda",262,646,2,NA,NA,NA
+"237","Lilongwe","Malawi",263,454,2,NA,NA,NA
+"238","Nouakchott","Mauritania",264,478,2,NA,NA,"Large supply-demand gap; many people rely entirely on private, expensive water companies"
+"239","Vientiane","Laos",265,418,4,NA,NA,NA
+"240","Monrovia","Liberia",266,430,2,NA,"Lack of sewerage means that diarrheal diseases are a huge problem","Since civil war, water is only piped to 17%, and only 40hrs/wk at that"
+"241","Bishkek","Kyrgyzstan",267,417,4,NA,NA,NA
+"242","Managua","Nicaragua",268,558,5,NA,NA,NA
+"243","Ulaanbaatar","Mongolia",269,496,4,NA,NA,NA
+"244","Amsterdam","The Netherlands",270,528,1,NA,NA,NA
+"245","Tbilisi","Georgia",271,268,4,NA,NA,NA
+"246","Maputo","Mozambique",272,508,2,NA,NA,NA
+"247","Amman","Jordan",273,400,4,NA,NA,NA
+"248","Almaty","Kazakhstan",274,398,4,NA,NA,NA
+"249","Phnom Penh","Cambodia",275,116,4,NA,NA,NA
+"250","Brazzaville","Republic of the Congo",276,178,2,NA,NA,NA
+"251","Macao","S.A.R. China",277,446,4,NA,NA,NA
+"252","Zhengzhou","China",278,156,4,NA,NA,NA
+"253","Harbin","China",279,156,4,NA,NA,NA
+"254","Anchorage","United States of America",280,840,6,NA,NA,NA
+"255","Birmingham","United States of America",281,840,6,NA,NA,NA
+"256","Huntsville","United States of America",282,840,6,NA,NA,NA
+"257","Mobile","United States of America",283,840,6,NA,NA,NA
+"258","Montgomery","United States of America",284,840,6,NA,NA,NA
+"259","Tuscaloosa","United States of America",285,840,6,NA,NA,NA
+"260","Little Rock","United States of America",286,840,6,NA,NA,NA
+"261","Fort Smith","United States of America",287,840,6,NA,NA,NA
+"262","Tucson","United States of America",288,840,6,NA,NA,NA
+"263","Antioch","United States of America",289,840,6,NA,NA,NA
+"264","Bakersfield","United States of America",290,840,6,NA,NA,NA
+"265","Concord","United States of America",291,840,6,NA,NA,NA
+"266","Fairfield","United States of America",292,840,6,NA,NA,NA
+"267","Fresno","United States of America",293,840,6,NA,NA,NA
+"268","Hemet","United States of America",294,840,6,NA,NA,NA
+"269","Merced","United States of America",295,840,6,NA,NA,NA
+"270","Mission Viejo","United States of America",296,840,6,NA,NA,NA
+"271","Modesto","United States of America",297,840,6,NA,NA,NA
+"272","Oxnard","United States of America",298,840,6,NA,NA,NA
+"273","Redding","United States of America",299,840,6,NA,NA,NA
+"274","Sacramento","United States of America",300,840,6,NA,NA,NA
+"275","Salinas","United States of America",301,840,6,NA,NA,NA
+"276","Santa Barbara","United States of America",302,840,6,NA,NA,NA
+"277","Santa Clarita","United States of America",303,840,6,NA,NA,NA
+"278","Santa Cruz","United States of America",304,840,6,NA,NA,NA
+"279","Santa Maria","United States of America",305,840,6,NA,NA,NA
+"280","Santa Rosa","United States of America",306,840,6,NA,NA,NA
+"281","Simi Valley","United States of America",307,840,6,NA,NA,NA
+"282","Stockton","United States of America",308,840,6,NA,NA,NA
+"283","Thousand Oaks","United States of America",309,840,6,NA,NA,NA
+"284","Vallejo","United States of America",310,840,6,NA,NA,NA
+"285","Visalia","United States of America",311,840,6,NA,NA,NA
+"286","Boulder","United States of America",312,840,6,NA,NA,NA
+"287","Colorado Springs","United States of America",313,840,6,NA,NA,NA
+"288","Fort Collins","United States of America",314,840,6,NA,NA,NA
+"289","Pueblo","United States of America",315,840,6,NA,NA,NA
+"290","Hartford","United States of America",316,840,6,NA,NA,NA
+"291","New Haven","United States of America",317,840,6,NA,NA,NA
+"292","Waterbury","United States of America",318,840,6,NA,NA,NA
+"293","Danbury","United States of America",319,840,6,NA,NA,NA
+"294","Brooksville","United States of America",320,840,6,NA,NA,NA
+"295","Cape Coral","United States of America",321,840,6,NA,NA,NA
+"296","Deltona","United States of America",322,840,6,NA,NA,NA
+"297","Fort Walton Beach","United States of America",323,840,6,NA,NA,NA
+"298","Gainesville","United States of America",324,840,6,NA,NA,NA
+"299","Kissimmee","United States of America",325,840,6,NA,NA,NA
+"300","Lakeland","United States of America",326,840,6,NA,NA,NA
+"301","Ocala","United States of America",327,840,6,NA,NA,NA
+"302","Orlando","United States of America",328,840,6,NA,NA,NA
+"303","Panama City","United States of America",329,840,6,NA,NA,NA
+"304","Port St. Lucie","United States of America",330,840,6,NA,NA,NA
+"305","Tallahassee","United States of America",331,840,6,NA,NA,NA
+"306","Winter Haven","United States of America",332,840,6,NA,NA,NA
+"307","Pensacola","United States of America",333,840,6,NA,NA,NA
+"308","Athens-Clarke County","United States of America",334,840,6,NA,NA,NA
+"309","Macon","United States of America",335,840,6,NA,NA,NA
+"310","Savannah","United States of America",336,840,6,NA,NA,NA
+"311","Augusta-Richmond County","United States of America",337,840,6,NA,NA,NA
+"312","Cedar Rapids","United States of America",339,840,6,NA,NA,NA
+"313","Des Moines","United States of America",340,840,6,NA,NA,NA
+"314","Waterloo","United States of America",341,840,6,NA,NA,NA
+"315","Davenport","United States of America",342,840,6,NA,NA,NA
+"316","Sioux City","United States of America",343,840,6,NA,NA,NA
+"317","Boise City","United States of America",344,840,6,NA,NA,NA
+"318","Champaign","United States of America",345,840,6,NA,NA,NA
+"319","Peoria","United States of America",346,840,6,NA,NA,NA
+"320","Rockford","United States of America",347,840,6,NA,NA,NA
+"321","Springfield","United States of America",348,840,6,NA,NA,NA
+"322","Fort Wayne","United States of America",349,840,6,NA,NA,NA
+"323","Lafayette","United States of America",350,840,6,NA,NA,NA
+"324","Evansville","United States of America",351,840,6,NA,NA,NA
+"325","Elkhart","United States of America",352,840,6,NA,NA,NA
+"326","South Bend","United States of America",353,840,6,NA,NA,NA
+"327","Topeka","United States of America",354,840,6,NA,NA,NA
+"328","Wichita","United States of America",355,840,6,NA,NA,NA
+"329","Lexington-Fayette","United States of America",356,840,6,NA,NA,NA
+"330","Louisville","United States of America",357,840,6,NA,NA,NA
+"331","Baton Rouge","United States of America",358,840,6,NA,NA,NA
+"332","Houma","United States of America",359,840,6,NA,NA,NA
+"333","Lafayette","United States of America",360,840,6,NA,NA,NA
+"334","Lake Charles","United States of America",361,840,6,NA,NA,NA
+"335","Monroe","United States of America",362,840,6,NA,NA,NA
+"336","New Orleans","United States of America",363,840,6,NA,NA,NA
+"337","Shreveport","United States of America",364,840,6,NA,NA,NA
+"338","Barnstable Town","United States of America",365,840,6,NA,NA,NA
+"339","New Bedford","United States of America",366,840,6,NA,NA,NA
+"340","Springfield","United States of America",367,840,6,NA,NA,NA
+"341","Worcester","United States of America",368,840,6,NA,NA,NA
+"342","Frederick","United States of America",369,840,6,NA,NA,NA
+"343","Hagerstown","United States of America",370,840,6,NA,NA,NA
+"344","Ann Arbor","United States of America",371,840,6,NA,NA,NA
+"345","Flint","United States of America",372,840,6,NA,NA,NA
+"346","Grand Rapids","United States of America",373,840,6,NA,NA,NA
+"347","Kalamazoo","United States of America",374,840,6,NA,NA,NA
+"348","Lansing","United States of America",375,840,6,NA,NA,NA
+"349","Muskegon","United States of America",376,840,6,NA,NA,NA
+"350","Saginaw","United States of America",377,840,6,NA,NA,NA
+"351","Duluth","United States of America",378,840,6,NA,NA,NA
+"352","Springfield","United States of America",379,840,6,NA,NA,NA
+"353","Kansas City","United States of America",380,840,6,NA,NA,NA
+"354","Jackson","United States of America",381,840,6,NA,NA,NA
+"355","Billings","United States of America",382,840,6,NA,NA,NA
+"356","Asheville","United States of America",383,840,6,NA,NA,NA
+"357","Concord","United States of America",384,840,6,NA,NA,NA
+"358","Durham","United States of America",385,840,6,NA,NA,NA
+"359","Fayetteville","United States of America",386,840,6,NA,NA,NA
+"360","Gastonia","United States of America",387,840,6,NA,NA,NA
+"361","Greensboro","United States of America",388,840,6,NA,NA,NA
+"362","Hickory","United States of America",389,840,6,NA,NA,NA
+"363","High Point","United States of America",390,840,6,NA,NA,NA
+"364","Raleigh","United States of America",391,840,6,NA,NA,NA
+"365","Wilmington","United States of America",392,840,6,NA,NA,NA
+"366","Winston-Salem","United States of America",393,840,6,NA,NA,NA
+"367","Fargo","United States of America",394,840,6,NA,NA,NA
+"368","Lincoln","United States of America",395,840,6,NA,NA,NA
+"369","Omaha","United States of America",396,840,6,NA,NA,NA
+"370","Manchester","United States of America",397,840,6,NA,NA,NA
+"371","Nashua","United States of America",398,840,6,NA,NA,NA
+"372","Atlantic City","United States of America",399,840,6,NA,NA,NA
+"373","Trenton","United States of America",400,840,6,NA,NA,NA
+"374","Albuquerque","United States of America",401,840,6,NA,NA,NA
+"375","Las Cruces","United States of America",402,840,6,NA,NA,NA
+"376","Reno","United States of America",403,840,6,NA,NA,NA
+"377","Albany","United States of America",404,840,6,NA,NA,NA
+"378","Buffalo","United States of America",405,840,6,NA,NA,NA
+"379","Rochester","United States of America",406,840,6,NA,NA,NA
+"380","Syracuse","United States of America",407,840,6,NA,NA,NA
+"381","Utica","United States of America",408,840,6,NA,NA,NA
+"382","Binghamton","United States of America",409,840,6,NA,NA,NA
+"383","Akron","United States of America",410,840,6,NA,NA,NA
+"384","Canton","United States of America",411,840,6,NA,NA,NA
+"385","Dayton","United States of America",412,840,6,NA,NA,NA
+"386","Cincinnati","United States of America",413,840,6,NA,NA,NA
+"387","Toledo","United States of America",414,840,6,NA,NA,NA
+"388","Youngstown","United States of America",415,840,6,NA,NA,NA
+"389","Oklahoma City","United States of America",416,840,6,NA,NA,NA
+"390","Tulsa","United States of America",417,840,6,NA,NA,NA
+"391","Eugene","United States of America",418,840,6,NA,NA,NA
+"392","Medford","United States of America",419,840,6,NA,NA,NA
+"393","Salem","United States of America",420,840,6,NA,NA,NA
+"394","Erie","United States of America",421,840,6,NA,NA,NA
+"395","Harrisburg","United States of America",422,840,6,NA,NA,NA
+"396","Lancaster","United States of America",423,840,6,NA,NA,NA
+"397","Pittsburgh","United States of America",424,840,6,NA,NA,NA
+"398","Reading","United States of America",425,840,6,NA,NA,NA
+"399","Scranton","United States of America",426,840,6,NA,NA,NA
+"400","York","United States of America",427,840,6,NA,NA,NA
+"401","Providence","United States of America",428,840,6,NA,NA,NA
+"402","Columbia","United States of America",429,840,6,NA,NA,NA
+"403","Greenville","United States of America",430,840,6,NA,NA,NA
+"404","Myrtle Beach","United States of America",431,840,6,NA,NA,NA
+"405","Spartanburg","United States of America",432,840,6,NA,NA,NA
+"406","Sioux Falls","United States of America",433,840,6,NA,NA,NA
+"407","Johnson City","United States of America",434,840,6,NA,NA,NA
+"408","Knoxville","United States of America",435,840,6,NA,NA,NA
+"409","Murfreesboro","United States of America",436,840,6,NA,NA,NA
+"410","Nashville-Davidson","United States of America",437,840,6,NA,NA,NA
+"411","Chattanooga","United States of America",438,840,6,NA,NA,NA
+"412","Clarksville","United States of America",439,840,6,NA,NA,NA
+"413","Memphis","United States of America",440,840,6,NA,NA,NA
+"414","Abilene","United States of America",441,840,6,NA,NA,NA
+"415","Amarillo","United States of America",442,840,6,NA,NA,NA
+"416","Beaumont","United States of America",443,840,6,NA,NA,NA
+"417","Brownsville","United States of America",444,840,6,NA,NA,NA
+"418","Corpus Christi","United States of America",445,840,6,NA,NA,NA
+"419","Harlingen","United States of America",446,840,6,NA,NA,NA
+"420","Killeen","United States of America",447,840,6,NA,NA,NA
+"421","Laredo","United States of America",448,840,6,NA,NA,NA
+"422","Lubbock","United States of America",449,840,6,NA,NA,NA
+"423","McAllen","United States of America",450,840,6,NA,NA,NA
+"424","Odessa","United States of America",451,840,6,NA,NA,NA
+"425","Port Arthur","United States of America",452,840,6,NA,NA,NA
+"426","Tyler","United States of America",453,840,6,NA,NA,NA
+"427","Waco","United States of America",454,840,6,NA,NA,NA
+"428","El Paso","United States of America",455,840,6,NA,NA,NA
+"429","Salt Lake City","United States of America",456,840,6,NA,NA,NA
+"430","Richmond","United States of America",457,840,6,NA,NA,NA
+"431","Roanoke","United States of America",458,840,6,NA,NA,NA
+"432","Virginia Beach","United States of America",459,840,6,NA,NA,NA
+"433","Burlington","United States of America",460,840,6,NA,NA,NA
+"434","Bremerton","United States of America",461,840,6,NA,NA,NA
+"435","Marysville","United States of America",462,840,6,NA,NA,NA
+"436","Yakima","United States of America",463,840,6,NA,NA,NA
+"437","Spokane","United States of America",464,840,6,NA,NA,NA
+"438","Appleton","United States of America",465,840,6,NA,NA,NA
+"439","Green Bay","United States of America",466,840,6,NA,NA,NA
+"440","Kenosha","United States of America",467,840,6,NA,NA,NA
+"441","Madison","United States of America",468,840,6,NA,NA,NA
+"442","Milwaukee","United States of America",469,840,6,NA,NA,NA
+"443","Racine","United States of America",470,840,6,NA,NA,NA
+"444","Charleston","United States of America",471,840,6,NA,NA,NA
+"445","Huntington","United States of America",472,840,6,NA,NA,NA
+"446","Chongqing","China",473,156,4,NA,NA,NA
+"447","Xi'an","China",474,156,4,NA,NA,NA
+"448","Dalian","China",475,156,4,NA,NA,NA
+"449","Kunming","China",476,156,4,NA,NA,NA
+"450","Cali","Colombia",477,170,5,NA,NA,NA
+"451","Barranquilla","Colombia",478,170,5,NA,NA,NA
+"452","Quito","Ecuador",479,218,5,NA,NA,NA
+"453","León","Mexico",480,484,6,NA,NA,NA
+"454","Ibadan","Nigeria",481,566,2,NA,NA,NA
+"455","Yaoundé","Cameroon",482,120,2,NA,NA,NA
+"456","Lubumbashi","The Democratic Republic of the Congo",483,180,2,NA,NA,NA
+"457","Kumasi","Ghana",484,288,2,NA,NA,NA
+"458","Concepción","Chile",485,152,5,NA,NA,NA
+"459","Mombasa","Kenya",486,404,2,NA,NA,NA
+"460","Jos","Nigeria",487,566,2,NA,NA,NA
+"461","Quetta","Pakistan",488,586,4,NA,NA,NA
+"462","Rajshahi","Bangladesh",489,50,4,NA,NA,NA
+"463","Aracaju","Brazil",490,76,5,NA,NA,NA
+"464","Taipei","Taiwan",491,158,4,NA,NA,NA
+"465","Guangzhou","China",492,156,4,NA,NA,NA
+"466","Wuhan","China",493,156,4,NA,NA,NA
+"467","Tianjin","China",494,156,4,NA,NA,NA
+"468","Dongguan","China",495,156,4,NA,NA,NA
+"469","Chengdu","China",496,156,4,NA,NA,NA
+"470","Nanjing","China",497,156,4,NA,NA,NA
+"471","Qingdao","China",498,156,4,NA,NA,NA
+"472","Changchun","China",499,156,4,NA,NA,NA
+"473","Teresina","Brazil",500,76,5,NA,NA,NA
+"474","Mogadishu","Somalia",501,706,2,NA,"Likely highly variable with varying groundwater conditions and water truck source","All water appears to come from private wells and water trucks; there is no municipal supply"
+"475","Florianópolis","Brazil",502,76,5,NA,NA,NA
+"476","Maracay","Venezuela",503,862,5,NA,NA,NA
+"477","Panama City","Panama",504,591,6,NA,NA,NA
+"478","Abuja","Nigeria",505,566,2,NA,NA,NA
+"479","Agadir","Morocco",506,504,2,NA,NA,NA
+"480","Samarinda","Indonesia",507,360,4,NA,NA,NA
+"481","Córdoba","Argentina",508,32,5,NA,NA,NA
+"482","Yekaterinburg","Russia",509,643,1,NA,NA,NA
+"483","Mosul","Iraq",510,368,4,NA,NA,NA
+"484","Shirāz","Iran",511,364,4,NA,NA,NA
+"485","Bridgeport","United States of America",512,840,6,NA,NA,NA
+"486","Portland","United States of America",513,840,6,NA,NA,NA
+"487","Manaus","Brazil",514,76,5,NA,NA,NA
+"488","Rosario","Argentina",515,32,5,NA,NA,NA
+"489","Santa Cruz de la Sierra","Bolivia",516,68,5,NA,NA,NA
+"490","Bucaramanga","Colombia",517,170,5,NA,NA,NA
+"491","Curitiba","Brazil",518,76,5,NA,NA,NA
+"492","Campinas","Brazil",519,76,5,NA,NA,NA
+"493","Goiânia","Brazil",520,76,5,NA,NA,NA
+"494","Belém","Brazil",521,76,5,NA,NA,NA
+"495","Grande Vitória","Brazil",522,76,5,NA,NA,NA
+"496","Santos","Brazil",523,76,5,NA,NA,NA
+"497","Grande São Luís","Brazil",524,76,5,NA,NA,NA
+"498","Natal","Brazil",525,76,5,NA,NA,NA
+"499","Maceió","Brazil",526,76,5,NA,NA,NA
+"500","João Pessoa","Brazil",527,76,5,NA,NA,NA
+"501","Valencia","Venezuela",528,862,5,NA,NA,NA
+"502","Maracaibo","Venezuela",529,862,5,NA,NA,NA
+"503","Barcelona","Venezuela",530,862,5,NA,NA,NA
+"504","Ciudad Guayana","Venezuela",531,862,5,NA,NA,NA
+"505","Ciudad de Guatemala","Guatemala",532,320,6,NA,NA,NA
+"506","Valparaíso","Chile",533,152,5,NA,NA,NA
+"507","Cartagena","Colombia",534,170,5,NA,NA,NA
+"508","Cúcuta","Colombia",535,170,5,NA,NA,NA
+"509","San Salvador","El Salvador",536,222,6,NA,NA,NA
+"510","Ciudad Juárez","Mexico",537,484,6,NA,NA,NA
+"511","Mérida","Mexico",538,484,6,NA,NA,NA
+"512","Puebla de Zaragoza","Mexico",539,484,6,NA,NA,NA
+"513","Querétaro","Mexico",540,484,6,NA,NA,NA
+"514","San Luis Potosí","Mexico",541,484,6,NA,NA,NA
+"515","Tijuana","Mexico",542,484,6,NA,NA,NA
+"516","Toluca de Lerdo","Mexico",543,484,6,NA,NA,NA
+"517","Torreón","Mexico",544,484,6,NA,NA,NA
+"518","Mendoza","Argentina",545,32,5,NA,NA,NA
+"519","Barquisimeto","Venezuela",546,862,5,NA,NA,NA
+"520","Milan","Italy",547,380,1,NA,NA,NA
+"521","Vancouver","Canada",548,124,6,NA,NA,NA
+"522","Venice","Italy",549,380,1,NA,NA,NA
+"523","Rotterdam","The Netherlands",550,528,1,NA,NA,NA
+"524","Basel","Switzerland",551,756,1,NA,NA,NA
+"525","Heidelberg","Germany",552,276,1,NA,NA,NA
+"526","Yokohama","Japan",553,392,4,NA,NA,NA
+"527","Changwon","Republic of Korea",554,410,4,NA,NA,NA
+"528","Berkeley","United States of America",555,840,6,NA,NA,NA
+"529","Norfolk","United States of America",556,840,6,NA,NA,NA
+"530","Bristol","United Kingdom",557,826,1,NA,NA,NA
+"531","Christchurch","New Zealand",558,554,3,NA,"No water treatment is used on municipal water",NA
+"532","Glasgow","United Kingdom",559,826,1,NA,NA,NA
+"533","Durban","South Africa",560,710,2,NA,NA,NA
+"534","Santa Fe","United States of America",561,840,6,NA,NA,NA
