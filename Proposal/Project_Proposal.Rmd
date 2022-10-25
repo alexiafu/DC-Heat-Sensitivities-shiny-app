@@ -1,0 +1,40 @@
+---
+title: "Environmental Research Group Project"
+author: "Evan Bowman (613), Karl van Zaborn (613), Adela Yang (613), & Alexia (613)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Description of the problem to be analyzed in the Shiny App
+
+# Proposed Data Sources
+
+# Status of Literature Review
+
+# Actor Description
+
+# Questions of Interest
+
+# Fixed or Dynamic Data
+
+# General Layout
+
+# Proposed optoins for user data manipulations
+
+# Proposed options for user numerical/graphical analysis
+
+# Proposed App Theme
+
+# Proposed options for user statistical model and tests
+
+# Discussion of ethics review
+
+# Names and responsibilities of the group members
+
+# Approach to collaboration and Branching
+
+# Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette 
