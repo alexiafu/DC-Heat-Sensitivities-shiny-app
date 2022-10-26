@@ -9,32 +9,32 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Description of the problem to be analyzed in the Shiny App
+# Description of the problem to be analyzed in the Shiny App - Evan
 
-# Proposed Data Sources
+# Proposed Data Sources - Karl
 
-# Status of Literature Review
+# Status of Literature Review - Alexia
 
-# Actor Description
+# Actor Description - Adela
 
-# Questions of Interest
+# Questions of Interest - Evan
 
-# Fixed or Dynamic Data
+# Fixed or Dynamic Data - Karl
 
-# General Layout
+# General Layout - Alexia
 
-# Proposed optoins for user data manipulations
+# Proposed optoins for user data manipulations -Adela
 
-# Proposed options for user numerical/graphical analysis
+# Proposed options for user numerical/graphical analysis - Evan
 
-# Proposed App Theme
+# Proposed App Theme - Karl
 
-# Proposed options for user statistical model and tests
+# Proposed options for user statistical model and tests - Alexia
 
-# Discussion of ethics review
+# Discussion of ethics review - Adela
 
-# Names and responsibilities of the group members
+# Names and responsibilities of the group members - Evan
 
-# Approach to collaboration and Branching
+# Approach to collaboration and Branching - Karl
 
-# Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette 
+# Dates for Major Phases and Milestones, e.g., Gathering of Data, Data Preparation, Milestones for developing the App, Code Cutoff, Producing the Vignette - Alexia
