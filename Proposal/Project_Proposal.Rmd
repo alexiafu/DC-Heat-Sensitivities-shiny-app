@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Description of the problem to be analyzed in the Shiny App
 
+This is an initial exploration of a data set put together by researchers at the Nature Conservancy published by McDonald et al. (2011). This project will make these data more accessible to researchers, policymakers, civil society actors, and more by creating an interface that will allow them to analyze data related to water based on different units of analysis. These data are extremely useful for better understanding the ways in which water resource stress exists in different locations, and how that stress manifests in varying water infrastructure projects globally. Furthermore, we will visualize data to prepare for econometric modeling.
+
+This data set shows over 1,500 water intake locations from the first global survey of the water sources of over 500 large cities. The data set was created and published by Rob McDonald and The Nature Conservancy from research on water utilities and their annual reports. For each intake location, spatial location was recorded. The locations were recorded as accurately as possible, and freshwater withdrawal points were adjusted to match the underlying hydrographic river system. Some intake points serve multiple water utilities and cities. Resource Watch shows only a subset of the data set.
+
 # Proposed Data Sources
 
 # Status of Literature Review
@@ -18,6 +22,10 @@ knitr::opts_chunk$set(echo = TRUE)
 # Actor Description
 
 # Questions of Interest
+
+What is the water source distributed in the global city? 
+
+Compare water sources from developed and non-developed cities?
 
 # Fixed or Dynamic Data
 
@@ -34,6 +42,16 @@ knitr::opts_chunk$set(echo = TRUE)
 # Discussion of ethics review
 
 # Names and responsibilities of the group members
+
+We segmented certain tasks among the group, but we will work with each other if additional help is needed.
+
+Karl von Zaborn: Literature review, Shiny coding-map tab
+
+ChihChin Yang: Data cleaning, Shiny coding-statistics tab
+
+SzuWei Fu: Data cleaning, Shiny coding-statistics tab
+
+Evan Bowman: Shiny coding-map tab, vignette
 
 # Approach to collaboration and Branching
 
