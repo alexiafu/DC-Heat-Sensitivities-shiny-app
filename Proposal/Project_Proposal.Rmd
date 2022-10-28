@@ -14,11 +14,17 @@ knitr::opts_chunk$set(echo = TRUE)
 <<<<<<< HEAD
 # Proposed Data Sources - Karl
 =======
-This is an initial exploration of a data set put together by researchers at the Nature Conservancy published by McDonald et al. (2011). This project will make these data more accessible to researchers, policymakers, civil society actors, and more by creating an interface that will allow them to analyze data related to water based on different units of analysis. These data are extremely useful for better understanding the ways in which water resource stress exists in different locations, and how that stress manifests in varying water infrastructure projects globally. Furthermore, we will visualize data to prepare for econometric modeling.
+Water systems are changing rapidly as the global temperatures continue to rise. Climate change is linked to the increase in drought, inundation events, is projected to affect water quality and exacerbates many forms of water pollution globally (IPPC 2021). Meanwhile, increasing urbanization and resource consumption associated with urban life put an ever increasing strain on water resources (McDonald et al. 2014). As of 2011, 3.6 billion people lived in urban areas globally, with in expected growth of 2.6 billion additional urban dwellers by 2050 (UNPD, 2011). Urbanization not only puts a strain on water resources through municipal water users, but increases water use in other sectors of economic growth such as agriculture and through industrial processes (McDonald et al. 2011a). The net increase in water demands lead cities to secure access to further reaching water source through the creation of quite complex water infrastructure projects (Alcott et al., 2013; Brown et al., 2009). 
 
-This data set shows over 1,500 water intake locations from the first global survey of the water sources of over 500 large cities. The data set was created and published by Rob McDonald and The Nature Conservancy from research on water utilities and their annual reports. For each intake location, spatial location was recorded. The locations were recorded as accurately as possible, and freshwater withdrawal points were adjusted to match the underlying hydrographic river system. Some intake points serve multiple water utilities and cities. Resource Watch shows only a subset of the data set.
+This app will allow users to explore a data set put together by researchers at the Nature Conservancy published by McDonald et al. (2014). This project will make these data more accessible to researchers, policymakers, civil society actors, and more by creating an interface that will allow them to analyze data related to water based on different units of analysis. These data are extremely useful for better understanding the ways in which water resource stress exists in different locations, and how that stress manifests in varying water infrastructure projects globally. Furthermore, we will visualize data to prepare for econometric modeling including country economic data, water sectoral water use (agricultural, industrial and municipal) by sector at the country level, and population growth by city. 
 
 # Proposed Data Sources
+
+The data used for this shiny app will come from the McDonald et al. 2014 paper. This data set shows over 1,500 water intake locations from the first global survey of the water sources of over 500 large cities. The data set was created and published by Rob McDonald and The Nature Conservancy from research on water utilities and their annual reports. For each intake location, spatial location was recorded. The locations were recorded as accurately as possible, and freshwater withdrawal points were adjusted to match the underlying hydrographic river system. Some intake points serve multiple water utilities and cities. The data is from WaterGAP to assess water availability of water from time series climatic data. 
+
+The data is intended to give users the ability to understand three components of water access: water availability, water quality, and delivery. Water availability refers purely to the amount of water physically available to a city. This measure informs the overall level of water stress by city. This measure does not account for the quality  of water sources nor mechanisms for water delivery. 
+
+
 >>>>>>> EvanBranch
 
 # Status of Literature Review - Alexia
@@ -29,6 +35,8 @@ This data set shows over 1,500 water intake locations from the first global surv
 
 <<<<<<< HEAD
 # Fixed or Dynamic Data - Karl
+
+The data for this project is fixed. Data collection for this projects came from decentralized sources and therefore required a large amount of labor to put into a cohesive, comparable format. 
 =======
 What is the water source distributed in the global city? 
 
@@ -56,7 +64,7 @@ Compare water sources from developed and non-developed cities?
 =======
 We segmented certain tasks among the group, but we will work with each other if additional help is needed.
 
-Karl von Zaborn: Literature review, Shiny coding-map tab
+Karl VonZabern: Literature review, Shiny coding-map tab
 
 ChihChin Yang: Data cleaning, Shiny coding-statistics tab
 
