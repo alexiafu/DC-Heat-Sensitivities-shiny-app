@@ -14,22 +14,30 @@
 
 <title>Vignette</title>
 
-<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
-// v0.0.1
-// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
-
-document.addEventListener('DOMContentLoaded', function() {
-  const codeList = document.getElementsByClassName("sourceCode");
-  for (var i = 0; i < codeList.length; i++) {
-    var linkList = codeList[i].getElementsByTagName('a');
-    for (var j = 0; j < linkList.length; j++) {
-      if (linkList[j].innerHTML === "") {
-        linkList[j].setAttribute('aria-hidden', 'true');
-      }
-    }
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
   }
 });
 </script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
 
 
 
@@ -231,7 +239,88 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-
+<p>#APP Title: City Water Exploration</p>
+<p>#Team members: Karl von Zabern - DATA 613-001 ChihChin Yang - DATA
+613-001 SzuWei Fu - DATA 613-001 Evan Bowman - DATA 613-001</p>
+<p>#Topic and Data: This is an initial exploration of a data set put
+together by researchers at the Nature Conservancy published by McDonald
+et al. (2011). This project will make these data more accessible to
+researchers, policymakers, civil society actors, and more by creating an
+interface that will allow them to analyze data related to water based on
+different units of analysis. These data are extremely useful for better
+understanding the ways in which water resource stress exists in
+different locations, and how that stress manifests in varying water
+infrastructure projects globally. Furthermore, we will visualize data to
+prepare for econometric modeling.</p>
+<p>This data set shows over 1,500 water intake locations from the first
+global survey of the water sources of over 500 large cities. The data
+set was created and published by Rob McDonald and The Nature Conservancy
+from research on water utilities and their annual reports. For each
+intake location, spatial location was recorded. The locations were
+recorded as accurately as possible, and freshwater withdrawal points
+were adjusted to match the underlying hydrographic river system. Some
+intake points serve multiple water utilities and cities. Resource Watch
+shows only a subset of the data set.</p>
+<pre><code>The literature on water scarcity related to climate change has long been concerned that climate change will drive political struggles over down stream and upstream users ().</code></pre>
+<p>#Proposed data sources: The data used for this shiny app will come
+from the McDonald et al. 2014 paper. This data set shows over 1,500
+water intake locations from the first global survey of the water sources
+of over 500 large cities. The data set was created and published by Rob
+McDonald and The Nature Conservancy from research on water utilities and
+their annual reports. For each intake location, spatial location was
+recorded. The locations were recorded as accurately as possible, and
+freshwater withdrawal points were adjusted to match the underlying
+hydrographic river system. Some intake points serve multiple water
+utilities and cities. The data is from WaterGAP to assess water
+availability of water from time series climatic data.</p>
+<p>The data is intended to give users the ability to understand three
+components of water access: water availability, water quality, and
+delivery. Water availability refers purely to the amount of water
+physically available to a city. This measure informs the overall level
+of water stress by city. This measure does not account for the quality
+of water sources nor mechanisms for water delivery.</p>
+<p>#Literature review: McDonald, R. I., Weber, K., Padowski, J., Flörke,
+M., Schneider, C., Green, P. A., … &amp; Montgomery, M. (2014). Water on
+an urban planet: Urbanization and the reach of urban water
+infrastructure. Global environmental change, 27, 96-105.</p>
+<p>#Actor/Audience Description: This App may tend best to city
+government officials and policy makers. They will be able to see which
+locations need more resources based on the map and statistical
+analysis.</p>
+<p>#Fixed or Dynamic Data: The data for this project is fixed. Data
+collection for this projects came from decentralized sources and
+therefore required a large amount of labor to put into a cohesive,
+comparable format.</p>
+<p>#Questions of Interest: 1. What is the water source distributed in
+the global city? 2. Compare water source from developed and not
+developed city 3. What is the size of water used from urban instructure
+around the world and the percentage of water used from earth
+surface?</p>
+<p>#General Layout: We will have 1 tab for an interactive map that will
+allow users to manipulate what variable they want to see and. Another
+tab will have tables for statistical analysis and summary, which users
+will be able to select which variable they want to analyze. The last tab
+will contain the sampled data.</p>
+<p>#APP Theme: We will use the Cosmo theme from Bootswatch.</p>
+<p>#Ethics review: Data from Nature Conservancy published by McDonald et
+al. (2011) does not warranty the completeness, accuracy, content, or
+fitness for any particular purpose”. We as the app developers, are not
+liable for any deficiencies in the completeness, accuracy, content, or
+fitness for any particular purpose or use of the public data set. Since
+our app uses data from Nature Conservancy published by McDonald et
+al. (2011), we need to pass this message onto the users.</p>
+<p>#Jobs: We segmented certain tasks among the group, but we will work
+with each other if additional help is needed. Karl von Zaborn:
+Literature review, Shiny coding-map tab ChihChin Yang: Data cleaning,
+Shiny coding-statistics tab SzuWei Fu: Data cleaning, Shiny
+coding-statistics tab Evan Bowman: Shiny coding-map tab, vignette</p>
+<p>We will collaborate and communicate over Zoom and WhatsApp.Regarding
+branching, each person will have their own branch. 1 person will push
+the main branch when we have a group meeting and we can merge to pull
+the latest submission/push.</p>
+<p>#Schedule: Data Cleaning and exploration and Peer Review: 11/1 Data
+manipulation and shiny structure and Prog Report: 11/8 Rough draft of
+app and Vignette: 11/15 Rehearsals: 11/29 Push to GitHub:12/6</p>
 
 
 
