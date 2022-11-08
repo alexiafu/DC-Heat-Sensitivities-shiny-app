@@ -1,0 +1,101 @@
+---
+title: "GlobalCitiesData"
+author: "Karl VonZabern"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(rvest)
+library(janitor)
+```
+
+```{r}
+page <- read_html("https://en.wikipedia.org/wiki/List_of_cities_by_GDP#Cities_(metropolitan_areas)_by_percentage_of_national_GDP")
+
+wikidat <- html_nodes(page, "table")
+
+tablist <- html_table(wikidat)
+```
+
+```{r}
+tablist[3]
+
+city_gdp <- tablist[2] %>%  data.frame()
+```
+
+```{r}
+city_gdp %>% 
+  rename(gdp_billions_US = Official.est..GDP.up.to.date..billion.US..,
+         ppp_brookings = Brookings.7..2014.est..PPP.adjusted.GDP..billion.US..,
+         population_date_source =  Metropolitan.population,
+         gdp_per_capita = Official.est..GDP.per.capita,
+         city = City.proper.metropolitan.area,
+         country = Country.region) %>% 
+  clean_names()-> city_gdp
+```
+
+
+```{r}
+#First remove commas from population data
+city_gdp$population_date_source <- str_remove_all(city_gdp$population_date_source, ",")
+#then use separate to 
+city_gdp%>% 
+separate(col = population_date_source, into = c("population", "date", "source"))-> city_gdp
+
+#take out year and save as gdp_date
+city_gdp$gdp_date <- str_extract(city_gdp$gdp_billions_us, "\\([^()]+\\)")
+#remove data from gdp_billions_us
+city_gdp$gdp_billions_us <- str_remove(city_gdp$gdp_billions_us, "\\([^()]+\\)")
+#take out source
+city_gdp$gdp_source <- str_extract(city_gdp$gdp_billions_us, "\\[([^]]+)\\].*")
+#remove source data from gdp_billions_us
+city_gdp$gdp_billions_us <- str_remove(city_gdp$gdp_billions_us, "\\[([^]]+)\\].*") %>% str_trim()
+city_gdp$gdp_date <- str_remove_all(city_gdp$gdp_date, "\\(")
+city_gdp$gdp_date <- str_remove_all(city_gdp$gdp_date, "\\)")
+```
+```{r}
+city_gdp$gdp_per_capita<-str_remove_all(city_gdp$gdp_per_capita, ",") %>% as.numeric()
+
+city_gdp %>% 
+  transmute(rank = rank,
+            city = city,
+            country = country,
+            unsd_sub_region_4 = unsd_sub_region_4,
+    gdp_billions_us = as.numeric(gdp_billions_us), 
+            ppp_brookings = as.numeric(ppp_brookings),
+            population = as.numeric(population),
+            date = as.numeric(date), 
+            gdp_per_capita = as.numeric(gdp_per_capita), 
+            gdp_date = as.numeric(gdp_date)) -> city_gdp
+```
+```{r}
+waterdata <- read.csv("~/22F-DATA-413-613/homework/gp-environmental-research/data/waterdata.csv", header=FALSE)
+waterdata<-waterdata %>% row_to_names(1)
+
+waterdata %>% 
+  select(City_Name, City_ID) %>% 
+  unique() %>% 
+  filter(!is.na(City_Name)->city_id
+
+city_id %>% 
+  mutate(city = City_Name)->city_id
+city_gdp %>% select(city) %>% 
+  unique() ->city_gdp_cities
+
+test<- full_join(city_id,city_gdp_cities, by = "city")
+
+test %>% filter(!is.na(city))->test
+
+city_gdp %>% 
+  rename(City_Name = city)-> city_gdp
+test <- full_join(waterdata, city_gdp, "City_Name")
+glimpse(test)
+```
+```{r}
+
+test %>% 
+  select(City_Name, gdp_billions_us:gdp_date) %>% 
+  View()
+```
+
