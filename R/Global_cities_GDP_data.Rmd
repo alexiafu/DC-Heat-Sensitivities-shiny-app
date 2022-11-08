@@ -90,6 +90,7 @@ test %>% filter(!is.na(city))->test
 city_gdp %>% 
   rename(City_Name = city)-> city_gdp
 test <- full_join(waterdata, city_gdp, "City_Name")
+
 glimpse(test)
 ```
 ```{r}
