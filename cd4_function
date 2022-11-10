@@ -1,0 +1,22 @@
+model
+{
+    for (i in 1:n) {
+        y.hat[i] <- a[newpid[i]] + b[newpid[i]] * time[i]
+        y[i] ~ dnorm(y.hat[i], tau.y)
+    }
+    for (j in 1:J) {
+        a[j] ~ dnorm(a.hat[j], tau.a)
+        b[j] ~ dnorm(b.hat[j], tau.b)
+        a.hat[j] <- g.a.0 + g.a.1 * ba[j] + g.a.2 * t[j]
+        b.hat[j] <- g.b.0 + g.b.1 * ba[j] + g.b.2 * t[j]
+    }
+    g.a.0 ~ dnorm(0.00000E+00, 0.1)
+    g.a.1 ~ dnorm(0.00000E+00, 0.1)
+    g.a.2 ~ dnorm(0.00000E+00, 0.1)
+    g.b.0 ~ dnorm(0.00000E+00, 0.1)
+    g.b.1 ~ dnorm(0.00000E+00, 0.1)
+    g.b.2 ~ dnorm(0.00000E+00, 0.1)
+    tau.a ~ dgamma(1, 0.1)
+    tau.b ~ dgamma(1, 0.1)
+    tau.y ~ dgamma(1, 0.1)
+}
