@@ -17,6 +17,7 @@ When you click the **Render** button a document will be generated that includes 
 ```{r echo=FALSE}
 library(tidyverse)
 library(RODBC)
+setwd("C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research")
 dta <- odbcConnectAccess2007("C:/Users/Karl/Dropbox/PC/Documents/Conduct III/DeprivatizationWater DiD/City_Water_Map_v1.6.accdb") 
 
 names <- c("TBL_City_WWA_WW", "TBL_DVSN","TBL_DVTR_DVSN_City_WTP","TBL_DVTR_System",
@@ -39,42 +40,58 @@ df11 <- sqlFetch(dta, "TBL_WW")
 df12 <- sqlFetch(dta, "TBL_WW_Agency")
 df13 <- sqlFetch(dta, "TBL_WW_Shed")
 df14 <- sqlFetch(dta, "TBL_WW")
+
 ```
 
 You can add options to executable code like this
 
 ```{r}
 df_full <- list(df1,df2,df3,df4,df5,df6,df7,df8,df8,df10,df11,df12,df13)
-df_list1 <-list(df1,df2,df6)
-city <- full_join(df1,df2)
-whats_this(city) %>% View()
-visualize(city, "numeric")
-city <- full_join(city, df6)
-unique(city$city_name)
- city <- full_join(city,df3)
-city <- full_join(city, df4)
-city<- full_join(city,df8)
-city <- full_join(city, df9)
 
-city <- full_join(city, df7)
 
-city <- full_join(city, df5)
-  View(city)
+write.csv(df1, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_1.csv")
+
+write.csv(df2, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_2.csv")
+
+write.csv(df3, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_3.csv")
+
+write.csv(df4, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_4.csv")
+
+write.csv(df5, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_5.csv")
+
+write.csv(df6, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_6.csv")
+
+write.csv(df7, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_7.csv")
+
+write.csv(df8, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_8.csv")
+
+write.csv(df9, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_9.csv")
+
+write.csv(df10, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_10.csv")
+
+write.csv(df11, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_11.csv")
+
+write.csv(df12, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_12.csv")
+
+write.csv(df13, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_13.csv")
+
+write.csv(df14, "C:/Users/Karl/Dropbox/PC/Documents/22F-DATA-413-613/homework/gp-environmental-research/mcdonald_14.csv")
   
 ```
 
 ```{r}
+#combine DATA
+df1$City_ID
+city<- left_join(df1, df2, by = "City_ID")
 
-data1 <- read.csv("C:/Users/Karl/Dropbox/PC/Documents/Conduct III/DeprivatizationWater DiD/Data/remunicaplisationALLDATA.csv")
-View(data1)
-               
+city <- full_join(city, df6, by = "City_ID")
+View(city)
 ```
 
 ```{r}
-visualize(city, "numeric")
-unique(data1$)
-```
 
-```{r}
-unique(remun$city)
+city$WW_Vol
+city %>% 
+  ggplot(aes(WW_VOl))+
+  geom_histogram()
 ```
