@@ -23,8 +23,12 @@ dta <- odbcConnectAccess2007("C:/Users/Karl/Dropbox/PC/Documents/Conduct III/Dep
 names <- c("TBL_City_WWA_WW", "TBL_DVSN","TBL_DVTR_DVSN_City_WTP","TBL_DVTR_System",
            "TBL_Retired_DVSNs","TBL_Retired_DVTR_DVSN","TBL_WTP","TBL_WW",
            "TBL_WW_Agency", "TBL_WW_Shed","TBL_WW")
-#specifies the file path
 
+dta %>% map(sqlFetch(dta, "QRY_City_DVTR"))
+#specifies the file path
+qry1<-RODBC::odbcQuery(dta, "QRY_City_DVTR")
+
+city_dvsn <- sqlFetch("Q")
 #I did this, but should write a for loop instead
 df1 <- sqlFetch(dta, "TBL_City")   #loads the table called 'bar' in the original Access file
 df2 <- sqlFetch(dta, "TBL_City_WWA_WW")
