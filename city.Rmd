@@ -1,0 +1,29 @@
+---
+title: "city_population"
+author: "ChihChin Yang (Adela)"
+date: '2022-11-08'
+output: html_document
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+    
+
+```{r}
+water <- read_csv("data/waterdata.csv", show_col_types = FALSE )
+city <- read_csv("data/mcdonald_1.csv", show_col_types = FALSE )
+population <- read_csv("data/world_populations_data.csv", show_col_types = FALSE)
+
+```
+
+```{r}
+city_pop <- city %>%
+  left_join(population, by = c("City_Name" = "Name",
+                               "Country_Name" = "Country"))
+```
+
+```{r}
+sum(is.na(city_pop$Population))
+```
+
