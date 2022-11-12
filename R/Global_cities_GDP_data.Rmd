@@ -72,6 +72,7 @@ city_gdp %>%
 ```{r}
 waterdata <- read.csv("~/22F-DATA-413-613/homework/gp-environmental-research/data/waterdata.csv", header=FALSE)
 waterdata<-waterdata %>% row_to_names(1)
+<<<<<<< HEAD
 head(waterdata,3)
 ```
 ```{r}
@@ -81,6 +82,14 @@ waterdata %>%
 city_id<- city_id %>% filter(!is.na(City_Name)
 ```
 ```{r}
+=======
+
+waterdata %>% 
+  select(City_Name, City_ID) %>% 
+  unique() %>% 
+  filter(!is.na(City_Name)->city_id
+
+>>>>>>> adela
 city_id %>% 
   mutate(city = City_Name)->city_id
 city_gdp %>% select(city) %>% 
@@ -94,6 +103,7 @@ city_gdp %>%
   rename(City_Name = city)-> city_gdp
 test <- full_join(waterdata, city_gdp, "City_Name")
 
+<<<<<<< HEAD
 
 city_gdp %>% 
   select(-rank, -country)
@@ -104,5 +114,14 @@ View(test)
 ```{r}
 getwd()
 #write.csv(test, "water_economic.csv")
+=======
+glimpse(test)
+```
+```{r}
+
+test %>% 
+  select(City_Name, gdp_billions_us:gdp_date) %>% 
+  View()
+>>>>>>> adela
 ```
 
