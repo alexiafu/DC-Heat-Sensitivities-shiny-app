@@ -3,7 +3,7 @@ library(bslib)
 library(shiny)
 library(ggplot2)
 library(tidyverse)
-heat_DC <- read.csv("Heat_Sensitivity_Exposure_Index.csv")
+heat_DC <- read_csv("../data/Heat_Sensitivity_Exposure_Index.csv", show_col_types = F)
 
 # User Interface Code
 ui <- fluidPage(
@@ -13,7 +13,13 @@ ui <- fluidPage(
   mainPanel(
     tabsetPanel(
       type = "pills",
-      tabPanel("Graphical Analysis",
+      tabPanel("Bivariate Analysis",
+               sidebarLayout(
+                 sidebarPanel(),
+                 mainPanel()
+               )
+      ), #End tabPanel
+      tabPanel("Mapping",
                sidebarLayout(
                  sidebarPanel(),
                  mainPanel()
@@ -40,7 +46,13 @@ server <- function(input, output) {
   output$plot <- renderPlot({
     ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2), color = !!(input$var3))) +
     geom_boxplot()
-  })}
+  })
+  
+  output$dynamic <- renderDataTable({
+    heat_DC
+  })
+
+}
 
 # Run the application 
 shinyApp(ui = ui, server = server)
