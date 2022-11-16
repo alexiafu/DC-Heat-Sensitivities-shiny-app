@@ -73,6 +73,7 @@ city_gdp %>%
 waterdata <- read.csv("~/22F-DATA-413-613/homework/gp-environmental-research/data/waterdata.csv", header=FALSE)
 waterdata<-waterdata %>% row_to_names(1)
 <<<<<<< HEAD
+<<<<<<< HEAD
 head(waterdata,3)
 ```
 ```{r}
@@ -90,6 +91,17 @@ waterdata %>%
   filter(!is.na(City_Name)->city_id
 
 >>>>>>> adela
+=======
+head(waterdata,3)
+```
+```{r}
+waterdata %>% 
+  dplyr::select(City_Name, City_ID) %>% 
+  unique() -> city_id
+city_id<- city_id %>% filter(!is.na(City_Name)
+```
+```{r}
+>>>>>>> alexiafu
 city_id %>% 
   mutate(city = City_Name)->city_id
 city_gdp %>% select(city) %>% 
@@ -104,10 +116,14 @@ city_gdp %>%
 test <- full_join(waterdata, city_gdp, "City_Name")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> alexiafu
 
 city_gdp %>% 
   select(-rank, -country)
 View(test)
+<<<<<<< HEAD
 ```
 
 
@@ -116,12 +132,21 @@ getwd()
 #write.csv(test, "water_economic.csv")
 =======
 glimpse(test)
+=======
+>>>>>>> alexiafu
 ```
+
+
 ```{r}
+<<<<<<< HEAD
 
 test %>% 
   select(City_Name, gdp_billions_us:gdp_date) %>% 
   View()
 >>>>>>> adela
+=======
+getwd()
+#write.csv(test, "water_economic.csv")
+>>>>>>> alexiafu
 ```
 
