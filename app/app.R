@@ -15,8 +15,11 @@ ui <- fluidPage(
       type = "pills",
       tabPanel("Bivariate Analysis",
                sidebarLayout(
-                 sidebarPanel(),
-                 mainPanel()
+                 sidebarPanel(  varSelectInput("var1", "X variable", data = heat_DC, selected = "TOTALPOP"),
+                                varSelectInput("var2", "Y variable", data=heat_DC, selected = "HEI"),
+                                varSelectInput("var3", "Coloer variable (categorical)", data = heat_DC, selected = "OBESITY")
+                               ),
+                 mainPanel( plotOutput("BivariatePlot"))
                )
       ), #End tabPanel
       tabPanel("Mapping",
@@ -34,16 +37,12 @@ ui <- fluidPage(
                dataTableOutput("dynamic"))
     ) # End tabsetPanel
   ),# End mainPanel
-  varSelectInput("var1", "X variable", data = heat_DC, selected = "TOTALPOP"),
-  varSelectInput("var2", "Y variable", data=heat_DC, selected = "HEI"),
-  varSelectInput("var3", "Coloer variable (categorical)", data = heat_DC, selected = "OBESITY"),
-  plotOutput("plot")
 ) # End fluidPage
 
 
 # Server Code
 server <- function(input, output) {
-  output$plot <- renderPlot({
+  output$BivariatePlot <- renderPlot({
     ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2), color = !!(input$var3))) +
     geom_boxplot()
   })
