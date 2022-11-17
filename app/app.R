@@ -6,8 +6,9 @@ library(tidyverse)
 heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
 heat_DC <- heat_DC %>%
   mutate(majority_minority = case_when(P_POC > 50 ~ "TRUE",
-                                       TRUE ~ "FALSE")
-         )
+                                       TRUE ~ "FALSE")) %>%
+  rename(med_income = estimate) %>%
+  select(-geometry)
 
 # User Interface Code
 ui <- fluidPage(
@@ -48,6 +49,7 @@ ui <- fluidPage(
                  mainPanel())
                ), # End tabPanel2
       tabPanel("Working Data",
+               checkboxInput("limit_id", "Remove Duplicate ID Variables?"),
                dataTableOutput("dynamic"))
     ) # End tabsetPanel
   ),# End mainPanel
@@ -78,7 +80,13 @@ server <- function(input, output) {
   })
     
   output$dynamic <- renderDataTable({
+    if (input$limit_id == TRUE) {
+      heat_DC <- heat_DC %>%
+        select(-OBJECTID, -ID2, -GEO_ID, -NAME, -ID, -GIS_ID:-variable)
+      heat_DC
+    } else {
     heat_DC
+    }
   })
 
 }
