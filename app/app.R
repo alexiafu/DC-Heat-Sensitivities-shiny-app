@@ -61,7 +61,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   heat_filtered <- reactive(
     heat_DC %>%
-      filter(input$var1 != -9999, input$var2 != -9999, input$var3 != -9999)
+      filter(input$var1 != -9999 & input$var2 != -9999 & input$var3 != -9999)
   )
     
   
