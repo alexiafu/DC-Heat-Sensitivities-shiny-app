@@ -9,6 +9,7 @@ heat_DC <- heat_DC %>%
                                        TRUE ~ "FALSE")) %>%
   rename(med_income = estimate) %>%
   select(-geometry)
+min(heat_DC$HSEI)
 
 # User Interface Code
 ui <- fluidPage(
@@ -58,24 +59,30 @@ ui <- fluidPage(
 
 # Server Code
 server <- function(input, output) {
+  heat_filtered <- reactive(
+    heat_DC %>%
+      filter(input$var1 != -9999, input$var2 != -9999, input$var3 != -9999)
+  )
+    
+  
   output$plot1 <- renderPlot({
     if (is.numeric(heat_DC[[input$var3]])) {
-    ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2))) +
+    ggplot(heat_filtered(), aes(x = !!input$var1, y = !!input$var2)) +
     geom_point() +
     ggtitle("Please Select Categorical Variable")
   } else {
-    ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2), color = !!(input$var3))) +
+    ggplot(heat_filtered(), aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
       geom_point()
   }
   })
   
   output$plot2 <- renderPlot({
-    ggplot(heat_DC, aes(x = !!(input$var1))) +
+    ggplot(heat_filtered(), aes(x = !!input$var1)) +
       geom_histogram(bins = input$bins)
   })
   
   output$plot3 <- renderPlot({
-    ggplot(heat_DC, aes(x = !!(input$var2))) +
+    ggplot(heat_filtered(), aes(x = !!input$var2)) +
       geom_histogram(bins = input$bins)
   })
     
