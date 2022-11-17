@@ -3,7 +3,11 @@ library(bslib)
 library(shiny)
 library(ggplot2)
 library(tidyverse)
-heat_DC <- read_csv("../data/Heat_Sensitivity_Exposure_Index.csv", show_col_types = F)
+heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
+heat_DC <- heat_DC %>%
+  mutate(majority_minority = case_when(P_POC > 50 ~ "TRUE",
+                                       TRUE ~ "FALSE")
+         )
 
 # User Interface Code
 ui <- fluidPage(
@@ -14,13 +18,23 @@ ui <- fluidPage(
     tabsetPanel(
       type = "pills",
       tabPanel("Bivariate Analysis",
-               sidebarLayout(
-                 sidebarPanel(  varSelectInput("var1", "X variable", data = heat_DC, selected = "TOTALPOP"),
-                                varSelectInput("var2", "Y variable", data=heat_DC, selected = "HEI"),
-                                varSelectInput("var3", "Coloer variable (categorical)", data = heat_DC, selected = "OBESITY")
-                               ),
-                 mainPanel( plotOutput("BivariatePlot"))
-               )
+               fluidRow(
+                 column(6, 
+                        varSelectInput("var1", "X variable", data = heat_DC, selected = "TOTALPOP"),
+                        varSelectInput("var2", "Y variable", data=heat_DC, selected = "HEI"),
+                        varSelectInput("var3", "Color variable (categorical)", data = heat_DC, selected = "majority_minority")
+                        ),
+                column(
+                  6, 
+                  sliderInput("bins", "Number of Bins",
+                              min = 1, max = 50, value = 30)
+                )
+              ),
+            fluidRow(
+              column(6, plotOutput("plot1")),
+              column(3, plotOutput("plot2")),
+              column(3, plotOutput("plot3"))
+            )
       ), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
@@ -42,11 +56,27 @@ ui <- fluidPage(
 
 # Server Code
 server <- function(input, output) {
-  output$BivariatePlot <- renderPlot({
+  output$plot1 <- renderPlot({
+    if (is.numeric(heat_DC[[input$var3]])) {
+    ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2))) +
+    geom_point() +
+    ggtitle("Please Select Categorical Variable")
+  } else {
     ggplot(heat_DC, aes(x = !!(input$var1), y = !!(input$var2), color = !!(input$var3))) +
-    geom_boxplot()
+      geom_point()
+  }
   })
   
+  output$plot2 <- renderPlot({
+    ggplot(heat_DC, aes(x = !!(input$var1))) +
+      geom_histogram(bins = input$bins)
+  })
+  
+  output$plot3 <- renderPlot({
+    ggplot(heat_DC, aes(x = !!(input$var2))) +
+      geom_histogram(bins = input$bins)
+  })
+    
   output$dynamic <- renderDataTable({
     heat_DC
   })
