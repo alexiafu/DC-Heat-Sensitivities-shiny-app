@@ -16,8 +16,8 @@ library(sf)
 
 # Data Loading
 ```{r}
-hsei <- read_csv("Heat_Sensitivity_Exposure_Index.csv", show_col_types = F)
-tracts <- read_sf("Census_Tracts_in_2020")
+hsei <- read_csv("../data/Heat_Sensitivity_Exposure_Index.csv", show_col_types = F)
+tracts <- read_sf("../data/Census_Tracts_in_2020")
 ```
 
 Getting geometry variable from DC Census Data
@@ -42,3 +42,13 @@ hsei_medianHouse <- left_join(hsei, dc_median, by = c("NAME" = "NAME"))
 
 write_csv(hsei_medianHouse, "DC_Heat_Island.csv")
 ```
+
+# delete the missing data
+```{r}
+library(tidyverse)
+DC_Heat_Island <- read_csv("../data/DC_Heat_Island.csv")
+DC_Heat_Island %>% 
+  filter(HSI > 0) -> DC_Heat_Island
+write_csv(DC_Heat_Island, "../data/DC_Heat_Island.csv")
+```
+
