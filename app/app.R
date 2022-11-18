@@ -9,7 +9,9 @@ heat_DC <- heat_DC %>%
                                        TRUE ~ "FALSE")) %>%
   rename(med_income = estimate) %>%
   select(-geometry)
-min(heat_DC$HSEI)
+
+heat_bivariate <- heat_DC %>%
+  select(-OBJECTID:-ID, -GIS_ID:-variable, -moe)
 
 # User Interface Code
 ui <- fluidPage(
@@ -22,9 +24,9 @@ ui <- fluidPage(
       tabPanel("Bivariate Analysis",
                fluidRow(
                  column(6, 
-                        varSelectInput("var1", "X variable", data = heat_DC, selected = "TOTALPOP"),
-                        varSelectInput("var2", "Y variable", data=heat_DC, selected = "HEI"),
-                        varSelectInput("var3", "Color variable (categorical)", data = heat_DC, selected = "majority_minority")
+                        varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
+                        varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
+                        varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority")
                         ),
                 column(
                   6, 
