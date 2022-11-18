@@ -14,7 +14,7 @@ min(heat_DC$HSEI)
 # User Interface Code
 ui <- fluidPage(
   theme = bs_theme(version = 5, bootswatch = "flatly"),
-  titlePanel("DC Heat Sensitivity Exposure", windowTitle = "DC Heat Sensitivity Exposure"),
+  titlePanel("DC Heat Sensitivity and Exposure", windowTitle = "DC Heat Sensitivity and Exposure"),
   
   mainPanel(
     tabsetPanel(
@@ -84,10 +84,20 @@ server <- function(input, output) {
   })
     
   output$dynamic <- renderDataTable({
-    if (input$limit_id == TRUE) {
+    if (input$limit_id == TRUE) { 
+      if (input$hsi_only == TRUE) {
+              heat_DC <- heat_DC %>%
+                select(-OBJECTID, -ID2:-ID, -P_TREECOVER:-GEOID)
+              heat_DC
+      } else if (input$hei_only == TRUE) {
+            heat_DC <- heat_DC %>%
+              select(-OBJECTID, -ID2:-HSI, -variable:-majority_minority)
+            heat_DC
+      } else {
         heat_DC <- heat_DC %>%
           select(-OBJECTID, -ID2, -GEO_ID, -NAME, -ID, -GIS_ID:-variable)
         heat_DC
+      }
     } else if (input$hsi_only == TRUE){
         heat_DC <- heat_DC %>%
          select(-P_TREECOVER:-GEOID)
@@ -96,14 +106,6 @@ server <- function(input, output) {
         heat_DC <- heat_DC %>%
          select(-TOTALPOP:-HSI, -variable:-majority_minority)
         heat_DC
-    # } else if (input$hsi_only == TRUE & input$limit_id == TRUE) {
-    #       heat_DC <- heat_DC %>%
-    #         select(-OBJECTID, -ID2:-ID, -P_TREECOVER:-GEOID)
-    #       heat_DC
-    # } else if (input$hei_only == TRUE & input$limit_id == TRUE) {
-    #     heat_DC <- heat_DC %>%
-    #       select(-OBJECTID, -ID2:-HSI)
-    #     heat_DC
     } else {
       heat_DC
     }
