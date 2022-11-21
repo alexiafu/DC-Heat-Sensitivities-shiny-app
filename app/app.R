@@ -46,9 +46,10 @@ ui <- fluidPage(
                ),
                fluidRow(
                  column(6, plotOutput("plot1")),
-                 column(3, plotOutput("plot2")),
-                 column(3, plotOutput("plot3"))
-               )
+                 column(6, plotOutput("plot4"))),
+               fluidRow(
+                 column(6, plotOutput("plot2")),
+                 column(6, plotOutput("plot3")))
       ), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
@@ -150,6 +151,11 @@ server <- function(input, output) {
   output$plot3 <- renderPlot({
     ggplot(heat_DC, aes(x = !!input$var2)) +
       geom_histogram(bins = input$bins)
+  })
+  
+  output$plot4 <- renderPlot({
+    ggplot(heat_DC, aes(!!input$var3)) +
+      geom_bar()
   })
   
   # Working Data Tab
