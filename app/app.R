@@ -49,7 +49,11 @@ ui <- fluidPage(
                  column(6, plotOutput("plot4"))),
                fluidRow(
                  column(6, plotOutput("plot2")),
-                 column(6, plotOutput("plot3")))
+                 column(6, plotOutput("plot3"))),
+               fluidRow(
+                 column(6, plotOutput("plot5")),
+                 column(6, plotOutput("plot6"))
+               )
       ), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
@@ -156,6 +160,16 @@ server <- function(input, output) {
   output$plot4 <- renderPlot({
     ggplot(heat_DC, aes(!!input$var3)) +
       geom_bar()
+  })
+  
+  output$plot5 <- renderPlot({
+    ggplot(heat_DC, aes(!!input$var3,!!input$var1)) +
+      geom_boxplot()
+  })
+  
+  output$plot6 <- renderPlot({
+    ggplot(heat_DC, aes(!!input$var3,!!input$var2)) +
+      geom_boxplot()
   })
   
   # Working Data Tab
