@@ -129,7 +129,8 @@ ui <- fluidPage(
 
 # Server Code
 server <- function(input, output) {
-  
+
+# Bivariate Analysis Tab
   output$plot1 <- renderPlot({
     if (is.numeric(heat_DC[[input$var3]])) {
       ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
@@ -151,6 +152,7 @@ server <- function(input, output) {
       geom_histogram(bins = input$bins)
   })
   
+  # Working Data Tab
   output$dynamic <- renderDataTable({
     if (input$limit_id == TRUE) { 
       if (input$hsi_only == TRUE) {
