@@ -17,9 +17,6 @@ heat_DC <- heat_DC %>%
   rename(med_income = estimate) %>%
   select(-geometry)
 
-
-
-
 heat_bivariate <- heat_DC %>%
   select(-OBJECTID:-ID, -GIS_ID:-variable, -moe)
 
