@@ -31,30 +31,30 @@ ui <- fluidPage(
   mainPanel(
     tabsetPanel(
       type = "pills",
-      tabPanel("Bivariate Analysis",
-               fluidRow(
-                 column(6, 
+      tabPanel("Graphing",
+               sidebarLayout(
+                 sidebarPanel(
                         varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
                         varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
-                        varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority")
-                 ),
-                 column(
-                   6, 
-                   sliderInput("bins", "Number of Bins",
-                               min = 1, max = 50, value = 30)
-                 )
+                        varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
+                        sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30)
                ),
-               fluidRow(
-                 column(6, plotOutput("plot1")),
-                 column(6, plotOutput("plot4"))),
-               fluidRow(
-                 column(6, plotOutput("plot2")),
-                 column(6, plotOutput("plot3"))),
+            mainPanel(
+              tabsetPanel(
+                type = "pills",
+                tabPanel("Bivaraite Analysis",
+                  fluidRow(
+                    column(6, plotOutput("plot1")),
+                    column(6, plotOutput("plot4")))),
+               tabPanel("Univariate Analysis",
+                  fluidRow(
+                    column(6, plotOutput("plot2")),
+                    column(6, plotOutput("plot3")))),
+               tabPanel("What to Call This",
                fluidRow(
                  column(6, plotOutput("plot5")),
-                 column(6, plotOutput("plot6"))
-               )
-      ), #End tabPanel
+                 column(6, plotOutput("plot6"))))
+      )))), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
                  sidebarPanel(),
@@ -114,7 +114,7 @@ ui <- fluidPage(
                                           column(6, plotOutput("distribution2"))
                                         )),
                                tabPanel("Model Summary", verbatimTextOutput("summary")), # Regression output
-                               tabPanel("Diagnosticplot",
+                               tabPanel("Diagnostic Plots",
                                         fluidRow(column(6, plotOutput("DiagnosticPlot")))),
                                tabPanel("Data", DT::dataTableOutput('tbl')) # Data as data table
                                
