@@ -42,18 +42,18 @@ ui <- fluidPage(
             mainPanel(
               tabsetPanel(
                 type = "pills",
-                tabPanel("Bivaraite Analysis",
+                tabPanel("Bivariate Analysis",
                   fluidRow(
-                    column(6, plotOutput("plot1")),
-                    column(6, plotOutput("plot4")))),
+                    column(12, plotOutput("plot1"))),
+                  fluidRow(
+                    column(6, plotOutput("plot5")),
+                    column(6, plotOutput("plot6"))
+                  )),
                tabPanel("Univariate Analysis",
                   fluidRow(
-                    column(6, plotOutput("plot2")),
-                    column(6, plotOutput("plot3")))),
-               tabPanel("What to Call This",
-               fluidRow(
-                 column(6, plotOutput("plot5")),
-                 column(6, plotOutput("plot6"))))
+                    column(4, plotOutput("plot2")),
+                    column(4, plotOutput("plot3")),
+                    column(4, plotOutput("plot4"))))
       )))), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
