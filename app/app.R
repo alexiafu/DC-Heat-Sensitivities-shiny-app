@@ -59,7 +59,7 @@ ui <- fluidPage(
       )))), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
-                 sidebarPanel(),
+                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_DC, selected = "TOTALPOP")),
                  mainPanel(leafletOutput("map_plot"))
                )
       ), # End tabPanel1
@@ -238,6 +238,7 @@ server <- function(input, output) {
   
   
 # Mapping Output
+  
   output$map_plot <- renderLeaflet({
     leaflet() %>% 
       addTiles() %>% 
