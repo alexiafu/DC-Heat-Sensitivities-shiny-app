@@ -3,7 +3,12 @@ library(bslib)
 library(shiny)
 library(ggplot2)
 library(tidyverse)
+library(leaflet)
+library(sf)
 heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
+tracts <- read_sf("../data/Census_Tracts_in_2020/")
+tracts_clean <- tracts %>%
+  st_transform(4326)
 
 stat_heat_DC <- heat_DC %>%
   rename(med_income = estimate) %>%
@@ -55,7 +60,7 @@ ui <- fluidPage(
       tabPanel("Mapping",
                sidebarLayout(
                  sidebarPanel(),
-                 mainPanel()
+                 mainPanel(leafletOutput("map_plot"))
                )
       ), # End tabPanel1
       tabPanel("Statistical Modeling",
@@ -231,6 +236,21 @@ server <- function(input, output) {
     hist(stat_heat_DC[,input$indepvar], main="", xlab=input$indepvar)
   }, height=300, width=300)
   
+  
+# Mapping Output
+  output$map_plot <- renderLeaflet({
+    leaflet() %>% 
+      addTiles() %>% 
+      addPolygons(data = tracts_clean,
+                  color = 'white',
+                  weight = 1.5,
+                  opacity = 1,
+                  fillColor = "#e8e8e8",
+                  fillOpacity = .8,
+                  highlightOptions = highlightOptions(color = "#FFF1BE",
+                                                      weight = 5),
+                  popup = ~ tracts_clean$NAME)
+  })
 }
 
 # Run the application 
