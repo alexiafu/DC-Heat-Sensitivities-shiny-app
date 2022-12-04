@@ -4,9 +4,13 @@ library(shiny)
 library(ggplot2)
 library(tidyverse)
 library(leaflet)
+library(viridis)
 library(sf)
+library(thematic)
 heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
 tracts <- read_sf("../data/Census_Tracts_in_2020/")
+Cooling_Centers <- read_csv("../data/Cooling_Centers_-_District_of_Columbia.csv")
+
 tracts_clean <- tracts %>%
   st_transform(4326)
 
@@ -25,7 +29,21 @@ heat_DC <- heat_DC %>%
 heat_bivariate <- heat_DC %>%
   select(-OBJECTID:-ID, -GIS_ID:-variable, -moe)
 
+#Clean cooling center data
+cooling_centers_clean <- Cooling_Centers %>% 
+  rename(latitude = Y,
+         longitude = X,
+         TYPE = TYPE_) %>% 
+  mutate(popup_label = paste(paste0('<br/>Name: ', NAME, '<br/>'),
+                             paste0("Type: ", TYPE, '<br/>'),
+                             paste0('<br/>Address: ', ADDRESS, '<br/>'),
+                             paste0('<br/>Capacity: ', Capacity, '<br/>'),
+                             paste0('<br/>Phone: ', PHONE, '<br/>'),
+                             paste0('<br/>Hours: ', Hours3, '<br/>')), 
+         sep = '<br/>')
+
 # User Interface Code
+thematic::thematic_shiny()
 ui <- fluidPage(
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   titlePanel("DC Heat Sensitivity and Exposure", windowTitle = "DC Heat Sensitivity and Exposure"),
@@ -130,7 +148,7 @@ ui <- fluidPage(
                checkboxInput("hei_only", "HEI Data Only"),
                dataTableOutput("dynamic"))
     ) # End tabsetPanel
-  ),# End mainPanel
+  )# End mainPanel
 ) # End fluidPage
 
 
@@ -250,9 +268,15 @@ server <- function(input, output) {
                   fillOpacity = .8,
                   highlightOptions = highlightOptions(color = "#FFF1BE",
                                                       weight = 5),
-                  popup = ~ tracts_clean$NAME)
+                  popup = ~ tracts_clean$NAME) %>% 
+    addCircleMarkers(data = cooling_centers_clean,
+                     popup = ~popup_label,
+                     stroke = F,
+                     radius = 3, 
+                     fillColor= ~pal(Warming_Cooling),
+                     fillOpacity = .8)
   })
 }
-
+viridis_pal()
 # Run the application 
 shinyApp(ui = ui, server = server)
