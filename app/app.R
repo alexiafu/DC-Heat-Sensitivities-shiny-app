@@ -28,7 +28,7 @@ heat_DC <- heat_DC %>%
   select(-geometry)
 
 heat_bivariate <- heat_DC %>%
-  select(-OBJECTID:-ID, -GIS_ID:-variable, -moe)
+  dplyr::select(-OBJECTID:-ID, -GIS_ID: -variable, -moe)
 
 #Clean cooling center data
 cooling_centers_clean <- Cooling_Centers %>% 
@@ -290,7 +290,7 @@ server <- function(input, output) {
       addCircleMarkers(data = urban_forestry,
                        popup = ~popup_label,
                        stroke = F,
-                       radius = .1, 
+                       radius = .3, 
                        fillColor= "green",
                        fillOpacity = .1)
   })
@@ -298,3 +298,4 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
