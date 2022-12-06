@@ -10,6 +10,7 @@ library(thematic)
 heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
 tracts <- read_sf("../data/Census_Tracts_in_2020/")
 Cooling_Centers <- read_csv("../data/Cooling_Centers_-_District_of_Columbia.csv")
+urban_forestry <- read_csv("../data/Urban_Forestry_Street_Trees.csv")
 
 tracts_clean <- tracts %>%
   st_transform(4326)
@@ -27,7 +28,7 @@ heat_DC <- heat_DC %>%
   select(-geometry)
 
 heat_bivariate <- heat_DC %>%
-  select(-OBJECTID:-ID, -GIS_ID:-variable, -moe)
+  dplyr::select(-OBJECTID:-ID, -GIS_ID: -variable, -moe)
 
 #Clean cooling center data
 cooling_centers_clean <- Cooling_Centers %>% 
@@ -42,6 +43,17 @@ cooling_centers_clean <- Cooling_Centers %>%
                              paste0('<br/>Hours: ', Hours3, '<br/>')), 
          sep = '<br/>')
 
+#Clean Tree Data
+urban_forestry <- urban_forestry %>% 
+  rename(latitude = Y,
+         longitude = X) %>% 
+  mutate(popup_label = paste(paste0("Type: ", CMMN_NM, '<br/>'),
+                             paste0('<br/>Condition: ', CONDITION, '<br/>'),
+                             paste0('<br/>Ownership: ', OWNERSHIP, '<br/>'),
+                             paste0('<br/>Tree Notes: ', TREE_NOTES, '<br/>')), 
+         sep = '<br/>')
+
+
 # User Interface Code
 thematic::thematic_shiny()
 ui <- fluidPage(
@@ -54,27 +66,27 @@ ui <- fluidPage(
       tabPanel("Graphing",
                sidebarLayout(
                  sidebarPanel(
-                        varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
-                        varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
-                        varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
-                        sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30)
-               ),
-            mainPanel(
-              tabsetPanel(
-                type = "pills",
-                tabPanel("Bivariate Analysis",
-                  fluidRow(
-                    column(12, plotOutput("plot1"))),
-                  fluidRow(
-                    column(6, plotOutput("plot5")),
-                    column(6, plotOutput("plot6"))
-                  )),
-               tabPanel("Univariate Analysis",
-                  fluidRow(
-                    column(4, plotOutput("plot2")),
-                    column(4, plotOutput("plot3")),
-                    column(4, plotOutput("plot4"))))
-      )))), #End tabPanel
+                   varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
+                   varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
+                   varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
+                   sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30)
+                 ),
+                 mainPanel(
+                   tabsetPanel(
+                     type = "pills",
+                     tabPanel("Bivariate Analysis",
+                              fluidRow(
+                                column(12, plotOutput("plot1"))),
+                              fluidRow(
+                                column(6, plotOutput("plot5")),
+                                column(6, plotOutput("plot6"))
+                              )),
+                     tabPanel("Univariate Analysis",
+                              fluidRow(
+                                column(4, plotOutput("plot2")),
+                                column(4, plotOutput("plot3")),
+                                column(4, plotOutput("plot4"))))
+                   )))), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
                  sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_DC, selected = "TOTALPOP")),
@@ -154,8 +166,8 @@ ui <- fluidPage(
 
 # Server Code
 server <- function(input, output) {
-
-# Bivariate Analysis Tab
+  
+  # Bivariate Analysis Tab
   output$plot1 <- renderPlot({
     if (is.numeric(heat_DC[[input$var3]])) {
       ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
@@ -255,7 +267,7 @@ server <- function(input, output) {
   }, height=300, width=300)
   
   
-# Mapping Output
+  # Mapping Output
   
   output$map_plot <- renderLeaflet({
     leaflet() %>% 
@@ -269,14 +281,21 @@ server <- function(input, output) {
                   highlightOptions = highlightOptions(color = "#FFF1BE",
                                                       weight = 5),
                   popup = ~ tracts_clean$NAME) %>% 
-    addCircleMarkers(data = cooling_centers_clean,
-                     popup = ~popup_label,
-                     stroke = F,
-                     radius = 3, 
-                     fillColor= ~pal(Warming_Cooling),
-                     fillOpacity = .8)
+      addCircleMarkers(data = cooling_centers_clean,
+                       popup = ~popup_label,
+                       stroke = F,
+                       radius = 3, 
+                       fillColor= "#4DB6D0",
+                       fillOpacity = .8) %>% 
+      addCircleMarkers(data = urban_forestry,
+                       popup = ~popup_label,
+                       stroke = F,
+                       radius = .3, 
+                       fillColor= "green",
+                       fillOpacity = .1)
   })
 }
-viridis_pal()
+
 # Run the application 
 shinyApp(ui = ui, server = server)
+
