@@ -71,7 +71,10 @@ ui <- fluidPage(
                    varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
                    varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
                    varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
-                   sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30)
+                   sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30),
+                   checkboxInput("smooth", "Add Smoothing Method?", value = FALSE),
+                   checkboxInput("log_x", "Log the X Variable?", value = FALSE),
+                   checkboxInput("log_y", "Log the Y Variable?", value = FALSE)
                  ),
                  mainPanel(
                    tabsetPanel(
