@@ -71,7 +71,8 @@ ui <- fluidPage(
                    varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
                    varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
                    varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
-                   sliderInput("bins", "Number of Bins", min = 1, max = 50, value = 30),
+                   sliderInput("bins_x", "Number of Bins for X Variable", min = 1, max = 50, value = 30),
+                   sliderInput("bins_y","Number of Bins for Y Variable", min = 1, max = 50, value = 30),
                    checkboxInput("smooth", "Add Smoothing Method?", value = FALSE),
                    checkboxInput("log_x", "Log the X Variable?", value = FALSE),
                    checkboxInput("log_y", "Log the Y Variable?", value = FALSE)
@@ -179,7 +180,7 @@ server <- function(input, output) {
     if (is.numeric(heat_DC[[input$var3]])) {
       ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
         geom_point() +
-        ggtitle("Please Select Categorical Variable")
+        ggtitle("No Categorical Variable Selected")
     } else {
       ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
         geom_point()
@@ -187,18 +188,33 @@ server <- function(input, output) {
   })
   
   output$plot2 <- renderPlot({
-    ggplot(heat_DC, aes(x = !!input$var1)) +
-      geom_histogram(bins = input$bins)
+    plot2 <- ggplot(heat_DC, aes(x = !!input$var1)) +
+      geom_histogram(bins = input$bins_x)
+    if (input$log_x == TRUE) {
+      plot2 +scale_x_log10()
+    } else {
+      plot2
+    }
   })
   
   output$plot3 <- renderPlot({
-    ggplot(heat_DC, aes(x = !!input$var2)) +
-      geom_histogram(bins = input$bins)
+    plot3 <- ggplot(heat_DC, aes(x = !!input$var2)) +
+      geom_histogram(bins = input$bins_y)
+    if (input$log_y == TRUE) {
+      plot3 + scale_y_log10()
+    } else {
+      plot3
+    }
   })
   
   output$plot4 <- renderPlot({
-    ggplot(heat_DC, aes(!!input$var3)) +
+    plot4 <- ggplot(heat_DC, aes(!!input$var3)) +
       geom_bar()
+    if (is.numeric(heat_DC[[input$var3]])) {
+      plot4 + ggtitle("No Categorical Variable Selected")
+    } else {
+      plot4
+    }
   })
   
   output$plot5 <- renderPlot({
