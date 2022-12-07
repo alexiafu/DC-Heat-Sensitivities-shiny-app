@@ -11,9 +11,11 @@ heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
 tracts <- read_sf("../data/Census_Tracts_in_2020/")
 Cooling_Centers <- read_csv("../data/Cooling_Centers_-_District_of_Columbia.csv")
 urban_forestry <- read_csv("../data/Urban_Forestry_Street_Trees.csv")
+forest_samp <- slice_sample(urban_forestry, prop = .2) 
 
 tracts_clean <- tracts %>%
-  st_transform(4326)
+  st_transform(4326) %>%
+  mutate(popup_label = paste0('<br/>Name: ', NAME, '<br/>'))
 
 stat_heat_DC <- heat_DC %>%
   rename(med_income = estimate) %>%
@@ -28,7 +30,7 @@ heat_DC <- heat_DC %>%
   select(-geometry)
 
 heat_bivariate <- heat_DC %>%
-  dplyr::select(-OBJECTID:-ID, -GIS_ID: -variable, -moe)
+  dplyr::select(-OBJECTID:-ID, -GIS_ID: -variable, -moe) 
 
 #Clean cooling center data
 cooling_centers_clean <- Cooling_Centers %>% 
@@ -44,7 +46,7 @@ cooling_centers_clean <- Cooling_Centers %>%
          sep = '<br/>')
 
 #Clean Tree Data
-urban_forestry <- urban_forestry %>% 
+forest_samp <- forest_samp %>% 
   rename(latitude = Y,
          longitude = X) %>% 
   mutate(popup_label = paste(paste0("Type: ", CMMN_NM, '<br/>'),
@@ -89,7 +91,9 @@ ui <- fluidPage(
                    )))), #End tabPanel
       tabPanel("Mapping",
                sidebarLayout(
-                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_DC, selected = "TOTALPOP")),
+                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_bivariate, selected = "TOTALPOP"),
+                              checkboxInput("cooling", "Show DC Cooling Centers", value = FALSE),
+                              checkboxInput("trees", "Show DC Tree Data?", value = FALSE)),
                  mainPanel(leafletOutput("map_plot"))
                )
       ), # End tabPanel1
@@ -270,29 +274,47 @@ server <- function(input, output) {
   # Mapping Output
   
   output$map_plot <- renderLeaflet({
-    leaflet() %>% 
+    map <- leaflet() %>% 
       addTiles() %>% 
       addPolygons(data = tracts_clean,
                   color = 'white',
                   weight = 1.5,
                   opacity = 1,
-                  fillColor = "#e8e8e8",
+                  fillColor = ~input$map_var,
                   fillOpacity = .8,
                   highlightOptions = highlightOptions(color = "#FFF1BE",
                                                       weight = 5),
-                  popup = ~ tracts_clean$NAME) %>% 
+                  popup = ~ tracts_clean$NAME)
+    
+    if (input$cooling == TRUE) {
+      map %>%
       addCircleMarkers(data = cooling_centers_clean,
                        popup = ~popup_label,
                        stroke = F,
                        radius = 3, 
                        fillColor= "#4DB6D0",
-                       fillOpacity = .8) %>% 
-      addCircleMarkers(data = urban_forestry,
+                       fillOpacity = .8) 
+    } else if (input$trees == TRUE) {
+      map %>%
+      addCircleMarkers(data = forest_samp,
                        popup = ~popup_label,
                        stroke = F,
                        radius = .3, 
                        fillColor= "green",
                        fillOpacity = .1)
+    } else {
+      leaflet() %>% 
+        addTiles() %>% 
+        addPolygons(data = tracts_clean,
+                    color = 'white',
+                    weight = 1.5,
+                    opacity = 1,
+                    fillColor = "#e8e8e8",
+                    fillOpacity = .8,
+                    highlightOptions = highlightOptions(color = "#FFF1BE",
+                                                        weight = 5),
+                    popup = ~popup_label)
+    }
   })
 }
 
