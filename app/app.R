@@ -177,10 +177,27 @@ server <- function(input, output) {
   
   # Bivariate Analysis Tab
   output$plot1 <- renderPlot({
+    plot1 <-  ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
+      geom_point()
+    
     if (is.numeric(heat_DC[[input$var3]])) {
-      ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
-        geom_point() +
-        ggtitle("No Categorical Variable Selected")
+       if (input$log_x == TRUE) {
+         if (input$log_y == TRUE) {
+           if (input$smooth == TRUE) {
+             plot1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F)
+           } else {
+             plot1 + scale_x_log10() + scale_y_log10()
+           }
+         } else {
+           if (input$smooth == TRUE) {
+             plot1 + scale_x_log10() + geom_smooth(se = F)
+           } else {
+             plot1 + scale_x_log10()
+           }
+         }
+       } else {
+         plot1 + ggtitle("No Categorical Variable Selected")
+       }
     } else {
       ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
         geom_point()
