@@ -179,28 +179,74 @@ server <- function(input, output) {
   output$plot1 <- renderPlot({
     plot1 <-  ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2)) +
       geom_point()
-    
+  
     if (is.numeric(heat_DC[[input$var3]])) {
        if (input$log_x == TRUE) {
          if (input$log_y == TRUE) {
            if (input$smooth == TRUE) {
-             plot1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F)
+             plot1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F, method = "lm")
            } else {
              plot1 + scale_x_log10() + scale_y_log10()
            }
          } else {
            if (input$smooth == TRUE) {
-             plot1 + scale_x_log10() + geom_smooth(se = F)
+             plot1 + scale_x_log10() + geom_smooth(se = F, method = "lm")
            } else {
              plot1 + scale_x_log10()
+           }
+         }
+       } else if (input$log_y == TRUE) {
+         if (input$log_x == TRUE) {
+           if (input$smooth == TRUE) {
+             plot1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F, method = "lm")
+           } else {
+             plot1 + scale_x_log10() + scale_y_log10()
+           }
+         } else {
+           if (input$smooth == TRUE) {
+             plot1 + scale_y_log10() + geom_smooth(se = F, method = "lm")
+           } else {
+             plot1 + scale_y_log10()
            }
          }
        } else {
          plot1 + ggtitle("No Categorical Variable Selected")
        }
     } else {
-      ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
+      plot1.1 <- ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
         geom_point()
+      
+      if (input$log_x == TRUE) {
+        if (input$log_y == TRUE) {
+          if (input$smooth == TRUE) {
+            plot1.1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F, method = "lm")
+          } else {
+            plot1.1 + scale_x_log10() + scale_y_log10()
+          }
+        } else {
+          if (input$smooth == TRUE) {
+            plot1.1 + scale_x_log10() + geom_smooth(se = F, method = "lm")
+          } else {
+            plot1.1 + scale_x_log10()
+          }
+        }
+      } else if (input$log_y == TRUE) {
+        if (input$log_x == TRUE) {
+          if (input$smooth == TRUE) {
+            plot1.1 + scale_x_log10() + scale_y_log10() + geom_smooth(se = F, method = "lm")
+          } else {
+            plot1.1 + scale_x_log10() + scale_y_log10()
+          }
+        } else {
+          if (input$smooth == TRUE) {
+            plot1.1 + scale_y_log10() + geom_smooth(se = F, method = "lm")
+          } else {
+            plot1.1 + scale_y_log10()
+          }
+        }
+      } else {
+        plot1.1
+      }
     }
   })
   
@@ -235,13 +281,29 @@ server <- function(input, output) {
   })
   
   output$plot5 <- renderPlot({
-    ggplot(heat_DC, aes(!!input$var3,!!input$var1)) +
+    plot5 <- ggplot(heat_DC, aes(!!input$var3,!!input$var1)) +
       geom_boxplot()
+    
+    if (is.numeric(heat_DC[[input$var3]])) {
+      validate("No Categorical Variable Selected")
+   } else if (input$log_x == TRUE) {
+      plot5 + scale_y_log10()
+   } else {
+     plot5
+   }
   })
   
   output$plot6 <- renderPlot({
-    ggplot(heat_DC, aes(!!input$var3,!!input$var2)) +
+    plot6 <- ggplot(heat_DC, aes(!!input$var3,!!input$var2)) +
       geom_boxplot()
+    
+    if (is.numeric(heat_DC[[input$var3]])) {
+      validate("No Categorical Variable Selected")
+    } else if (input$log_y == TRUE) {
+      plot6 + scale_y_log10()
+    } else {
+      plot6
+    }
   })
   
   # Working Data Tab
