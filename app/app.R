@@ -290,7 +290,7 @@ server <- function(input, output) {
   
   output$plot5 <- renderPlot({
     plot5 <- ggplot(heat_DC, aes(!!input$var3,!!input$var1)) +
-      geom_boxplot()
+      geom_violin()
     
     if (is.numeric(heat_DC[[input$var3]])) {
       validate("No Categorical Variable Selected")
@@ -303,7 +303,7 @@ server <- function(input, output) {
   
   output$plot6 <- renderPlot({
     plot6 <- ggplot(heat_DC, aes(!!input$var3,!!input$var2)) +
-      geom_boxplot()
+      geom_violin()
     
     if (is.numeric(heat_DC[[input$var3]])) {
       validate("No Categorical Variable Selected")
