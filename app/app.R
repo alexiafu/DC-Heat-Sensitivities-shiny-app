@@ -210,7 +210,11 @@ server <- function(input, output) {
            }
          }
        } else {
-         plot1 + ggtitle("No Categorical Variable Selected")
+         if (input$smooth == TRUE) {
+         plot1 + geom_smooth(se = F, method = "lm")
+         } else {
+           plot1
+         }
        }
     } else {
       plot1.1 <- ggplot(heat_DC, aes(x = !!input$var1, y = !!input$var2, color = !!input$var3)) +
@@ -245,7 +249,11 @@ server <- function(input, output) {
           }
         }
       } else {
+        if (input$smooth == TRUE) {
+          plot1.1 + geom_smooth(se = F, method = "lm")
+        } else {
         plot1.1
+        }
       }
     }
   })
@@ -274,7 +282,7 @@ server <- function(input, output) {
     plot4 <- ggplot(heat_DC, aes(!!input$var3)) +
       geom_bar()
     if (is.numeric(heat_DC[[input$var3]])) {
-      plot4 + ggtitle("No Categorical Variable Selected")
+      validate("No Categorical Variable Selected")
     } else {
       plot4
     }
