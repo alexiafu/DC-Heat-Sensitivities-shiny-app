@@ -467,7 +467,8 @@ server <- function(input, output) {
                   fillOpacity = .8,
                   highlightOptions = highlightOptions(color = "#FFF1BE",
                                                       weight = 5),
-                  popup = ~ tracts_clean$NAME)
+                  popup = ~ tracts_clean$NAME) %>%
+      addLegend(pal = pal, values = heat_map_data[[input$var_map]], opacity = 1)
     
     if (input$cooling == TRUE) {
       map %>%
