@@ -6,6 +6,14 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+---
+title: "Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -19,7 +27,8 @@ knitr::opts_chunk$set(
 
 #### -  Names and course of the group members:
 
-- Karl von Zabern - DATA 613-001
+
+- Karl VonZabern - DATA 613-001
 - ChihChin Yang - DATA 613-001
 - SzuWei Fu - DATA 613-001
 - Evan Bowman - DATA 613-001
@@ -44,7 +53,8 @@ Who are the communities that are at a larger risk of heat-induced health events?
  
 #### - Choice of approach to data: 
 
-Our approach is to be able to map different socio demographic metrics and environmental metrics to different Census tracts. This will allow the user to be able to visualize different metrics and how they differentiate between census tracts in DC. The modeling will also help shed insight on the magnitude of these differences. 
+Our approach is to be able to map different socio-demographic metrics and environmental metrics to different Census tracts. This will allow the user to be able to visualize different metrics and how they differentiate between census tracts in DC. The modeling will also help shed insight on the magnitude of these differences. We additionally add two policy relevant data sets to map including the location and hours of cooling centers and a random sample of tree data. 
+
 
 ### <span style="color: blue;">Required Packages:</span>
 
@@ -83,10 +93,24 @@ Heat Sensitivity Exposure Data was gathered from Open Data DC and contains varia
 
 #### DC Cooling Center Data
 
+
+When the temperature or heat index in the District reaches 95 degrees, District Government, through the Department of Human Services (DHS) and the Homeland Security and Emergency Management Agency (HSEMA), will implement the Heat Emergency Plan and activate cooling centers for residents to seek relief. We provide locations, name of center, phone number and hours of cooling centers. 
+Data comes from Open Data DC
+
 #### DC Tree Data
 
-## EDA Inputs, Controls, and Outputs
+DDOT's Urban Forestry Division (UFD) is the primary steward of Washington DC's ~170,000 public trees and has a mission of keeping this resource healthy, safe, & growing! Trees provide many benefits to the populations such as improving air and water quality and creates habitat for local fauna. Importantly trees are also critical for keeping the city cooler. 
+Data comes from Open Data DC
+
 
 ## Statistical Analysis Inputs, Controls, and Outputs
 
-## References
+
+## References 
+“Cooling Centers - District of Columbia.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/cooling-centers-district-of-columbia/explore?location=38.903124,-77.008453,12.75.
+
+
+“Heat Sensitivity Exposure Index.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/DCGIS::heat-sensitivity-exposure-index/explore.
+
+“Urban Forestry in DC.” Accessed December 10, 2022. https://trees.dc.gov/.
+
