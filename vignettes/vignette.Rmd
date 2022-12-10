@@ -77,7 +77,17 @@ ggplot2 (Version 3.3.6): Also apart of the tidyverse, ggplot2 was used to render
 
 #### Statistical Modeling
 
-base (Version 4.2.1): 
+
+
+shinycssloaders(Version 1.0.0) : it can automatically loads the animations on our Shiny output (e.g. plots, tables), the shiny output function we are using call withSpinner().
+
+shinydashboard(Version 0.7.2): to easy create dashboard in shiny.
+
+corrplot (Version 0.92) : its a graphical display for our correlation matrix.
+
+recipes(version 1.0.3) : creating our regression part, recipes function can let the varibles have arbitrary roles in the analysis beyond predictors and outcomes.
+
+
 
 #### Mapping
 

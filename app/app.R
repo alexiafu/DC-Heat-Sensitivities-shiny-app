@@ -5,15 +5,13 @@ library(bslib)
 library(ggplot2)
 library(tidyverse)
 library(leaflet)
-library(viridis)
 library(sf)
 library(thematic)
 library(corrplot)
 library(recipes)
-library(nortest)
-library(leaps)
 library(shinydashboard)
 library(shinycssloaders)
+
 
 
 heat_DC <- read_csv("../data/DC_Heat_Island.csv", show_col_types = F)
