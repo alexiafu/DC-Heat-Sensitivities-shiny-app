@@ -65,6 +65,15 @@ forest_samp <- forest_samp %>%
                              paste0('<br/>Tree Notes: ', TREE_NOTES, '<br/>')), 
          sep = '<br/>')
 
+#Join tracts to dc heat
+heat_map_data <- tracts_clean |>
+  select(TRACT, geometry, popup_label) |>
+  left_join(heat_DC)
+
+#Add Pallet for Map
+pal <- colorNumeric(
+  palette = "Reds",
+  domain = NULL)
 
 
 
@@ -117,7 +126,7 @@ ui <- fluidPage(
                  "AIRTEMP_MEAN=Average ambient air temperature per Census Tract",tags$br(),
                  "HSI=Heat Sensitivity Index",tags$br(),
                  "HEI=Heat Exposure Index",tags$br(),
-                 "HSEI=Heat Sensitivity Exposure Index",tags$br(),
+                 "HSEI=Heat Sensitivity Exposure Index",tags$br()
                )),
       tabPanel("Graphing",
                sidebarLayout(
@@ -177,7 +186,7 @@ ui <- fluidPage(
                                                 ),
                                                 tabPanel("Model Fit",
                                                          box(withSpinner(plotOutput("residualPlots")), width = 12, title = h4("Diagnostic Plots")
-                                                         ),
+                                                         )
                                                 )
                                        ),
                                        tabPanel("Data",
@@ -192,7 +201,7 @@ ui <- fluidPage(
                  sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_bivariate, selected = "TOTALPOP"),
                               checkboxInput("cooling", "Show DC Cooling Centers", value = FALSE),
                               checkboxInput("trees", "Show DC Tree Data?", value = FALSE)),
-                 mainPanel(leafletOutput("map_plot"))
+                 mainPanel(leafletOutput("map_plot", height = "600px"))
                )
       ), # End tabPanel3
       tabPanel("Working Data",
@@ -450,11 +459,11 @@ server <- function(input, output) {
   output$map_plot <- renderLeaflet({
     map <- leaflet() %>% 
       addTiles() %>% 
-      addPolygons(data = tracts_clean,
+      addPolygons(data = heat_map_data,
                   color = 'white',
                   weight = 1.5,
                   opacity = 1,
-                  fillColor = ~input$map_var,
+                  fillColor = ~ pal(heat_map_data[[input$var_map]]),
                   fillOpacity = .8,
                   highlightOptions = highlightOptions(color = "#FFF1BE",
                                                       weight = 5),
@@ -467,28 +476,20 @@ server <- function(input, output) {
                          stroke = F,
                          radius = 3, 
                          fillColor= "#4DB6D0",
-                         fillOpacity = .8) 
-    } else if (input$trees == TRUE) {
+                         fillOpacity = .8) ->
+        map
+    }
+    if (input$trees == TRUE) {
       map %>%
         addCircleMarkers(data = forest_samp,
                          popup = ~popup_label,
                          stroke = F,
                          radius = .3, 
                          fillColor= "green",
-                         fillOpacity = .1)
-    } else {
-      leaflet() %>% 
-        addTiles() %>% 
-        addPolygons(data = tracts_clean,
-                    color = 'white',
-                    weight = 1.5,
-                    opacity = 1,
-                    fillColor = "#e8e8e8",
-                    fillOpacity = .8,
-                    highlightOptions = highlightOptions(color = "#FFF1BE",
-                                                        weight = 5),
-                    popup = ~popup_label)
-    }
+                         fillOpacity = .1)->
+        map
+    } 
+    map
   })
 }
 
