@@ -77,23 +77,23 @@ ggplot2 (Version 3.3.6): Also apart of the tidyverse, ggplot2 was used to render
 
 #### Statistical Modeling
 
+shinycssloaders (Version 1.0.0) : shinycssloaders can automatically load the animations of our Shiny output (e.g. plots, tables). The shiny output function we used is called withSpinner().
 
+shinydashboard (Version 0.7.2): Shinydashboard was used to easily create our dashboard for the Regression Analysis tab.
 
-shinycssloaders(Version 1.0.0) : it can automatically loads the animations on our Shiny output (e.g. plots, tables), the shiny output function we are using call withSpinner().
+corrplot (Version 0.92) : Corrplot was used to help graphically display our correlation matrix.
 
-shinydashboard(Version 0.7.2): to easy create dashboard in shiny.
-
-corrplot (Version 0.92) : its a graphical display for our correlation matrix.
-
-recipes(version 1.0.3) : creating our regression part, recipes function can let the varibles have arbitrary roles in the analysis beyond predictors and outcomes.
-
-
+recipes(version 1.0.3) : Recipes was used to assist in creating the regression equations. This functions lets the variables have arbitrary roles beyond just predictors and outcomes.
 
 #### Mapping
 
 leaflet (Version 2.1.1): Leaflet was used to create the mapping tab of the app. A base level map was created using a shape variable for each DC census tract. More functions were used to interactively plot tract metrics, cooling center information, and tree information. 
 
 sf (Version 1.0.8): The sf package was used in the business section to correctly manipulate the shape variable for DC census tracts into the correct format. 
+
+#### Working Data
+
+tidyverse (Version 1.3.2): The select function of the dplyr package was used to assist in filtering data based on what input controls were selected. 
 
 ### <span style="color: blue;">Data Source and Structure:</span>
 
@@ -112,9 +112,11 @@ Data comes from Open Data DC
 DDOT's Urban Forestry Division (UFD) is the primary steward of Washington DC's ~170,000 public trees and has a mission of keeping this resource healthy, safe, & growing! Trees provide many benefits to the populations such as improving air and water quality and creates habitat for local fauna. Importantly trees are also critical for keeping the city cooler. 
 Data comes from Open Data DC
 
+### <span style="color: blue;">Graphical Analysis Inputs, Controls, and Outputs:</span>
 
-## Statistical Analysis Inputs, Controls, and Outputs
+### <span style="color: blue;">Statistical Analysis Inputs, Controls, and Outputs:</span>
 
+### <span style="color: blue;">Mapping Analysis Inputs, Controls, and Outputs:</span>
 
 ## References 
 “Cooling Centers - District of Columbia.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/cooling-centers-district-of-columbia/explore?location=38.903124,-77.008453,12.75.
