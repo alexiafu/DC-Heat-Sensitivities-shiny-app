@@ -114,9 +114,15 @@ Data comes from Open Data DC
 
 ### <span style="color: blue;">Graphical Analysis Inputs, Controls, and Outputs:</span>
 
+![](../vignettes/Graphing_Capture.jpeg){#id .class width=85% height=85%}
+
 ### <span style="color: blue;">Statistical Analysis Inputs, Controls, and Outputs:</span>
 
+![](../vignettes/Regression_Capture.jpeg){#id .class width=85% height=85%}
+
 ### <span style="color: blue;">Mapping Analysis Inputs, Controls, and Outputs:</span>
+
+![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
 ## References 
 “Cooling Centers - District of Columbia.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/cooling-centers-district-of-columbia/explore?location=38.903124,-77.008453,12.75.
