@@ -481,9 +481,10 @@ server <- function(input, output) {
                   popup = ~ tracts_clean$NAME) %>%
       addLegend(pal = pal, values = heat_map_data[[input$var_map]], opacity = 1)
     
-    if (is.character(heat_map_data[[input$var_map]])) {
-      validate("Please Choose Numeric Vector")
-    } else if (input$cooling == TRUE) {
+   if (input$cooling == TRUE) {
+     if (input$trees == TRUE) {
+       validate("To eliminate cluttering, please select either Cooling Centers data or Tree data")
+     } else {
       map %>%
         addCircleMarkers(data = cooling_centers_clean,
                          popup = ~popup_label,
@@ -491,7 +492,11 @@ server <- function(input, output) {
                          radius = 3, 
                          fillColor= "#4DB6D0",
                          fillOpacity = .8)
+     }
     } else if (input$trees == TRUE) {
+        if (input$cooling == TRUE) {
+          validate("To eliminate cluttering, please select either Cooling Centers data or Tree data")
+        } else {
       map %>%
         addCircleMarkers(data = forest_samp,
                          popup = ~popup_label,
@@ -499,6 +504,7 @@ server <- function(input, output) {
                          radius = .3, 
                          fillColor= "green",
                          fillOpacity = .1)
+        }
     } else {
       map
     }
