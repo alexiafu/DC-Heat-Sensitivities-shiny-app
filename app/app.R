@@ -203,10 +203,20 @@ ui <- fluidPage(
                )
       ), # End tabPanel3
       tabPanel("Working Data",
-               checkboxInput("limit_id", "Remove Duplicate ID Variables?"),
-               checkboxInput("hsi_only", "HSI Data Only"),
-               checkboxInput("hei_only", "HEI Data Only"),
-               dataTableOutput("dynamic"))
+               mainPanel(
+                 tabsetPanel(
+                   type = "pills",
+                tabPanel("Heat Data",
+                         checkboxInput("limit_id", "Remove Duplicate ID Variables?"),
+                         checkboxInput("hsi_only", "HSI Data Only?"),
+                         checkboxInput("hei_only", "HEI Data Only?"),
+                         dataTableOutput("dynamic_heat")),
+                tabPanel("Cooling Center Data",
+                         dataTableOutput("dynamic_cooling")),
+                tabPanel("Tree Data",
+                         dataTableOutput("dynamic_tree"))
+                 )
+               ))
     ) # End tabsetPanel
   )# End mainPanel
 )# End fluidPage
@@ -355,7 +365,7 @@ server <- function(input, output) {
   })
   
   # Working Data Tab
-  output$dynamic <- renderDataTable({
+  output$dynamic_heat <- renderDataTable({
     if (input$limit_id == TRUE) { 
       if (input$hsi_only == TRUE) {
         heat_DC <- heat_DC %>%
@@ -381,6 +391,14 @@ server <- function(input, output) {
     } else {
       heat_DC
     }
+  })
+  
+  output$dynamic_cooling <- renderDataTable({
+    cooling_centers_clean
+  })
+  
+  output$dynamic_tree <- renderDataTable({
+    urban_forestry
   })
   
   # For tab Regression by data use
