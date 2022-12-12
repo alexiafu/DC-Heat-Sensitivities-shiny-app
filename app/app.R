@@ -40,6 +40,9 @@ heat_DC <- heat_DC %>%
 heat_bivariate <- heat_DC %>%
   dplyr::select(-OBJECTID:-ID, -GIS_ID: -variable, -moe) 
 
+heat_quant <- heat_bivariate %>%
+  select(-majority_minority)
+
 #Clean cooling center data
 cooling_centers_clean <- Cooling_Centers %>% 
   rename(latitude = Y,
@@ -188,7 +191,7 @@ ui <- fluidPage(
                )),#End tabPanel2
       tabPanel("Mapping",
                sidebarLayout(
-                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_bivariate, selected = "TOTALPOP"),
+                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_quant, selected = "TOTALPOP"),
                               checkboxInput("cooling", "Show DC Cooling Centers", value = FALSE),
                               checkboxInput("trees", "Show DC Tree Data?", value = FALSE)),
                  mainPanel(leafletOutput("map_plot", height = "600px"))
@@ -478,27 +481,27 @@ server <- function(input, output) {
                   popup = ~ tracts_clean$NAME) %>%
       addLegend(pal = pal, values = heat_map_data[[input$var_map]], opacity = 1)
     
-    if (input$cooling == TRUE) {
+    if (is.character(heat_map_data[[input$var_map]])) {
+      validate("Please Choose Numeric Vector")
+    } else if (input$cooling == TRUE) {
       map %>%
         addCircleMarkers(data = cooling_centers_clean,
                          popup = ~popup_label,
                          stroke = F,
                          radius = 3, 
                          fillColor= "#4DB6D0",
-                         fillOpacity = .8) ->
-        map
-    }
-    if (input$trees == TRUE) {
+                         fillOpacity = .8)
+    } else if (input$trees == TRUE) {
       map %>%
         addCircleMarkers(data = forest_samp,
                          popup = ~popup_label,
                          stroke = F,
                          radius = .3, 
                          fillColor= "green",
-                         fillOpacity = .1)->
-        map
-    } 
-    map
+                         fillOpacity = .1)
+    } else {
+      map
+    }
   })
 }
 
