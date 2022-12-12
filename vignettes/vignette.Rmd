@@ -114,6 +114,18 @@ Data comes from Open Data DC
 
 ### <span style="color: blue;">Graphical Analysis Inputs, Controls, and Outputs:</span>
 
+#### Inputs 
+
+The graphing tab of our app is centered around exploratory data analysis of the DC Heat Sensitivity Exposure Index. The inputs of the tab are a x, y, and categorical variable. It is important to note that our data only has one categorical available for analysis. This is because the data set only contained quantitative variables. Further empirical research can be done in the future to accurately create new categorical variables. For example, thresholds for poverty can me researched to justify the creation of a categorical variable that identifies levels of poverty per census tract. However, as a result of the lack of categorical variables, any quantitative variable selected for the color variable will only return a scatterplot of the x and y in the bivariate tab and the histograms in the univariate tab. This allows the user to still run analysis on the two variables until more factors are created. 
+
+#### Controls
+
+The controls of the graphing tab allow for transformations and smoothing fitting of the variables selected. There are sliders that will change the number of bins for both the x and y variable histograms. The user also has the ability to log the x and y variables which will successfully log scale all graphs associated with the variable. Finally, the user has the ability to fit a linear smoother to the scatterplot to see a preliminary relationship between the two variables. No smoothing output is shown due to the in depth analysis found within the regression tab.
+
+#### Output
+
+There are two tabs containing outputs within the Graphing tab. In the bivariate tab, a scatterplot of the x and y variable is rendered with the ability to differentiate data points by a categorical variable. Below the scatter plot are two violin plots that examine the categorical variable against the two selected x and y variables. The univariate tab shows the histograms of the x and y variables, as well as a bar graph of the count of observations by factor level.
+
 ![](../vignettes/Graphing_Capture.jpeg){#id .class width=85% height=85%}
 
 ### <span style="color: blue;">Statistical Analysis Inputs, Controls, and Outputs:</span>
@@ -121,6 +133,14 @@ Data comes from Open Data DC
 ![](../vignettes/Regression_Capture.jpeg){#id .class width=85% height=85%}
 
 ### <span style="color: blue;">Mapping Analysis Inputs, Controls, and Outputs:</span>
+
+#### Inputs
+
+The inputs of the app's mapping section are the quantitative variables of the Heat Sensitivity Exposure Data which identifies quantitative measurements of socioeconomic variables and health variables for DC census tracts. There are also two options to layer more data on top of the HSEI data. The user will have the option to choose to add locations of DC cooling centers or tree locations to the map. 
+
+#### Output
+
+Based on what metric the user chooses, the app will return a map of DC census tracts with a color scale of the specific metric. The user will be able to click on a specific census track to obtain the track number. If cooling center is layered, data points of DC's cooling centers will be visible. Clicking on any given point will create a popup label including the name, location, hours, and center type. If trees are selected, a random sample of DC tree data will be visibile. Clicking on any given point will create a popup label that includes the tree type, location, owner, and condition of the tree. 
 
 ![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
