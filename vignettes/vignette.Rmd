@@ -130,11 +130,11 @@ There are two tabs containing outputs within the Graphing tab. In the bivariate 
 
 ### <span style="color: blue;">Statistical Analysis Inputs, Controls, and Outputs:</span>
 
-####Inputs
+#### Inputs
 
 The Regression Analysis tab is for Statistical Analysis. The response variable is fixed with HEI, HSI, and HSEI since there are only classification variables. Users could select one y variable and one or multiple x variables from the left bar. All of the x variables are numeric.
 
-####Outputs
+#### Outputs
 
 There are three subsets of the results. First, we have "Model Summary", which is the summary result of the customized regression model. Second, "Correlation" presents correlation values between variables, and last, we have the diagnostic plots and normality test (Q-Q plot) from the fitted model. 
 
