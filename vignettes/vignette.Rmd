@@ -132,11 +132,11 @@ There are two tabs containing outputs within the Graphing tab. In the bivariate 
 
 #### Inputs
 
-The Regression Analysis tab is for Statistical Analysis. The response variable is fixed with HEI, HSI, and HSEI since there are only classification variables. Users could select one y variable and one or multiple x variables from the left bar. All of the x variables are numeric.
+The response variable is fixed with the three index variables HEI, HSI, and HSEI. Users could select one y variable and one or multiple x variables from the left bar. All of the x variables are of numeric classification.
 
 #### Outputs
 
-There are three subsets of the results. First, we have "Model Summary", which is the summary result of the customized regression model. Second, "Correlation" presents correlation values between variables, and last, we have the diagnostic plots and normality test (Q-Q plot) from the fitted model. 
+There are three subsets of the results. First, we have "Model Summary", which is the summary result of the customized regression model. Second, "Correlation" presents correlation values between variables and is represented with a correlation plot. Last, the app outputs diagnostic plots and normality test (Q-Q plot) from the fitted model. 
 
 
 ![](../vignettes/Regression_Capture.jpeg){#id .class width=85% height=85%}
@@ -149,7 +149,7 @@ The inputs of the app's mapping section are the quantitative variables of the He
 
 #### Output
 
-Based on what metric the user chooses, the app will return a map of DC census tracts with a color scale of the specific metric. The user will be able to click on a specific census track to obtain the track number. If cooling center is layered, data points of DC's cooling centers will be visible. Clicking on any given point will create a popup label including the name, location, hours, and center type. If trees are selected, a random sample of DC tree data will be visibile. Clicking on any given point will create a popup label that includes the tree type, location, owner, and condition of the tree. 
+Based on what metric the user chooses, the app will return a map of DC census tracts with a color scale of the specific metric. The user will be able to click on a specific census track to obtain the track number. If cooling center is layered, data points of DC's cooling centers will be visible. Clicking on any given point will create a popup label including the name, location, hours, and center type. If trees are selected, a random sample of DC tree data will be visible. Clicking on any given point will create a popup label that includes the tree type, location, owner, and condition of the tree. 
 
 ![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
