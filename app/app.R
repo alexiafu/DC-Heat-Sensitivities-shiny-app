@@ -163,8 +163,6 @@ ui <- fluidPage(
                               status = "primary",           
                               checkboxGroupInput("x", label = h4("Select X Variables:"),
                                                  choices = names(stat_heat_DC), selected = "TOTALPOP"),
-                              varSelectInput("bi_variable_x","X Variable - Bivariate Tab:",stat_heat_DC,"TOTALPOP"),
-                              varSelectInput("bi_variable_y","Y Variable - Bivariate Tab:",stat_heat_DC,"HSI"),
                               solidHeader = TRUE,
                               status = "primary"),
                  mainPanel(tabsetPanel(type = "pills",
@@ -179,16 +177,10 @@ ui <- fluidPage(
                                                 box(withSpinner(plotOutput("Corr")),width = 12, title = h4("Correlation - by Selected Variables")
                                                 )
                                        ),
-                                       tabPanel("Bivariate", 
-                                                box(withSpinner(plotOutput("bi_plot")),width=12,title=h4("Bivariate Plot - by Selected variables")
-                                                ),
+                                       tabPanel("Diagnostics", 
                                                 tabPanel("Model Fit",
                                                          box(withSpinner(plotOutput("residualPlots")), width = 12, title = h4("Diagnostic Plots")
                                                          )
-                                                )
-                                       ),
-                                       tabPanel("Data",
-                                                box(withSpinner(dataTableOutput('tbl')), width = 12, title = h4("Data for DC Heat")
                                                 )
                                        )
                  )      
