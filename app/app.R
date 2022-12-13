@@ -389,11 +389,13 @@ server <- function(input, output) {
   })
   
   output$dynamic_cooling <- renderDataTable({
-    cooling_centers_clean
+    cooling_centers_clean %>%
+      select(-popup_label, -sep)
   })
   
   output$dynamic_tree <- renderDataTable({
-    urban_forestry
+    urban_forestry %>%
+      select(-ONEYEARPHOTO:-PHOTOREMARKS, -CREATED_USER:-EDITED)
   })
   
   # For tab Regression by data use
