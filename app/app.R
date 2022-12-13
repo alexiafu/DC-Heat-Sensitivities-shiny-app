@@ -135,8 +135,8 @@ ui <- fluidPage(
       tabPanel("Graphing",
                sidebarLayout(
                  sidebarPanel(
-                   varSelectInput("var1", "X variable", data = heat_bivariate, selected = "TOTALPOP"),
-                   varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HEI"),
+                   varSelectInput("var1", "X variable", data = heat_bivariate, selected = "HSI"),
+                   varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "P_POVERTY"),
                    varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
                    sliderInput("bins_x", "Number of Bins for X Variable", min = 1, max = 50, value = 30),
                    sliderInput("bins_y","Number of Bins for Y Variable", min = 1, max = 50, value = 30),
@@ -392,11 +392,13 @@ server <- function(input, output) {
   })
   
   output$dynamic_cooling <- renderDataTable({
-    cooling_centers_clean
+    cooling_centers_clean %>%
+      select(-popup_label, -sep)
   })
   
   output$dynamic_tree <- renderDataTable({
-    urban_forestry
+    urban_forestry %>%
+      select(-ONEYEARPHOTO:-PHOTOREMARKS, -CREATED_USER:-EDITED)
   })
   
   # For tab Regression by data use
@@ -493,7 +495,7 @@ server <- function(input, output) {
                          popup = ~popup_label,
                          stroke = F,
                          radius = 3, 
-                         fillColor= "#4DB6D0",
+                         fillColor= "blue",
                          fillOpacity = .8)
      }
     } else if (input$trees == TRUE) {
