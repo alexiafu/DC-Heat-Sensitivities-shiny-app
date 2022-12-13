@@ -92,16 +92,18 @@ ui <- fluidPage(
       tabPanel("Introduction",
                h3(strong("Description")),
                p(style="text-align: justify; font-size = 25px",
-                 "The objective of this app is to provide a tool to analyzes heat sensitivities across DC census tracts. We aim to 
-                provide useful statistically model specific correlates of the Heat Sensitivity Exposure Index (HSEI). 
-               These correlates can then be taken and used to 
-               explore any socio-demographic trends that are prevalent on a census tract basis."
+                 "Extreme heat in urban environments pose a serious health and justic challenge to local government and civil society groups.
+                 The objective of this app is to provide a tool to analyzes heat sensitivities across DC census tracts. We 
+                provide a tool that allows users to statistically model the correlates of the Heat Sensitivity Exposure Index (HSEI),
+                Heat Sensitivity Index (HSI) and Heat Exposure Index (HEI). A user can find the relevant socio-demographic and health correlates of
+                these extreme heat metrics on census tract basis."
                ),
                h3(strong("Use Case")),
                p(style="text-align: justify; font-size = 25px",
-                 "The actor for this app will most likely be someone within the DC government’s Department of Energy and Environment or Health and Human Services. 
-               The purpose of the visual representation and statistical modeling would be to assist in the formulation of policy 
-               that attempts to mitigate the occurrences of heat-related health incidences."),
+                 "We imagine this app being used by someone within the DC government’s Department of Energy and Environment, Health and Human Services, or 
+                 by a civil society group such as a community association or non-profit to best plan for extreme heat events. The purpose of the visual representation and statistical
+                 modeling is to assist in the formulation of long term policy making as well as short term assistence to indivdual looking for repreive from
+                 extreme heat. policy that attempts to mitigate the occurrences of heat-related health incidences."),
                h3(strong("Data")),
                p(style="text-align: justify; font-size = 25px",
                  "The data used in this app comes from a variety of sources. Our main source comes from the",
@@ -111,23 +113,24 @@ ui <- fluidPage(
                ),
                h3(strong("Attributes introduction")),
                p(style="text-align: justify; font-size = 25px",
-                 "TOTALPOP=Total 2020 census population",tags$br(),
-                 "P_POC=Percent of people of color population",tags$br(),
-                 "P_CHILD=Percent of population below 5 years of age",tags$br(),
-                 "P_ELDERLY=Percent of population over 65 years of age",tags$br(),
-                 "P_POVERTY=Percent of population below 200% above the Federal Povery Line",tags$br(),
-                 "P_DISABILITY=Percent of population that report having a disability",tags$br(),
-                 "P_LIMENG=Percent of households that are “limited English speaking”",tags$br(),
-                 "ASTHMA=Crude prevalence of adults with asthma",tags$br(),
-                 "CHD=Crude prevalence of adults diagnosed with CHD",tags$br(),
-                 "OBESITY=Crude prevalence of adults who are obese",tags$br(),
-                 "P_TREECOVER=Percent of census tract covered in tree canopy",tags$br(),
-                 "P_NOTREE=Percent of census tract not covered in tree canopy",tags$br(),
-                 "P_IMPSURF=Percent of impervious surfaces",tags$br(),
-                 "AIRTEMP_MEAN=Average ambient air temperature per Census Tract",tags$br(),
-                 "HSI=Heat Sensitivity Index",tags$br(),
-                 "HEI=Heat Exposure Index",tags$br(),
-                 "HSEI=Heat Sensitivity Exposure Index",tags$br()
+                 "TOTALPOP = Total 2020 census population",tags$br(),
+                 "P_POC = Percent of people of color population",tags$br(),
+                 "P_CHILD = Percent of population below 5 years of age",tags$br(),
+                 "P_ELDERLY = Percent of population over 65 years of age",tags$br(),
+                 "P_POVERTY = Percent of population below 200% above the Federal Povery Line",tags$br(),
+                 "P_DISABILITY = Percent of population that report having a disability",tags$br(),
+                 "P_LIMENG = Percent of households that are “limited English speaking”",tags$br(),
+                 "ASTHMA = Crude prevalence of adults with asthma",tags$br(),
+                 "CHD = Prevalence of adults diagnosed with Congenital Heart Disease (CHD)",tags$br(),
+                 "OBESITY = Crude prevalence of adults who are obese",tags$br(),
+                 "P_TREECOVER = Percent of census tract covered in tree canopy",tags$br(),
+                 "P_NOTREE = Percent of census tract not covered in tree canopy",tags$br(),
+                 "P_IMPSURF = Percent of impervious surfaces",tags$br(),
+                 "AIRTEMP_MEAN = Average ambient air temperature per Census Tract",tags$br(),
+                 "HSI = Heat Sensitivity Index. Corresponds to population average ability to adapt to,
+                        cope with, and recover from extreme heat",tags$br(),
+                 "HEI = Heat Exposure Index. Includes ambient air temperatures, impervious survaces and lack of canopy cover",tags$br(),
+                 "HSEI = Heat Sensitivity Exposure Index. A composite index of both HSI and HEI.",tags$br()
                )),
       tabPanel("Graphing",
                sidebarLayout(
@@ -501,7 +504,7 @@ server <- function(input, output) {
         addCircleMarkers(data = forest_samp,
                          popup = ~popup_label,
                          stroke = F,
-                         radius = .3, 
+                         radius = .5, 
                          fillColor= "green",
                          fillOpacity = .1)
         }
