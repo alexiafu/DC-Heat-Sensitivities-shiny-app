@@ -135,8 +135,8 @@ ui <- fluidPage(
       tabPanel("Graphing",
                sidebarLayout(
                  sidebarPanel(
-                   varSelectInput("var1", "X variable", data = heat_bivariate, selected = "HSI"),
-                   varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "P_POVERTY"),
+                   varSelectInput("var1", "X variable", data = heat_bivariate, selected = "P_POVERTY"),
+                   varSelectInput("var2", "Y variable", data=heat_bivariate, selected = "HSI"),
                    varSelectInput("var3", "Color variable (categorical)", data = heat_bivariate, selected = "majority_minority"),
                    sliderInput("bins_x", "Number of Bins for X Variable", min = 1, max = 50, value = 30),
                    sliderInput("bins_y","Number of Bins for Y Variable", min = 1, max = 50, value = 30),

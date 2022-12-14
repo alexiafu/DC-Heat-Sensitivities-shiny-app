@@ -153,7 +153,7 @@ Based on what metric the user chooses, the app will return a map of DC census tr
 
 ![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
-## References 
+## References
 “Cooling Centers - District of Columbia.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/cooling-centers-district-of-columbia/explore?location=38.903124,-77.008453,12.75.
 
 “Heat Sensitivity Exposure Index.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/DCGIS::heat-sensitivity-exposure-index/explore.
